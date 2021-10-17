@@ -1,0 +1,176 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Safe Crossing Viewer</title>
+  <meta name="description" content="Safe Crossing viewer">
+  <meta name="author" content="ZUG">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #info {
+      overflow: auto;
+      padding: 2rem;
+    }
+    #map {
+      flex-grow: 1;
+    }
+    .invisible {
+      display: none;
+    }
+    .button-info button {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+    .red {
+      color: red;
+      font-weight: bold;
+    }
+    .orange {
+      color: orange;
+      font-weight: bold;
+    }
+    @media only screen and (max-width: 768px) {
+      #info {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="info">
+    <h2>Safe Crossing</h2>
+    <p>
+      Welcome to the "Safe Crossing" viewer. The map shows pedestrian crossings in Luxembourg-City that have
+      been determined as not being compliant with the Highway Code ("Code de la Route") because there are designated
+      parking spots (this includes, among others, bus stops) within 5 metres of a given pedestrian crossing.
+    </p>
+    <p>
+      Data has been collected in 2021 by a collective crowd-sourced effort using an app which provided users with a list of
+      pedestrian crossings in Luxembourg-City. Satellite imagery of the given crossings was provided to users, and the app
+      allowed measuring a 5 metre radius on screen to determine whether or not a crossing is compliant with the law.
+    </p>
+    <p>
+      The relevant pedestrian crossings are marked by dots, either in red or orange. The meaning of the colour is explained
+      below:
+    </p>
+    <p>
+      <span class="red">RED:</span> Users were in agreement that the crossing was not compiant with the Highway Code
+    </p>
+    <p>
+      <span class="orange">ORANGE:</span> Users were unable to determine whether the crossing is compliant with the Highway Code<br>
+    </p>
+    <p>
+      Compliant crossings are not shown on the map.
+    </p>
+    <p>
+      By clicking on a dot, you can check the street name and neighbourhood, as well as how many votes were cast. You can
+      also check out the OpenStreetMaps node id.
+    </p>
+    <p>
+      Data for the pedestrian crossings comes from OpenStreetMap. Satellite imagery comes from Geoportail. Download
+      the data as GeoJSON by <a href="https://zug.lu/safe-crossing/safe-crossing-results.geojson">clicking here</a>.
+    </p>
+    <p class="button-info"><button onClick="javascript:hideInfo()">OK, got it!</button></p>
+  </div>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+  <script>
+    function getResultDescription(result) {
+      switch (result) {
+        case 2:
+          case 12:
+            return "Designated parking too close to crossing";
+            break;
+          default:
+            return "Ambiguous or impossible to judge";
+      }
+    }
+
+    function getLocationDescription(street, neighbourhood) {
+      if (street && neighbourhood) return `${street} (${neighbourhood})`;
+      else if (street) return street;
+      else if (neighbourhood) return neighbourhood;
+      return "";
+    }
+
+    async function loadGeojson() {
+      const url = 'https://zug.lu/safe-crossing/safe-crossing-results.geojson';
+      return (await fetch(url)).json();
+    }
+
+    function bindPopups(feature, layer) {
+      const { street, neighbourhood, votesTotal, currentResult, osmnodeid } = feature.properties;
+
+      layer.bindPopup(`<h2>${getLocationDescription(street, neighbourhood)}</h2><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: ${osmnodeid}</p>`);
+    }
+
+    var map = L.map('map').setView([49.6061209088, 6.12493950024], 14);
+    mapLink = '<a href="http://geoportail.lu">Geoportail</a>';
+    L.tileLayer(
+      'https://wmts1.geoportail.lu/opendata/wmts/ortho_2020/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
+      {
+        attribution: 'Map data &copy; ' + mapLink,
+        maxZoom: 18,
+      }
+    ).addTo(map);
+
+    function hideInfo() {
+      document.getElementById("info").className = "invisible";
+      map.invalidateSize();
+    }
+
+    const notSureMarkerOptions = {
+      radius: 8,
+      fillColor: "#ffd700",
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.8
+    };
+
+    const tooCloseMarkerOptions = {
+      radius: 8,
+      fillColor: "#ff0000",
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.8
+    };
+
+    loadGeojson().then(data => L.geoJson(data, {
+      onEachFeature: bindPopups,
+      pointToLayer: function (feature, latlng) {
+        switch (feature.properties.currentResult) {
+          case 2:
+          case 12:
+            return L.circleMarker(latlng, tooCloseMarkerOptions);
+            break;
+          default:
+            return L.circleMarker(latlng, notSureMarkerOptions);
+        }
+      }
+    })).then(map.addLayer.bind(map));
+  </script>
+</body>
+</html>
