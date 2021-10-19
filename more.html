@@ -1,0 +1,189 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Safe Crossing - More information</title>
+  <meta name="description" content="Safe Crossing viewer">
+  <meta name="author" content="ZUG">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .container {
+      padding: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 768px;
+    }
+    .main-title {
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px grey solid;
+    }
+    .at-a-glance {
+      margin: 2rem 0;
+      padding: 1rem;
+      background-color: lightgray;
+      border-radius: 4px;
+    }
+    .result-highlight {
+      font-weight: bold;
+    }
+    .quote {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 0.1rem 1rem;
+      color: grey;
+    }
+    .contact {
+      margin-top: 3rem;
+    }
+    @media only screen and (max-width: 768px) {
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="main-title">About "Safe Crossing"</h1>
+    <div class="at-a-glance">
+      <h3>At a glance</h3>
+      <p>
+        Safe Crossing is a project based on a crowd-sourced effort to assess if the setup of pedestrian crossings
+        in Luxembourg-City comply with the <i>Code de la Route</i>.
+      </p>
+      <p>Results:</p>
+      <ul class="result-highlight">
+        <li>A total of 1787 pedestrian crossings were analysed.</li>
+        <li>The setup of 475 (27%) crossings is likely in violation of the <i>Code de la Route</i></li>
+        <li>For 162 (9%) crossings, no assessment was possible</li>
+      </ul>
+      <p>The remaining 1150 (64%) pedestrian crossings have been assessed as being in compliance with the
+        <i>Code de la Route</i>.</p>
+      <p class="result-highlight">This means that roughly a third of all pedestrian crossings in the City of Luxembourg
+        may not be setup according to the rules of the law.
+      </p>
+      <p>
+        <a href="index.html">Go to map</a>, or
+        <a href="https://zug.lu/safe-crossing/safe-crossing-results.geojson">download results</a> as GeoJSON.
+      </p>
+    </div>
+    <h2>What is the project about?</h2>
+    <p>
+      Safe Crossing is a project that aims to highlight and assemble a list of pedestrian crossings within Luxembourg-City that
+      appear to be in violation of Articles 164(2.)(e) & 166(h) of the <i>Code de la Route</i>:
+    </p>
+    <div class="quote">
+      <h5>Art 164(2.) (excerpt)</h5>
+      <p>L'arrêt des véhicules ou animaux est interdit:</p>
+      <p>(e) sur les passages pour piétons, les passages pour piétons et cyclistes, les gués pour piétons et les gués pour cyclistes
+        ainsi qu'à moins de 5 mètres de part et d'autre de ces passages ou gués, sauf signalisation dérogatoire temporaire ou
+        sauf autorisation de l'autorité délivrée à titre temporaire</p>
+      <h5>Art 166(h) (excerpt)</h5>
+      <p>Le stationnement des véhicules ou animaux est interdit:</p>
+      <p>(h) sur les passages pour piétons, les passages pour piétons et cyclistes, les gués pour piétons et les gués pour cyclistes
+        ainsi qu'à moins de 5 mètres de part et d’autre de ces passages ou gués</p>
+    </div>
+    <p>
+      You can read more about how the data was collected below, as well as to why this project was launched.
+    </p>
+    <p>
+      The result of the project, which is the list of crossings that have been identified to be likely in violation of the
+      above paragraphs of the <i>Code de la Route</i>, can be visualised on a map <a href="index.html">here</a>, or downloaded as GeoJSON
+      <a href="https://zug.lu/safe-crossing/safe-crossing-results.geojson">here</a>.
+    </p>
+    <p>
+      You can consult the full text of the <i>Code de la Route</i>
+      <a href="https://legilux.public.lu/eli/etat/leg/code/route/20210820">here</a>.
+    </p>
+    <h2>How was the data collected?</h2>
+    <p>
+      Safe Crossing is a crowd-sourced project. As such, the data has been generated in 2021 (from June to August) through a collective effort
+      involving around 20 active volunteers. Volunteers have been approached on social media to ask whether they would be interested in
+      participating.
+    </p>
+    <p>
+      Interested users were invited to install a custom-made application on their phone. Upon launch, the application presented users
+      with a pedestrian crossing in Luxembourg-City on a map using satellite imagery. The volunteer was then asked to assess whether there
+      were parking spots within 5 metres of the pedestrian crossing in question. The volunteers were able to measure the distance
+      using a dedicated feature of the app that allowed them to draw a circle with a 5 metre radius and move it around the screen freely. This way,
+      the distances around the pedestrian crossing could be measured with adequate accuracy.
+    </p>
+    <p>
+      Volunteers could then click one of three buttons: one button to state that there were no parkings within 5 metres of the pedestrian crossing
+      (which would be in compliance with the law), another button to say that there were parking spots within 5 metres of the pedestrian crossing
+      (which would be in violation of the law), and a last button to indicate that they were not sure of that it was impossible to tell (for instance
+      because trees impeded visibility of the pedestrian crossing on the satellite image).
+    </p>
+    <p>
+      After making a choice, the volunteer was presented with a new pedestrian crossing, and so forth.
+    </p>
+    </p>
+      Some screenshots:
+    </p>
+    <div>
+      <img src="https://github.com/fedus/safe_crossing/raw/develop/screens/iphone_1.png?raw=true" alt="Safe Crossing Screenshot - 1" style="max-width: 100%;">
+      <img src="https://github.com/fedus/safe_crossing/raw/develop/screens/iphone_2.png?raw=true" alt="Safe Crossing Screenshot - 2" style="max-width: 100%;">
+    </div>
+    <h2>At what point did data collection stop?</h2>
+    <p>
+      Data collection stopped when all crossings in the database had at least 5 votes each. A threshold of 5 votes as a minimum per crossing
+      was subjectively chosen to ensure that a somewhat robust conclusion can be drawn about the pedestrian crossing's setup's
+      compliance with the <i>Code de la Route</i>.
+    </p>
+    <h2>How was the collected data processed?</h2>
+    <p>
+      Once data collection had finished, it was minimally processed. The only processing that took place was concerning crossings for
+      which there was a tie after voting (that is, there was a tie between the possible outcomes that the crossing was in compliance with
+      the law or not, or that it was impossible to say for volunteers). For these crossings, a manual intervention took place and a decision
+      was made by a single volunteer to overturn the tie and assign a definitive status of being in compliant with the, or not being
+      compliant with the law, or deciding that it was not possible to judge based on the satellite imagery.
+    </p>
+    <h2>Interpretation of the results</h2>
+    <p>
+      While no quality assurances can be made about the data as it has been crowd-sourced (and as it is subject to human error and
+      factors like the quality of the data on OpenStreetMap as wel as the satellite imagery of Geoportail), the results are highly
+      indicative of a general lack of safety for vulnerable road users in Luxembourg-City and in specific pedestrians.
+      Roughly a quarter of all pedestrian crossings in the database were marked as having parking
+      spots in a too close vicinity. This means that at all those crossings, there exists unnecessary danger for pedestrians as visibility
+      is impeded and moving safely might be difficult due to the vicinity of parking spots.
+    </p>
+    <h2>What's the motivation for this project?</h2>
+    <p>
+      Luxembourg-City is a beautiful, vibrant city. However, it is also a city with a lot of individual, motorised traffic and
+      therefore suffers from a lot of the disadvantages that come with the latter: congestion, noise, pollution - and also
+      a high risk for pedestrians and cyclists.
+    </p>
+    <p>
+      Every human being that is hurt on our streets is one too many - and city leaders should do everything in their power
+      to protect people as they walk or cycle. However, it turns out that when it comes to one of the most basic infrastructures
+      for soft mobility, pedestrian crossings, there has been a lot of "creativity" to squeeze in more parking spots at the expense
+      of pedestrian safety.
+    </p>
+    <p>
+      Most often, this creativity manifests itself as starting the curb-side parkings spots already well before the 5 metre
+      minimum distance from the pedestrian crossing, but only letting the designated lay-by reach the full width exactly at
+      the 5 metre mark. While this is a grey zone, on a great number of pedestrian crossings, there is simply no minimum distance left at all.
+      On other occasions, and most often in 30km/h zones, there are no markings on the ground - neither for pedestrians, nor for cars. But
+      in practice this means that drivers will take up every square inch, disregarding that they impede visibility for pedestrians
+      and cyclists but also other drivers.
+    </p>
+    <p>
+      Therefore, this project aimed to highlight the extent of the problem, but also to show where the problematic crossings are.
+      The ambition was one of positive citizen-powered action to help make the City of Luxembourg a safer place. City leaders
+      are welcome and in fact encouraged to draw on the collected data to improve dangerous pedestrian crossings an align their setup
+      with the <i>Code de la Route</i>.
+    </p>
+    <h2>What are the sources for the initial list of pedestrian crossings and the satellite imagery?</h2>
+    <p>
+      The initial list of pedestrian crossings in Luxembourg-City has been drawn from <a href="https://openstreetmap.org">OpenStreetMap</a>.
+      Satellite imagery has been provided by <a href="https://www.geoportail.lu">Geoportail</a> (2020 Ortho-Photos).
+    </p>
+    <h3 class="contact">Licensing & contact</h3>
+    <p>The GeoJSON dataset is licensed as Creative Commons "CC BY". You can contact us at info(at)zug.lu</p>
+  </div>
+</body>
+</html>

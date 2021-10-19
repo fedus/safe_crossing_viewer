@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Safe Crossing Viewer</title>
+  <title>Safe Crossing - Map viewer</title>
   <meta name="description" content="Safe Crossing viewer">
   <meta name="author" content="ZUG">
 
@@ -47,6 +47,13 @@
       color: orange;
       font-weight: bold;
     }
+    .more-information {
+      font-weight: bold;
+      text-align: center;
+      background-color: lightgrey;
+      border-radius: 4px;
+      padding: .5rem;
+    }
     @media only screen and (max-width: 768px) {
       #info {
         height: 100%;
@@ -64,22 +71,17 @@
       parking spots (this includes, among others, bus stops) within 5 metres of a given pedestrian crossing.
     </p>
     <p>
-      Data has been collected in 2021 by a collective crowd-sourced effort using an app which provided users with a list of
-      pedestrian crossings in Luxembourg-City. Satellite imagery of the given crossings was provided to users, and the app
-      allowed measuring a 5 metre radius on screen to determine whether or not a crossing is compliant with the law.
-    </p>
-    <p>
       The relevant pedestrian crossings are marked by dots, either in red or orange. The meaning of the colour is explained
       below:
     </p>
     <p>
-      <span class="red">RED:</span> Users were in agreement that the crossing was not compiant with the Highway Code
+      <span class="red">RED (475 crossings, 27%):</span> Users were in agreement that the crossing was not compiant with the Highway Code
     </p>
     <p>
-      <span class="orange">ORANGE:</span> Users were unable to determine whether the crossing is compliant with the Highway Code<br>
+      <span class="orange">ORANGE (162 crossings, 9%):</span> Users were unable to determine whether the crossing is compliant with the Highway Code<br>
     </p>
     <p>
-      Compliant crossings are not shown on the map.
+      Compliant crossings are not shown on the map (1150 crossings, 64%).
     </p>
     <p>
       By clicking on a dot, you can check the street name and neighbourhood, as well as how many votes were cast. You can
@@ -88,6 +90,9 @@
     <p>
       Data for the pedestrian crossings comes from OpenStreetMap. Satellite imagery comes from Geoportail. Download
       the data as GeoJSON by <a href="https://zug.lu/safe-crossing/safe-crossing-results.geojson">clicking here</a>.
+    </p>
+    <p class="more-information">
+      More information about the project can be found <a href="more.html">here</a>.
     </p>
     <p class="button-info"><button onClick="javascript:hideInfo()">OK, got it!</button></p>
   </div>
