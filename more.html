@@ -41,6 +41,22 @@
     .contact {
       margin-top: 3rem;
     }
+    .guide-snippets {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+    }
+    .guide-snippets img {
+      width: 50%;
+    }
+    .centered-content {
+      display: flex;
+      justify-content: space-around;
+    }
+    .constrained-dimensions {
+      max-width: 90%;
+      max-height: 90%;
+    }
     @media only screen and (max-width: 768px) {
     }
   </style>
@@ -53,7 +69,9 @@
       <h3>At a glance</h3>
       <p>
         Safe Crossing is a project based on a crowd-sourced effort to assess if the setup of pedestrian crossings
-        in Luxembourg-City comply with the <i>Code de la Route</i>.
+        in Luxembourg-City complies with the <i>Code de la Route</i> (also: Highway Code). Specifically, users were asked to analyse whether or
+        not there were parking spots within 5 metres of a pedestrian crossing, which is prohibited according to the
+        <i>Code de la Route</i>.
       </p>
       <p>Results:</p>
       <ul class="result-highlight">
@@ -64,7 +82,8 @@
       <p>The remaining 1150 (64%) pedestrian crossings have been assessed as being in compliance with the
         <i>Code de la Route</i>.</p>
       <p class="result-highlight">This means that roughly a third of all pedestrian crossings in the City of Luxembourg
-        may not be setup according to the rules of the law.
+        may not be setup according to the rules of the law, despite the fact that such flaws have already been
+        brought to attention of city leaders by an audit on pedestrian security in 2015.
       </p>
       <p>
         <a href="index.html">Go to map</a>, or
@@ -86,6 +105,17 @@
       <p>Le stationnement des véhicules ou animaux est interdit:</p>
       <p>(h) sur les passages pour piétons, les passages pour piétons et cyclistes, les gués pour piétons et les gués pour cyclistes
         ainsi qu'à moins de 5 mètres de part et d’autre de ces passages ou gués</p>
+    </div>
+    <p>
+      Furthermore, the MDDI recommends that this prohibition is materialized by appropriate
+      road markings in order to increase the field of vision of road users and to optimize the safety of pedestrians.
+      (Source: <a href="https://transports.public.lu/content/dam/transport/publications/2014-passages-pietons-agglomeration.pdf">Guide
+      de la Commission de Circulation de l'Etat avril 2014 - <i>"Guide Circulation"</i></a>)
+    </p>
+    <p>Two snippets taken from the <i>Guide Circulation</i>:</p>
+    <div class="guide-snippets">
+      <img src="img/mmtp_prohibition_5m.png" alt="Screenshot of text included in the Guide Circulation">
+      <img src="img/mmtp_standards.png" alt="Screenshot of text included in the Guide Circulation">
     </div>
     <p>
       You can read more about how the data was collected below, as well as to why this project was launched.
@@ -124,7 +154,7 @@
     </p>
       Some screenshots:
     </p>
-    <div>
+    <div class="centered-content">
       <img src="https://github.com/fedus/safe_crossing/raw/develop/screens/iphone_1.png?raw=true" alt="Safe Crossing Screenshot - 1" style="max-width: 100%;">
       <img src="https://github.com/fedus/safe_crossing/raw/develop/screens/iphone_2.png?raw=true" alt="Safe Crossing Screenshot - 2" style="max-width: 100%;">
     </div>
@@ -164,13 +194,41 @@
       of pedestrian safety.
     </p>
     <p>
-      Most often, this creativity manifests itself as starting the curb-side parkings spots already well before the 5 metre
+      Most often, this creativity manifests itself as starting the curb-side parking spots already well before the 5 metre
       minimum distance from the pedestrian crossing, but only letting the designated lay-by reach the full width exactly at
-      the 5 metre mark. While this is a grey zone, on a great number of pedestrian crossings, there is simply no minimum distance left at all.
+      the 5 metre mark. This is technically allowed by the <i>Code de la Route</i>, but on many pedestrian crossings this
+      flexibility is stretched to the absolute maximum.
+    </p>
+    <p>
+      On a great number of pedestrian crossings, there is simply no minimum distance left at all.
       On other occasions, and most often in 30km/h zones, there are no markings on the ground - neither for pedestrians, nor for cars. But
-      in practice this means that drivers will take up every square inch, disregarding that they impede visibility for pedestrians
+      in practice this means that drivers will take up every square inch for parking, disregarding that they impede visibility for pedestrians
       and cyclists but also other drivers.
     </p>
+    <p>
+      To illustrate the importance of visibility at pedestrian crossings, the following animation taken from Twitter is
+      very powerful:
+    </p>
+    <div class="centered-content">
+      <blockquote class="twitter-tweet">
+        <p lang="lv" dir="ltr">
+          Stabiņi Rīgas ielās vajadzīgi, lai bērnu ceļš uz skolu būtu drošs.
+          <a href="https://t.co/jxClayY3Bc">pic.twitter.com/jxClayY3Bc</a>
+        </p>
+        &mdash; Oto Ozols (@otucis)
+        <a href="https://twitter.com/otucis/status/1450030316199059456?ref_src=twsrc%5Etfw">
+          October 18, 2021
+        </a>
+      </blockquote>
+    </div>
+    <p>
+      Jumping back to Luxembourg-City, take a look at the following example: the street on the top has adequate field of vision
+      of the pedestrian crossing, while on the bottom one, parking spaces are put right next to it. Approaching drivers are unable
+      to see pedestrians trying to engage on the street. As a consequence, they are exposed to unnecessary danger.
+    </p>
+    <div class="centered-content">
+      <img class="constrained-dimensions" src="img/field_of_vision.png" alt="Illustration of different field of visions of pedestrian crossings in Luxembourg-City">
+    </div>
     <p>
       Therefore, this project aimed to highlight the extent of the problem, but also to show where the problematic crossings are.
       The ambition was one of positive citizen-powered action to help make the City of Luxembourg a safer place. City leaders
@@ -179,11 +237,20 @@
     </p>
     <h2>What are the sources for the initial list of pedestrian crossings and the satellite imagery?</h2>
     <p>
-      The initial list of pedestrian crossings in Luxembourg-City has been drawn from <a href="https://openstreetmap.org">OpenStreetMap</a>.
+      The initial list of pedestrian crossings in Luxembourg-City has been drawn from <a href="https://openstreetmap.org">OpenStreetMap</a>, © OpenStreetMap contributors.
       Satellite imagery has been provided by <a href="https://www.geoportail.lu">Geoportail</a> (2020 Ortho-Photos).
     </p>
+    <h3 class="contact">Disclaimer</h3>
+    <p>
+      This is a crowd-sourced effort. The information this homepage and in the dataset is provided for informational purposes
+      only, and no assurances can be made as to the level of accuracy of the presented data. There is no representation or warranty
+      of any kind, not expressed and not implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness
+      of any information on the this website, including the GeoJSON dataset. Use of this website and / or reliance on any data or information
+      on this website, including the GeoJSON dataset, is solely at your own risk.
+    </p>
     <h3 class="contact">Licensing & contact</h3>
-    <p>The GeoJSON dataset is licensed as Creative Commons "CC BY". You can contact us at info(at)zug.lu</p>
+    <p>The GeoJSON dataset is licensed as Creative Commons "CC BY-SA". You can contact us at info(at)zug.lu</p>
   </div>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
