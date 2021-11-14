@@ -97,7 +97,8 @@
     </p>
     <p>
       Data for the pedestrian crossings comes from OpenStreetMap. Satellite imagery comes from Geoportail. Download
-      the data as GeoJSON by <a href="https://zug.lu/safe-crossing/safe-crossing-results.geojson">clicking here</a>.
+      the data as GeoJSON by <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson">clicking here</a> or as
+      CSV by <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.csv">clicking here</a>.
     </p>
     <p class="more-information">
       More information about the project can be found <a href="more.html">here</a>.
@@ -128,7 +129,7 @@
     }
 
     async function loadGeojson() {
-      const url = 'https://zug.lu/safe-crossing/safe-crossing-results.geojson';
+      const url = 'https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson';
       return (await fetch(url)).json();
     }
 
