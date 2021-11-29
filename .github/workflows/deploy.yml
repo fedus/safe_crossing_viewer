@@ -1,0 +1,23 @@
+name: deploy-main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest
+    name: deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: deploy file
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          username: 'deploy'
+          server: 'zug.lu'
+          ssh_private_key: ${{ secrets.DEPLOYER_PKEY }}
+          local_path: './*'
+          remote_path: '/var/www/zug/safe-crossing'
+          args: '-o ConnectTimeout=5'
