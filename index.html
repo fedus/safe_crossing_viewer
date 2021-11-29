@@ -74,36 +74,34 @@
     <h2>Safe Crossing</h2>
     <p>
       Welcome to the "Safe Crossing" viewer. The map shows pedestrian crossings in Luxembourg-City that have
-      been determined as not being compliant with the Highway Code ("Code de la Route") through a crowd-sourced
-      effort because there are designated parking spots (this includes, among others, bus stops) within 5 metres
-      of a given pedestrian crossing.
+      been determined through a crowdsourced effort as not being compliant with the Highway Code ("Code de la route")
+      because designated parking spots (including bus stops) are within 5 metres of a pedestrian crossing.
     </p>
     <p>
-      The relevant pedestrian crossings are marked by dots, either in red or orange. The meaning of the colour is explained
-      below:
+      Red and orange dots mark the relevant crossings:
     </p>
     <p>
-      <span class="red">RED (475 crossings, 27%):</span> Users were in agreement that the crossing was not compliant with the Highway Code
+      <span class="red">RED (475 crossings, 27%):</span> Users agreed that the crossing was not compliant with the Highway Code
     </p>
     <p>
-      <span class="orange">ORANGE (162 crossings, 9%):</span> Users were unable to determine whether the crossing is compliant with the Highway Code<br>
+      <span class="orange">Yellow (162 crossings, 9%):</span> Users were unable to determine whether the crossing is compliant with the Highway Code<br>
     </p>
     <p>
       Compliant crossings are not shown on the map (1150 crossings, 64%).
     </p>
     <p>
-      By clicking on a dot, you can check the street name and neighbourhood, as well as how many votes were cast. You can
+      By clicking on a dot, you can check the street name and neighbourhood, and how many users cast votes. You can
       also check out the OpenStreetMaps node id.
     </p>
     <p>
       Data for the pedestrian crossings comes from OpenStreetMap. Satellite imagery comes from Geoportail. Download
-      the data as GeoJSON by <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson">clicking here</a> or as
-      CSV by <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.csv">clicking here</a>.
+      the data <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson">as GeoJSON</a> or as
+      <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.csv">CSV</a>.
     </p>
     <p class="more-information">
-      More information about the project can be found <a href="more.html">here</a>.
+      <a href="more.html">More information about the project</a>.
     </p>
-    <p class="button-info"><button onClick="javascript:hideInfo()">OK, got it!</button></p>
+    <p class="button-info"><button onClick="javascript:hideInfo()">OK, hide this text!</button></p>
   </div>
   <div id="map"></div>
 
@@ -117,7 +115,7 @@
             return "Designated parking too close to crossing";
             break;
           default:
-            return "Ambiguous or impossible to judge";
+            return "Ambiguous or impossible to see";
       }
     }
 
@@ -136,7 +134,7 @@
     function bindPopups(feature, layer) {
       const { street, neighbourhood, votesTotal, currentResult, osmnodeid } = feature.properties;
 
-      layer.bindPopup(`<h2>${getLocationDescription(street, neighbourhood)}</h2><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: ${osmnodeid}</p>`);
+      layer.bindPopup(`<h2>${getLocationDescription(street, neighbourhood)}</h2><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: <a href="https://openstreetmap.org/node/${osmnodeid}">${osmnodeid}</a></p>`);
     }
 
     var map = L.map('map').setView([49.6061209088, 6.12493950024], 14);
@@ -156,7 +154,7 @@
 
     const notSureMarkerOptions = {
       radius: 8,
-      fillColor: "#ffd700",
+      fillColor: "#fede42",
       color: "#000",
       weight: 1,
       opacity: 1,
