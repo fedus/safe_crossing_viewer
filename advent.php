@@ -27,7 +27,7 @@ if ($day >= 1 && day <= 24) {
   <meta property="og:title" content="<?=$title_pre ?>Safe Crossing Advent Calendar">
   <meta property="og:site_name" content="Safe Crossing by ZUG (Zentrum fir Urban Gerechtegkeet)">
   <meta property="og:url" content="https://www.zug.lu/safe-crossing/advent.php<?=$url_appendix ?>">
-  <meta property="og:description" content="The Safe Crossing Advent Calendar highlights a selection of more tha 32 unsafe crossings in Luxembourg-City">
+  <meta property="og:description" content="The Safe Crossing Advent Calendar showcases a selection of possibly more than 32🤭 unsafe crossings in Luxembourg-City">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://zug.lu/safe-crossing/img/advent_link_previews/<?=$img_file ?>.png">
 
@@ -35,7 +35,7 @@ if ($day >= 1 && day <= 24) {
   <meta name="twitter:site" content="@zug_lu">
   <meta name="twitter:creator" content="@zug_lu">
   <meta name="twitter:title" content="<?=$title_pre ?>Safe Crossing Advent Calendar">
-  <meta name="twitter:description" content="The Safe Crossing Advent Calendar highlights a selection of more tha 32 unsafe crossings in Luxembourg-Cit">
+  <meta name="twitter:description" content="The Safe Crossing Advent Calendar showcases a selection of possibly more than 32🤭 unsafe crossings in Luxembourg-City">
   <meta name="twitter:image" content="https://zug.lu/safe-crossing/img/advent_link_previews/<?=$img_file ?>.png">
 
   <style>
