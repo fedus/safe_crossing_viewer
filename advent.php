@@ -37,6 +37,17 @@ if ($day >= 1 && day <= 24) {
   <meta name="twitter:title" content="<?=$title_pre ?>Safe Crossing Advent Calendar">
   <meta name="twitter:description" content="The Safe Crossing Advent Calendar highlights a selection of more tha 32 unsafe crossings in Luxembourg-Cit">
   <meta name="twitter:image" content="https://zug.lu/safe-crossing/img/advent_link_previews/<?=$img_file ?>.png">
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
   <iframe src="https://calendar.myadvent.net/?id=1789a3686bdd0f7e2c1d4611760faa1b" class="myadvent-calendar" frameBorder="0" scrolling="no" style="width: 100%; min-height: 600px"></iframe>
