@@ -43,20 +43,13 @@ if ($day >= 1 && day <= 24) {
       padding: 0;
       margin: 0;
     }
-    html, body {
+    html, body, .calendar-frame {
       height: 100%;
       width: 100%;
     }
   </style>
-
-  <script>
-    function goToCalendar() {
-      window.location.href = "https://calendar.myadvent.net/?id=1789a3686bdd0f7e2c1d4611760faa1b";
-    }
-  </script>
 </head>
-<body onload="goToCalendar()">
-  <iframe src="https://calendar.myadvent.net/?id=1789a3686bdd0f7e2c1d4611760faa1b" class="myadvent-calendar" frameBorder="0" scrolling="no" style="width: 100%; min-height: 600px"></iframe>
-  <script src="https://code.myadvent.net/autoResize_1.0.0.min.js"></script>
+<body>
+  <iframe src="https://calendar.myadvent.net/?id=1789a3686bdd0f7e2c1d4611760faa1b" class="calendar-frame" frameBorder="0"></iframe>
 </body>
 </html>
