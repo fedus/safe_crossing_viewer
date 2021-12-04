@@ -101,13 +101,17 @@
     <p class="more-information">
       <a href="more.html">More information about the project</a>.
     </p>
-    <p class="button-info"><button onClick="javascript:hideInfo()">OK, hide this text!</button></p>
+    <p class="button-info"><button onClick="javascript:hideInfoAndMaybeLocate()">OK, hide this text!</button></p>
   </div>
   <div id="map"></div>
 
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
   <script>
+    const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+    let ownPositionMarker;
+    let ownPositionRadiusMarker;
+
     function getResultDescription(result) {
       switch (result) {
         case 2:
@@ -137,8 +141,9 @@
       layer.bindPopup(`<h2>${getLocationDescription(street, neighbourhood)}</h2><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: <a href="https://openstreetmap.org/${osmnodeid}">${osmnodeid}</a></p>`);
     }
 
-    var map = L.map('map').setView([49.6061209088, 6.12493950024], 14);
-    mapLink = '<a href="http://geoportail.lu">Geoportail</a>';
+    const map = L.map('map').setView([49.6061209088, 6.12493950024], 14);
+    const mapLink = '<a href="http://geoportail.lu">Geoportail</a>';
+
     L.tileLayer(
       'https://wmts1.geoportail.lu/opendata/wmts/ortho_2020/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
       {
@@ -147,10 +152,40 @@
       }
     ).addTo(map);
 
-    function hideInfo() {
+    function onLocationFound(e) {
+      const radius = e.accuracy;
+
+      if (!ownPositionMarker) {
+        ownPositionMarker = L.marker(e.latlng).addTo(map);
+      } else {
+        ownPositionMarker.setLatLng(e.latlng)
+      }
+
+      if (!ownPositionRadiusMarker) {
+        ownPositionRadiusMarker = L.circle(e.latlng, radius).addTo(map);
+      } else {
+        ownPositionRadiusMarker.setLatLng(e.latlng)
+      }
+    }
+
+    map.on('locationfound', onLocationFound);
+
+    async function startLocation() {
+      map.locate({setView: false, watch: true, /* maxZoom: 17 */});
+    }
+
+    if (!isMobile) {
+      startLocation();
+    }
+
+    function hideInfoAndMaybeLocate() {
       document.getElementById("info").className = "invisible";
       map.invalidateSize();
+      if (isMobile) {
+        startLocation();
+      }
     }
+
 
     const notSureMarkerOptions = {
       radius: 8,
