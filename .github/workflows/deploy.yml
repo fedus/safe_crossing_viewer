@@ -19,5 +19,5 @@ jobs:
           server: 'zug.lu'
           ssh_private_key: ${{ secrets.DEPLOYER_PKEY }}
           local_path: './*'
-          remote_path: '/var/www/zug/safe-crossing'
+          remote_path: '/var/www/safe-crossing'
           args: '-o ConnectTimeout=5'
