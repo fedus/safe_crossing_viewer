@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ZUG Crowdfunding</title>
+
+  <meta name="description" content="ZUG - Crowdfunding">
+  <meta name="author" content="ZUG">
+
+  <meta property="og:title" content="ZUG - Safe Crossing Crowdfunding">
+  <meta property="og:site_name" content="Safe Crossing Crowdfunding by ZUG (Zentrum fir Urban Gerechtegkeet)">
+  <meta property="og:url" content="https://www.zug.lu/safe-crossing/crowdfunding.html">
+  <meta property="og:description" content="Help ZUG raise funds to cover its legal fees of court proceedings against the City of Luxembourg">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://zug.lu/safe-crossing/img/banner.png">
+
+  <style>
+    html {
+      font-family: Helvetica, sans-serif;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f5f5f5;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 30px;
+    }
+
+    .container-header {
+      border-bottom: 3px solid #DCDCDC;
+      background-color: white;
+
+      padding: 10px 20px;
+    }
+
+    .container-hero {
+      padding-top: 20px;
+      background-color: white;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .hero-left {
+      width: 60%;
+    }
+
+    .hero-right {
+      width: 40%;
+    }
+
+    .hero-right-image {
+      height: 350px;
+      width: auto;
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        flex-direction: column-reverse;
+      }
+
+
+      .hero-left {
+        width: 100%;
+      }
+
+      .hero-right {
+        width: 100%;
+      }
+
+      .hero-right-image {
+        height: 150px;
+        width: auto;
+      }
+    }
+
+    .progress-bar {
+      background-color: white;
+      height: 30px;
+      border: 2px solid lightgrey;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 95%;
+      margin: 30px 0;
+    }
+
+    .progress-bar-inner {
+      background-color: #91c591;
+      width: 0%;
+      height: 100%;
+      border-radius: 0 15px 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+
+    .progress-bar-label {
+      font-weight: bold;
+      padding: 10px
+    }
+
+    .amount-container {
+      margin: 30px 0;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .amount-received,
+    .amount-goal {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .amount-received-number,
+    .amount-goal-number {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 470px) {
+      .amount-container {
+        flex-direction: column;
+      }
+
+      .amount-received,
+      .amount-goal {
+        width: 100%;
+        margin: 20px 0;
+      }
+    }
+
+    .donation-details-background {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background: linear-gradient(180deg, #fff 50%, #f5f5f5 50%);
+    }
+
+    .donation-details {
+      overflow: auto;
+      background-color: white;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #999;
+    }
+
+    .donation-details-content {
+      padding: 10px;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .font-large {
+      font-size: 1.5rem;
+    }
+
+    .footer {
+      margin-top: 40px;
+    }
+  </style>
+
+</head>
+
+<body translate="no">
+  <div class="container-header">
+    Zentrum fir Urban Gerechtegkeet a.s.bl. ("ZUG") - Safe Crossing - Crowdfunding
+  </div>
+  <div class="container-hero">
+    <div class="hero content">
+      <div class="hero-left">
+        <h1>Safe Crossing: Crowdfunding</h1>
+        <h2>We need your help to fight for real transparence from the City of Luxembourg!</h2>
+        <p>
+          The short and sweet: The City of Luxembourg denied ZUG (and by extension the public) access to
+          information relating to the safety of pedestrian infrastructure. We are now attacking this refusal
+          in court, and we need your help to cover our legal fees!
+        </p>
+        <p>Want more details? Read on below!</p>
+        <div class="progress-bar">
+          <div class="progress-bar-inner">
+            <div class="progress-bar-label">N/A %</div>
+          </div>
+        </div>
+        <div class="amount-container">
+          <div class="amount-received">
+            <div class="amount-received-number">N/A</div>
+            <div class="amount-received-label">Amount raised to date</div>
+          </div>
+          <div class="amount-goal">
+            <div class="amount-goal-number">€ 5.000,00</div>
+            <div class="amount-goal-label">Current fundraising goal</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img class="hero-right-image"
+          src="img/crowdfunding.webp" />
+      </div>
+    </div>
+  </div>
+  <div class="donation-details-background">
+    <div class="content">
+      <div class="donation-details">
+        <div class="donation-details-content">
+          <p class="bold center">We need your help! Please use the following bank details to make your
+            donation:</p>
+          <p class="font-large center"><span class="bold">IBAN:</span> LU23 1111 7405 7274 0000</p>
+          <p class="font-large center"><span class="bold">BIC:</span> CCPLLULL
+          <p>
+          <p class="center">Account holder is "Zentrum fir Urban Gerechtegkeet a.s.b.l." - Please mention that
+            your transfer is a donation in the payment reference.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Questions & answers</h1>
+    <h2>Why are we raising funds?</h2>
+    <p>In October 2021, ZUG released the "Safe Crossing" project, in which we presented a crowd-sourced dataset of
+      potentially unsafe pedestrian crossings on the territory of the City of Luxembourg, owing to the presence of
+      parking spots too close to them.</p>
+    <p>After the project got significant press coverage, the City of Luxembourg refuted the validity of ZUG's
+      project and claimed that it has performed its own analysis of the situation. According to that in-house
+      analysis, only 32 crosswalks were supposed to be problematic (the number later got revised to 37).</p>
+    <p>ZUG then requested the City of Luxembourg release their own anaylsis by filing a request on the basis of the
+      law of 14 september 2018. The City of Luxembourg denied the initial request citing dubious and shaky
+      arguments, so ZUG escalated the matter to the "Commission d'accès aux documents" (CAD). In March 2022, The
+      CAD ruled in ZUG's favour, stating that the City has to release the documents. However, the City again
+      confirmed that it refuses to do so.</p>
+    <p>In accordance with the law, ZUG has therefore decided to appeal this decision in a court of law. The appeal
+      has been lodged at the end of June / beginning of July 2022.</p>
+    <p>To help cover ZUG's legal fees related to the court proceedings, we are now running this crowdfunding and
+      would be grateful for your generous support! Fees may be billed to us incrementally as the process evolves
+      and depending on the hours billed by our lawyer. This means that we may launch multiple rounds of
+      crowdfunding.</p>
+    <p class="bold">Please note that you can find extensive information about the "Safe Crossing" project and the
+      correspondence with the City of Luxembourg, as well as a complete and up to date press section on the
+      project's website. <a href="https://zug.lu/safe-crossing/more.html">Click here</a> to visit it.</p>
+    <h2>How exactly will my donation be used?</h2>
+    <p>Your donation will be used first and foremost to cover our ongoing legal fees in relation to the court
+      proceedings.</p>
+    <p>We will keep this page updated to show the evolution of the crowdfunding and to inform donors about our legal
+      bills.</p>
+    <p>Should the case arise that all our legal fees are covered and that we have a surplus resulting from
+      donations, these funds will be used to start additional legal proceedings (if applicable and useful), or to
+      finance new projects.</p>
+    <h2>Why should I donate? How does this concern me?</h2>
+    <p>The City of Luxembourg's decision to refuse citizens access to information relating to their safety is
+      problematic on multiple levels.</p>
+    <p>For one, the administration is handling the situation in an opaque manner which goes against the spirit of a
+      modern and transparent public body. The immediate result is a lack of accountability, since shortcomings
+      resulting from the administrations decisions remain secret or unverifiable. None of the data ZUG has
+      requested is sensitive in any way that could preclude the information from being made public.</p>
+    <p>However, there is more. Apart from the issue about pedestrian safety as well, the City of Luxembourg's
+      argumentation on which it bases its refusal to provide the documents is riddled with misinterpretations of
+      applicable legislation and is partly purposely deceiptful.</p>
+    <p>Some of the invoked points are "blanket arguments" that are routinely employed by the administration to
+      detract annoying requests for information from the citizens, even though these arguments are completely
+      unfounded or outright wrong. This shows a deep disregard for a healthy public discourse and a democratic
+      process. Not just ZUG is affected by this abusive handling of requests for information, but every citizen
+      and every association that will file similar requests in the future.</p>
+    <p>In summary, you should donate to our cause if you care about at least one of the following:</p>
+    <ul>
+      <li>transparency in the matter of the "Safe Crossing" project and the release of the requested documents in
+        relation to the safety of citizens</li>
+      <li>better accountability of public administrations when it comes to freedom of information requests</li>
+    </ul>
+    <p>We hope that the court proceedings will set a valuable precedent for future information requests that will
+      make it harder for administrations to shy away from their responsibilities.</p>
+    <h2>I have more questions. Can I contact ZUG?</h2>
+    <p>Of course! You can contact us via e-mail at <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+        data-cfemail="137a7d757c536966743d7f663d">[email&#160;protected]</a> We are also on Twitter (@zug_lu)
+      and Instagram (@zug_luxembourg), feel free to message us on your favourite platform.</p>
+  </div>
+
+  <div class="content footer">
+    <p>Illustration: <a href="https://www.freepik.com/vectors/financial-support">Financial support vector created by
+        vectorjuice - www.freepik.com</a></p>
+  </div>
+
+</html>
