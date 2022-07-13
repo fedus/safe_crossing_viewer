@@ -185,7 +185,7 @@
       margin-top: 40px;
     }
   </style>
-
+  <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
 </head>
 
 <body translate="no">
@@ -231,8 +231,12 @@
         <div class="donation-details-content">
           <p class="bold center">We need your help! Please use the following bank details to make your
             donation:</p>
-          <p class="font-large center"><span class="bold">IBAN:</span> LU23 1111 7405 7274 0000</p>
-          <p class="font-large center"><span class="bold">BIC:</span> CCPLLULL
+          <p class="font-large center"><span class="bold">IBAN:</span> <input id="iban" type="text" value="LU23 1111 7405 7274 0000" />
+          <button class="btn" data-clipboard-action="copy" data-clipboard-target="#iban">Copy</button>
+          </p>
+          <p class="font-large center"><span class="bold">BIC:</span> <input id="bic" type="text" value="CCPLLULL" />
+          <button class="btn" data-clipboard-action="copy" data-clipboard-target="#bic">Copy</button>
+          </p>
           <p>
           <p class="center">Account holder is "Zentrum fir Urban Gerechtegkeet a.s.b.l." - Please mention that
             your transfer is a donation in the payment reference.</p>
@@ -305,5 +309,18 @@
     <p>Illustration: <a href="https://www.freepik.com/vectors/financial-support">Financial support vector created by
         vectorjuice - www.freepik.com</a></p>
   </div>
+  <script>
+  var clipboard = new ClipboardJS('.btn');
+
+  clipboard.on('success', function (e) {
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger);
+  });
+
+  clipboard.on('error', function (e) {
+    console.log(e);
+  });
+</script>
 
 </html>
