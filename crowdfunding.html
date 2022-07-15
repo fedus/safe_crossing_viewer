@@ -165,10 +165,14 @@
         background: linear-gradient(180deg, #fff 50%, #f5f5f5 50%);
       }
 
+      .donation-pulse {
+        width: 90%;
+        border-radius: 10px;
+      }
+
       .donation-details {
         overflow: auto;
         background-color: white;
-        width: 90%;
         margin-left: auto;
         margin-right: auto;
         border-radius: 10px;
@@ -177,6 +181,58 @@
 
       .donation-details-content {
         padding: 10px;
+      }
+
+      .or {
+        width: auto;
+        text-align: center;
+        border-bottom: 2px solid lightgray;
+        line-height: 0.1em;
+        margin: 30px -10px 30px;
+      }
+
+      .or-label {
+        background: #fff;
+        padding: 0 10px;
+      }
+
+      .button {
+        display: block;
+        text-decoration: none;
+        color: white;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: darkslategrey;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: background 0.5s;
+      }
+
+      .button:hover {
+        background-color: darkgray;
+      }
+
+      .payment-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .apay {
+        height: 30px;
+        width: auto;
+      }
+
+      .gpay {
+        height: 50px;
+        width: auto;
+      }
+
+      .ccpay {
+        height: 40px;
+        width: auto;
       }
 
       .bold {
@@ -194,6 +250,20 @@
       .footer {
         margin-top: 40px;
       }
+
+      .pulse {
+        animation: pulse-animation 2s infinite;
+      }
+
+      @keyframes pulse-animation {
+        0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+        }
+        100% {
+          box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+        }
+      }
+
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
   </head>
@@ -235,43 +305,53 @@
           <p class="center">(as of 15 July 2022 cob)</p>
         </div>
         <div class="hero-right">
-          <img class="hero-right-image" src="img/crowdfunding.webp" />
+          <img class="hero-right-image" src="img/crowdfunding.webp" alt="Person putting money in a lightbulb as if it was a piggy bank"/>
         </div>
       </div>
     </div>
     <div class="donation-details-background">
       <div class="content">
-        <div class="donation-details">
-          <div class="donation-details-content">
-            <p class="bold center">
-              Please mention “donation” in your payment reference:
-            </p>
-            <p class="font-large center">
-              <span class="bold">IBAN:</span>
-              <span id="iban" class="bold">LU23 1111 7405 7274 0000</span>
-              <button
-                class="btn"
-                data-clipboard-action="copy"
-                data-clipboard-target="#iban"
-              >
-                Copy
-              </button>
-            </p>
-            <p class="font-large center">
-              <span class="bold">BIC:</span>
-              <span id="bic" class="bold">CCPLLULL</span>
-              <button
-                class="btn"
-                data-clipboard-action="copy"
-                data-clipboard-target="#bic"
-              >
-                Copy
-              </button>
-            </p>
-            <p></p>
-            <p class="center">
-              Account holder is “Zentrum fir Urban Gerechtegkeet a.s.b.l.”
-            </p>
+        <div class="donation-pulse pulse">
+          <div class="donation-details">
+            <div class="donation-details-content">
+              <p class="bold center">
+                Please mention “donation” in your payment reference:
+              </p>
+              <p class="font-large center">
+                <span class="bold">IBAN:</span>
+                <span id="iban" class="bold">LU23 1111 7405 7274 0000</span>
+                <button
+                  class="btn"
+                  data-clipboard-action="copy"
+                  data-clipboard-target="#iban"
+                >
+                  Copy
+                </button>
+              </p>
+              <p class="font-large center">
+                <span class="bold">BIC:</span>
+                <span id="bic" class="bold">CCPLLULL</span>
+                <button
+                  class="btn"
+                  data-clipboard-action="copy"
+                  data-clipboard-target="#bic"
+                >
+                  Copy
+                </button>
+              </p>
+              <p class="center">
+                Account holder is “Zentrum fir Urban Gerechtegkeet a.s.b.l.”
+              </p>
+              <div class="or center">
+                <span class="or-label" style="background: #fff;padding: 0 10px;">or</span>
+              </div>
+              <a class="center button" href="https://donate.stripe.com/6oE5nH0gkbtocCIdQQ" alt="Click to donate using Stripe">Click here to donate with:</a>
+              <div class="payment-icons">
+                <img src="img/payment/apay.svg" class="apay">
+                <img src="img/payment/gpay.svg" class="gpay">
+                <img src="img/payment/cc.png" class="ccpay">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -396,8 +476,13 @@
           <a href="https://www.freepik.com/vectors/financial-support"
             >Financial support vector created by vectorjuice -
             www.freepik.com</a
-          ></small
-        >
+          >
+        </small>
+      </p>
+      <p>
+        <small>
+          <a href="https://www.freeiconspng.com/img/4408">Credit Card 2 Icon</a>
+        </small>
       </p>
     </div>
     <script>
