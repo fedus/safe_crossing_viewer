@@ -66,6 +66,8 @@
 
         position: sticky;
         top: 0;
+
+        z-index: 2;
       }
 
       .container-hero {
@@ -332,6 +334,34 @@
         border-top: 3px solid #79A70A;
       }
 
+      .payconiq-qr {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 200px;
+      }
+
+      .payconiq-logo {
+        height: 25px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .payconiq-payment-mobile {
+        display: none;
+      }
+
+      @media (max-width: 767px) {
+        .payconiq-payment-desktop {
+          display: none;
+        }
+
+        .payconiq-payment-mobile {
+          display: unset;
+        }
+      }
+
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
   </head>
@@ -419,6 +449,19 @@
                 <img src="img/payment/apay.svg" class="apay">
                 <img src="img/payment/gpay.svg" class="gpay">
                 <img src="img/payment/cc.png" class="ccpay">
+              </div>
+              <div class="or center">
+                <span class="or-label" style="background: #fff;padding: 0 10px;">or</span>
+              </div>
+              <div class="payconiq-payment-desktop">
+                <p class="center">Donate using Payconiq:</p>
+                <img class="payconiq-qr" src="img/payment/payconiq_qr.png" alt="Payconiq QR code">
+              </div>
+
+              <div class="payconiq-payment-mobile">
+                <a class="center button" href="https://donate.stripe.com/6oE5nH0gkbtocCIdQQ" alt="Click to donate using Payconiq">
+                  Click here to donate with <img class="payconiq-logo" src="img/payment/payconiq_logo.png" alt="Payconiq Logo">
+                </a>
               </div>
             </div>
           </div>
