@@ -16,7 +16,8 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://zug.lu/safe-crossing/img/banner.png">
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
   <style>
     body {
@@ -105,8 +106,6 @@
   </div>
   <div id="map"></div>
 
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-
   <script>
     const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
     let ownPositionMarker;
@@ -130,15 +129,15 @@
       return "";
     }
 
-    async function loadGeojson() {
+    async function loadCrosswalksGeojson() {
       const url = 'https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson';
       return (await fetch(url)).json();
     }
 
-    function bindPopups(feature, layer) {
+    function bindTooltips(feature, layer) {
       const { street, neighbourhood, votesTotal, currentResult, osmnodeid } = feature.properties;
 
-      layer.bindPopup(`<h2>${getLocationDescription(street, neighbourhood)}</h2><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: <a href="https://openstreetmap.org/${osmnodeid}">${osmnodeid}</a></p>`);
+      layer.bindTooltip(`<h2>${getLocationDescription(street, neighbourhood)}</h2><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: <a href="https://openstreetmap.org/${osmnodeid}">${osmnodeid}</a></p>`);
     }
 
     const map = L.map('map').setView([49.6061209088, 6.12493950024], 14);
@@ -162,7 +161,7 @@
       }
 
       if (!ownPositionRadiusMarker) {
-        ownPositionRadiusMarker = L.circle(e.latlng, radius).addTo(map);
+        ownPositionRadiusMarker = L.circle(e.latlng, { radius, interactive: false }).addTo(map);
       } else {
         ownPositionRadiusMarker.setLatLng(e.latlng)
       }
@@ -205,8 +204,8 @@
       fillOpacity: 0.8
     };
 
-    loadGeojson().then(data => L.geoJson(data, {
-      onEachFeature: bindPopups,
+    loadCrosswalksGeojson().then(data => L.geoJson(data, {
+      onEachFeature: bindTooltips,
       pointToLayer: function (feature, latlng) {
         switch (feature.properties.currentResult) {
           case 2:
