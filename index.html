@@ -117,7 +117,7 @@
   </div>
   <div id="map"></div>
 
-  <script type="text/javascript" src="quartiers-vdl.js"></script>
+  <script type="text/javascript" src="30kmh.js"></script>
   <script>
     const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
     let ownPositionMarker;
@@ -162,18 +162,6 @@
         maxZoom: 20,
       }
     ).addTo(map);
-
-    const projectSelector = L.control({ position: 'topright' });
-
-    projectSelector.onAdd = function (map) {
-        const div = L.DomUtil.create('div');
-
-        div.innerHTML = '<div class="project-selector"><div><button class="btn btn-project-selector">Safe Crossing</button></div><div><button class="btn btn-project-selector">Missing crosswalks</button></div></div>';
-
-        return div;
-    };
-
-    projectSelector.addTo(map);
 
     function onLocationFound(e) {
       const radius = e.accuracy;
@@ -228,19 +216,78 @@
       fillOpacity: 0.8
     };
 
+    const thirtyMarkerUnmarked = {
+      radius: 8,
+      fillColor: "red",
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.8
+    };
+
+    const thirtyMarkerMarkedButNotRed = {
+      radius: 8,
+      fillColor: "white",
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.8
+    };
+
+
+    const safeCrossingGroup = L.layerGroup();
+
     loadCrosswalksGeojson().then(data => L.geoJson(data, {
       onEachFeature: bindTooltips,
       pointToLayer: function (feature, latlng) {
         switch (feature.properties.currentResult) {
           case 2:
           case 12:
-            return L.circleMarker(latlng, tooCloseMarkerOptions);
+            return L.circleMarker(latlng, tooCloseMarkerOptions).addTo(safeCrossingGroup);
             break;
           default:
-            return L.circleMarker(latlng, notSureMarkerOptions);
+            return L.circleMarker(latlng, notSureMarkerOptions).addTo(safeCrossingGroup);
         }
       }
     })).then(map.addLayer.bind(map));
+
+    const thirtyKmhGroup = L.layerGroup();
+
+    L.geoJson(thirtyKmh, {
+      pointToLayer: function (feature, latlng) {
+        if(feature.properties.crossing === 'unmarked') {
+          return L.circleMarker(latlng, thirtyMarkerUnmarked).addTo(thirtyKmhGroup);
+        }
+
+        if(feature.properties['crossing:marking']) {
+          if((feature.properties['crossing:marking']) === 'no') {
+            return L.circleMarker(latlng, thirtyMarkerMarkedButNotRed).addTo(thirtyKmhGroup);
+          }
+        }
+      }
+    });
+
+    const projectSelector = L.control({ position: 'topright' });
+
+    projectSelector.onAdd = function (map) {
+        const div = L.DomUtil.create('div');
+
+        div.innerHTML = '<div class="project-selector"><div><button class="btn btn-project-selector" onClick="toggleSafeCrossing()">Safe Crossing</button></div><div><button class="btn btn-project-selector" onClick="toggle30kmh()">Missing crosswalks</button></div></div>';
+
+        return div;
+    };
+
+    projectSelector.addTo(map);
+
+    function toggleSafeCrossing() {
+        if (!map.hasLayer(safeCrossingGroup)) map.addLayer(safeCrossingGroup);
+        else map.removeLayer(safeCrossingGroup);
+    }
+
+    function toggle30kmh() {
+        if (!map.hasLayer(thirtyKmhGroup)) map.addLayer(thirtyKmhGroup);
+        else map.removeLayer(thirtyKmhGroup);
+    }
   </script>
 </body>
 </html>
