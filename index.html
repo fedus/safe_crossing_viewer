@@ -62,6 +62,17 @@
       border-radius: 4px;
       padding: .5rem;
     }
+    .project-selector {
+      margin: 10px;
+    }
+    .btn-project-selector {
+      border-radius: 10px;
+      padding: 10px;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 5px;
+    }
     @media only screen and (max-width: 768px) {
       #info {
         height: 100%;
@@ -106,6 +117,7 @@
   </div>
   <div id="map"></div>
 
+  <script type="text/javascript" src="quartiers-vdl.js"></script>
   <script>
     const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
     let ownPositionMarker;
@@ -150,6 +162,18 @@
         maxZoom: 20,
       }
     ).addTo(map);
+
+    const projectSelector = L.control({ position: 'topright' });
+
+    projectSelector.onAdd = function (map) {
+        const div = L.DomUtil.create('div');
+
+        div.innerHTML = '<div class="project-selector"><div><button class="btn btn-project-selector">Safe Crossing</button></div><div><button class="btn btn-project-selector">Missing crosswalks</button></div></div>';
+
+        return div;
+    };
+
+    projectSelector.addTo(map);
 
     function onLocationFound(e) {
       const radius = e.accuracy;
