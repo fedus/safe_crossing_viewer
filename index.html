@@ -146,7 +146,19 @@
       return (await fetch(url)).json();
     }
 
-    function bindTooltips(feature, layer) {
+    function bindThirtyKmhTooltips(feature, layer) {
+      const { crossing, 'crossing:marking': crossingMarking } = feature.properties;
+
+      if(crossing === 'unmarked') {
+        return layer.bindTooltip(`<h2>Missing crosswalk</h2><p>There must be a pedestrian crossing at this place, but it is completely missing.</p>`);
+      }
+
+      if(crossingMarking && crossingMarking === 'no') {
+        return layer.bindTooltip(`<h2>Crosswalk should be red</h2><p>There is a crosswalk at this spot, but it must have a red background.</p>`);
+      }
+    }
+
+    function bindSafeCrossingTooltips(feature, layer) {
       const { street, neighbourhood, votesTotal, currentResult, osmnodeid } = feature.properties;
 
       layer.bindTooltip(`<h2>${getLocationDescription(street, neighbourhood)}</h2><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: <a href="https://openstreetmap.org/${osmnodeid}">${osmnodeid}</a></p>`);
@@ -235,10 +247,10 @@
     };
 
 
-    const safeCrossingGroup = L.layerGroup();
+    const safeCrossingGroup = L.layerGroup().addTo(map);
 
     loadCrosswalksGeojson().then(data => L.geoJson(data, {
-      onEachFeature: bindTooltips,
+      onEachFeature: bindSafeCrossingTooltips,
       pointToLayer: function (feature, latlng) {
         switch (feature.properties.currentResult) {
           case 2:
@@ -249,11 +261,12 @@
             return L.circleMarker(latlng, notSureMarkerOptions).addTo(safeCrossingGroup);
         }
       }
-    })).then(map.addLayer.bind(map));
+    }));
 
     const thirtyKmhGroup = L.layerGroup();
 
     L.geoJson(thirtyKmh, {
+      onEachFeature: bindThirtyKmhTooltips,
       pointToLayer: function (feature, latlng) {
         if(feature.properties.crossing === 'unmarked') {
           return L.circleMarker(latlng, thirtyMarkerUnmarked).addTo(thirtyKmhGroup);
@@ -281,12 +294,14 @@
 
     function toggleSafeCrossing() {
         if (!map.hasLayer(safeCrossingGroup)) map.addLayer(safeCrossingGroup);
-        else map.removeLayer(safeCrossingGroup);
+
+        map.removeLayer(thirtyKmhGroup);
     }
 
     function toggle30kmh() {
         if (!map.hasLayer(thirtyKmhGroup)) map.addLayer(thirtyKmhGroup);
-        else map.removeLayer(thirtyKmhGroup);
+
+        map.removeLayer(safeCrossingGroup);
     }
   </script>
 </body>
