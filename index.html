@@ -33,6 +33,16 @@
       flex-direction: column;
       font-family: Arial, Helvetica, sans-serif;
     }
+    h2 {
+      margin: 0;
+    }
+    .leaflet-tooltip {
+      border-radius: 20px;
+      padding: 15px;
+      background-color: #242121;
+      color: lightgray;
+      border: 2px solid lightgray;
+    }
     #info {
       overflow: auto;
       padding: 2rem;
@@ -66,12 +76,40 @@
       margin: 10px;
     }
     .btn-project-selector {
-      border-radius: 10px;
-      padding: 10px;
+      border-radius: 20px;
+      padding: 15px;
       width: 100%;
       text-transform: uppercase;
       font-weight: bold;
       margin: 5px;
+      background-color: #242121;
+      color: orange;
+      border-color: orange;
+      border-style: solid;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    .info {
+      padding: 10px 14px;
+      font: 14px/16px Arial, Helvetica, sans-serif;
+      background: #242121;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 20px;
+    }
+    .legend {
+      line-height: 18px;
+      color: lightgrey;
+    }
+    .legend p {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+    .legend p i {
+      width: 18px;
+      height: 18px;
+      float: left;
+      margin-right: 8px;
+      opacity: 1;
+      border-radius: 9px;
     }
     @media only screen and (max-width: 768px) {
       #info {
@@ -149,19 +187,21 @@
     function bindThirtyKmhTooltips(feature, layer) {
       const { crossing, 'crossing:marking': crossingMarking } = feature.properties;
 
+      const options = { opacity: 1 };
+
       if(crossing === 'unmarked') {
-        return layer.bindTooltip(`<h2>Missing crosswalk</h2><p>There must be a pedestrian crossing at this place, but it is completely missing.</p>`);
+        return layer.bindTooltip(`<h2>Missing crosswalk</h2><p>There must be a pedestrian crossing at this place, but it is completely missing.</p>`, options);
       }
 
       if(crossingMarking && crossingMarking === 'no') {
-        return layer.bindTooltip(`<h2>Crosswalk should be red</h2><p>There is a crosswalk at this spot, but it must have a red background.</p>`);
+        return layer.bindTooltip(`<h2>Crosswalk should be red</h2><p>There is a crosswalk at this spot, but it must have a red background.</p>`, options);
       }
     }
 
     function bindSafeCrossingTooltips(feature, layer) {
       const { street, neighbourhood, votesTotal, currentResult, osmnodeid } = feature.properties;
 
-      layer.bindTooltip(`<h2>${getLocationDescription(street, neighbourhood)}</h2><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: <a href="https://openstreetmap.org/${osmnodeid}">${osmnodeid}</a></p>`);
+      layer.bindTooltip(`<h2>${getLocationDescription(street, neighbourhood)}</h2><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: <a href="https://openstreetmap.org/${osmnodeid}">${osmnodeid}</a></p>`, { opacity: 1 });
     }
 
     const map = L.map('map').setView([49.6061209088, 6.12493950024], 14);
@@ -211,39 +251,39 @@
 
 
     const notSureMarkerOptions = {
-      radius: 8,
-      fillColor: "#fede42",
-      color: "#000",
-      weight: 1,
+      radius: 6,
+      color: "#fede42",
+      fillColor: "#242121",
+      weight: 3,
       opacity: 1,
-      fillOpacity: 0.8
+      fillOpacity: 1
     };
 
     const tooCloseMarkerOptions = {
-      radius: 8,
-      fillColor: "#ff0000",
-      color: "#000",
-      weight: 1,
+      radius: 6,
+      color: "#ff0000",
+      fillColor: "#242121",
+      weight: 3,
       opacity: 1,
-      fillOpacity: 0.8
+      fillOpacity: 1
     };
 
     const thirtyMarkerUnmarked = {
-      radius: 8,
-      fillColor: "red",
-      color: "#000",
-      weight: 1,
+      radius: 6,
+      color: "red",
+      fillColor: "#242121",
+      weight: 3,
       opacity: 1,
-      fillOpacity: 0.8
+      fillOpacity: 1
     };
 
     const thirtyMarkerMarkedButNotRed = {
-      radius: 8,
-      fillColor: "white",
-      color: "#000",
-      weight: 1,
+      radius: 6,
+      color: "white",
+      fillColor: "#242121",
+      weight: 3,
       opacity: 1,
-      fillOpacity: 0.8
+      fillOpacity: 1
     };
 
 
@@ -285,23 +325,56 @@
     projectSelector.onAdd = function (map) {
         const div = L.DomUtil.create('div');
 
-        div.innerHTML = '<div class="project-selector"><div><button class="btn btn-project-selector" onClick="toggleSafeCrossing()">Safe Crossing</button></div><div><button class="btn btn-project-selector" onClick="toggle30kmh()">Missing crosswalks</button></div></div>';
+        div.innerHTML = '<div class="project-selector"><div><button class="btn btn-project-selector" onClick="toggleSafeCrossing()">Unsafe Crosswalks</button></div><div><button class="btn btn-project-selector" onClick="toggle30kmh()">Missing crosswalks</button></div></div>';
 
         return div;
     };
 
     projectSelector.addTo(map);
 
+    const safeCrossingLegend = L.control({position: 'bottomright'});
+
+    safeCrossingLegend.onAdd = function(map) {
+        const div = L.DomUtil.create('div', 'info legend');
+
+        div.innerHTML +=
+            '<p><i style="background: #ff0000"></i> Parking spots too close to crossing</p>';
+          div.innerHTML +=
+            '<p><i style="background: #fede42"></i> Unclear because aerial view is obstructed</p>';
+
+        return div;
+    };
+
+    safeCrossingLegend.addTo(map);
+
+    const thirtyKmhLegend = L.control({position: 'bottomright'});
+
+    thirtyKmhLegend.onAdd = function(map) {
+        const div = L.DomUtil.create('div', 'info legend');
+
+        div.innerHTML +=
+            '<p><i style="background: red"></i> Crosswalk completely missing</p>';
+          div.innerHTML +=
+            '<p><i style="background: white"></i> Red background missing from crosswalk</p>';
+
+        return div;
+    };
+
+
     function toggleSafeCrossing() {
         if (!map.hasLayer(safeCrossingGroup)) map.addLayer(safeCrossingGroup);
+        map.addControl(safeCrossingLegend);
 
         map.removeLayer(thirtyKmhGroup);
+        map.removeControl(thirtyKmhLegend);
     }
 
     function toggle30kmh() {
         if (!map.hasLayer(thirtyKmhGroup)) map.addLayer(thirtyKmhGroup);
+        map.addControl(thirtyKmhLegend);
 
         map.removeLayer(safeCrossingGroup);
+        map.removeControl(safeCrossingLegend);
     }
   </script>
 </body>
