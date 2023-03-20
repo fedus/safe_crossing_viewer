@@ -78,12 +78,6 @@
       padding: 20px;
       margin: 40px 0;
     }
-    .project-selector {
-      margin: 10px;
-    }
-    .project-selector .button-container {
-      margin: 5px;
-    }
     .btn {
       border-radius: 20px;
       padding: 15px;
@@ -386,18 +380,6 @@
         }
       }
     });
-
-    const projectSelector = L.control({ position: 'topright' });
-
-    projectSelector.onAdd = function (map) {
-        const div = L.DomUtil.create('div');
-
-        div.innerHTML = '<div class="project-selector"><div class="button-container"><button class="btn btn-project-selector" onClick="toggleSafeCrossing()">Unsafe Crosswalks</button></div><div class="button-container"><button class="btn btn-project-selector" onClick="toggle30kmh()">Missing crosswalks</button></div></div>';
-
-        return div;
-    };
-
-    projectSelector.addTo(map);
 
     const safeCrossingLegend = L.control({position: 'bottomright'});
 
