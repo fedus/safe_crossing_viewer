@@ -46,13 +46,13 @@
       border: 2px solid lightgray;
     }
     #info {
+      z-index: 999;
       overflow: auto;
       padding: 2rem;
       max-width: 350px;
       background-color: #242121;
       color: lightgrey;
-      border-right: 6px solid orange;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;
     }
     #info h2 {
       color: orange;
@@ -124,6 +124,35 @@
       opacity: 1;
       border-radius: 9px;
     }
+    .project-switcher-head {
+      margin-bottom: 20px;
+    }
+    .btn-group {
+      display: flex;
+      flex-direction: row;
+    }
+    .btn-group .btn {
+      border-radius: 0;
+    }
+    .btn-group .btn:first-child {
+      border-top-left-radius:20px;
+      border-bottom-left-radius:20px;
+    }
+    .btn-group .btn:last-child {
+      border-top-right-radius:20px;
+      border-bottom-right-radius:20px;
+      border-left-width: 0;
+    }
+    .btn-group .btn.active {
+      background-color: orange;
+      color: #242121;
+    }
+    .spacer {
+      margin-left: -2rem;
+      margin-right: -2rem;
+      border-bottom: 1px solid #484848;
+      margin-bottom: 20px;
+    }
     @media only screen and (max-width: 768px) {
       #info {
         height: 100%;
@@ -140,37 +169,46 @@
 
 <body>
   <div id="info">
-    <h2>Safe Crossing</h2>
-    <p>
-      Welcome to the "Safe Crossing" viewer. The map shows pedestrian crossings in Luxembourg-City that have
-      been determined through a crowdsourced effort as not being compliant with the Highway Code ("Code de la route")
-      because designated parking spots (including bus stops) are within 5 metres of a pedestrian crossing.
-    </p>
-    <p>
-      Red and orange dots mark the relevant crossings:
-    </p>
-    <p>
-      <span class="red">Red (475 crossings, 27%):</span> Users agreed that the crossing was not compliant with the Highway Code
-    </p>
-    <p>
-      <span class="yellow">Yellow (162 crossings, 9%):</span> Users were unable to determine whether the crossing is compliant with the Highway Code<br>
-    </p>
-    <p>
-      Compliant crossings are not shown on the map (1150 crossings, 64%).
-    </p>
-    <p>
-      By clicking on a dot, you can check the street name and neighbourhood, and how many users cast votes. You can
-      also check out the OpenStreetMaps node id.
-    </p>
-    <p>
-      Data for the pedestrian crossings comes from OpenStreetMap. Satellite imagery comes from Geoportail. Download
-      the data <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson">as GeoJSON</a> or as
-      <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.csv">CSV</a>.
-    </p>
-    <p class="more-information">
-      <a href="more.html">Click here for more in-depth information about the project</a>
-    </p>
-    <p class="button-info mobile"><button class="btn" onClick="javascript:hideInfoAndMaybeLocate()">OK, hide this text!</button></p>
+    <div class="project-switcher-head">
+      <div class="btn-group">
+        <button class="btn btn-project-selector btn-safe-crossing active" onClick="toggleSafeCrossing()">Unsafe Crosswalks</button>
+        <button class="btn btn-project-selector btn-thirtykmh" onClick="toggle30kmh()">Missing crosswalks</button>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="project-switcher-description">
+      <h2>Safe Crossing</h2>
+      <p>
+        Welcome to the "Safe Crossing" viewer. The map shows pedestrian crossings in Luxembourg-City that have
+        been determined through a crowdsourced effort as not being compliant with the Highway Code ("Code de la route")
+        because designated parking spots (including bus stops) are within 5 metres of a pedestrian crossing.
+      </p>
+      <p>
+        Red and orange dots mark the relevant crossings:
+      </p>
+      <p>
+        <span class="red">Red (475 crossings, 27%):</span> Users agreed that the crossing was not compliant with the Highway Code
+      </p>
+      <p>
+        <span class="yellow">Yellow (162 crossings, 9%):</span> Users were unable to determine whether the crossing is compliant with the Highway Code<br>
+      </p>
+      <p>
+        Compliant crossings are not shown on the map (1150 crossings, 64%).
+      </p>
+      <p>
+        By clicking on a dot, you can check the street name and neighbourhood, and how many users cast votes. You can
+        also check out the OpenStreetMaps node id.
+      </p>
+      <p>
+        Data for the pedestrian crossings comes from OpenStreetMap. Satellite imagery comes from Geoportail. Download
+        the data <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson">as GeoJSON</a> or as
+        <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.csv">CSV</a>.
+      </p>
+      <p class="more-information">
+        <a href="more.html">Click here for more in-depth information about the project</a>
+      </p>
+      <p class="button-info mobile"><button class="btn" onClick="javascript:hideInfoAndMaybeLocate()">OK, hide this text!</button></p>
+    </div>
   </div>
   <div id="map"></div>
 
@@ -226,13 +264,23 @@
     const map = L.map('map').setView([49.6061209088, 6.12493950024], 14);
     const mapLink = '<a href="http://geoportail.lu">Geoportail</a>';
 
-    L.tileLayer(
+    const ortho2020 = L.tileLayer(
       'https://wmts1.geoportail.lu/opendata/wmts/ortho_2020/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
       {
-        attribution: 'Map data &copy; ' + mapLink,
-        maxZoom: 20,
+        attribution: '2020 aerial photography &copy; ' + mapLink,
+        maxZoom: 22,
       }
-    ).addTo(map);
+    );
+
+    const ortho2022 = L.tileLayer(
+      'https://wmts1.geoportail.lu/opendata/wmts/ortho_2022/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
+      {
+        attribution: '2022 aerial photography &copy; ' + mapLink,
+        maxZoom: 22,
+      }
+    );
+
+    map.addLayer(ortho2020)
 
     function onLocationFound(e) {
       const radius = e.accuracy;
@@ -386,6 +434,19 @@
 
         map.removeLayer(thirtyKmhGroup);
         map.removeControl(thirtyKmhLegend);
+
+        map.addLayer(ortho2020);
+        map.removeLayer(ortho2022);
+
+        const safeCrossingButtons = document.getElementsByClassName('btn-safe-crossing');
+        for (let i = 0; i < safeCrossingButtons.length; i++) {
+          safeCrossingButtons.item(i).classList.add("active");
+        }
+
+        const thirtyKmhButtons = document.getElementsByClassName('btn-thirtykmh');
+        for (let i = 0; i < thirtyKmhButtons.length; i++) {
+          thirtyKmhButtons.item(i).classList.remove("active");
+        }
     }
 
     function toggle30kmh() {
@@ -394,6 +455,19 @@
 
         map.removeLayer(safeCrossingGroup);
         map.removeControl(safeCrossingLegend);
+
+        map.addLayer(ortho2022);
+        map.removeLayer(ortho2020);
+
+        const thirtyKmhButtons = document.getElementsByClassName('btn-thirtykmh');
+        for (let i = 0; i < thirtyKmhButtons.length; i++) {
+          thirtyKmhButtons.item(i).classList.add("active");
+        }
+
+        const safeCrossingButtons = document.getElementsByClassName('btn-safe-crossing');
+        for (let i = 0; i < safeCrossingButtons.length; i++) {
+          safeCrossingButtons.item(i).classList.remove("active");
+        }
     }
   </script>
 </body>
