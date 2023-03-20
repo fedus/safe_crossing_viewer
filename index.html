@@ -35,7 +35,7 @@
     a {
       color: orange;
     }
-    h2 {
+    h1 {
       margin: 0;
     }
     .leaflet-tooltip {
@@ -49,12 +49,12 @@
       z-index: 999;
       overflow: auto;
       padding: 2rem;
-      max-width: 350px;
+      max-width: 400px;
       background-color: #242121;
       color: lightgrey;
       box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;
     }
-    #info h2 {
+    #info h1 {
       color: orange;
     }
     #map {
@@ -69,6 +69,10 @@
     }
     .yellow {
       color: yellow;
+      font-weight: bold;
+    }
+    .white {
+      color: white;
       font-weight: bold;
     }
     .more-information {
@@ -118,6 +122,9 @@
       opacity: 1;
       border-radius: 9px;
     }
+    .project-switcher-title {
+      margin-bottom: 20px;
+    }
     .project-switcher-head {
       margin-bottom: 20px;
     }
@@ -147,6 +154,9 @@
       border-bottom: 1px solid #484848;
       margin-bottom: 20px;
     }
+    .hidden {
+      display: none;
+    }
     @media only screen and (max-width: 768px) {
       #info {
         height: 100%;
@@ -163,45 +173,99 @@
 
 <body>
   <div id="info">
+    <div class="project-switcher-title">
+      <h1>Safe Crossing</h1>
+      <p>Please select the data you wish to see:</p>
+    </div>
     <div class="project-switcher-head">
       <div class="btn-group">
         <button class="btn btn-project-selector btn-safe-crossing active" onClick="toggleSafeCrossing()">Unsafe Crosswalks</button>
-        <button class="btn btn-project-selector btn-thirtykmh" onClick="toggle30kmh()">Missing crosswalks</button>
+        <button class="btn btn-project-selector btn-thirtykmh" onClick="toggle30kmh()">NEW: Missing crosswalks</button>
       </div>
     </div>
     <div class="spacer"></div>
-    <div class="project-switcher-description">
-      <h2>Safe Crossing</h2>
+    <div class="project-switcher-description" id="project-safe-crossing">
+      <h2>Unsafe crosswalks</h2>
+      <p>Uses aerial imagery from 2020.</p>
       <p>
-        Welcome to the "Safe Crossing" viewer. The map shows pedestrian crossings in Luxembourg-City that have
-        been determined through a crowdsourced effort as not being compliant with the Highway Code ("Code de la route")
-        because designated parking spots (including bus stops) are within 5 metres of a pedestrian crossing.
+        This is the original "Safe Crossing" project, crowd-sourced and released in 2021.
       </p>
+      <p>
+        The map shows dangerous pedestrian crossings in Luxembourg-City. They are dangerous because designated parking spots (including bus stops) are
+        located less than 5 metres away from them. This reduces drivers' visibility of the crosswalk and the people using it, putting them in
+        unnecessary danger. In fact, setting up parking spots so close to crosswalks is also in violation of the Highway Code ("Code de la route").
+      </p>
+      <div class="spacer"></div>
+      <h3>How to read the map</h3>
       <p>
         Red and orange dots mark the relevant crossings:
       </p>
       <p>
-        <span class="red">Red (475 crossings, 27%):</span> Users agreed that the crossing was not compliant with the Highway Code
+        <span class="red">Red (475 crossings, 27%):</span> Dangerous crosswalk due to illegal parking spots nearby
       </p>
       <p>
-        <span class="yellow">Yellow (162 crossings, 9%):</span> Users were unable to determine whether the crossing is compliant with the Highway Code<br>
+        <span class="yellow">Yellow (162 crossings, 9%):</span> Unable to determine whether the crosswalk is dangerous<br>
       </p>
       <p>
-        Compliant crossings are not shown on the map (1150 crossings, 64%).
+        Safe crosswalks which are not affected by dangerously close parking spots are not shown on the map (1150 crossings, 64%).
       </p>
       <p>
-        By clicking on a dot, you can check the street name and neighbourhood, and how many users cast votes. You can
-        also check out the OpenStreetMaps node id.
+        By hovering (or tapping) on a dot, you can check the street name and neighbourhood, and how many users cast votes during the crowd-sourcing. You can
+        also check out the relevant OpenStreetMap node id.
       </p>
+      <div class="spacer"></div>
+      <h3>How data was gathered</h3>
+      <p>The data for the project was gathered through a crowd-sourced effort with about 25 volunteers in 2021. You can find detailed information
+        about the process at the link at the bottom of this text.
+      </p>
+      <div class="spacer"></div>
       <p>
-        Data for the pedestrian crossings comes from OpenStreetMap. Satellite imagery comes from Geoportail. Download
+        Raw location data for the pedestrian crossings comes from OpenStreetMap. Satellite imagery comes from Geoportail. Download
         the data <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson">as GeoJSON</a> or as
         <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.csv">CSV</a>.
       </p>
       <p class="more-information">
-        <a href="more.html">Click here for more in-depth information about the project</a>
+        <a href="more.html">Want to know more? Click here for all the nitty-gritty details of the project</a>
       </p>
       <p class="button-info mobile"><button class="btn" onClick="javascript:hideInfoAndMaybeLocate()">OK, hide this text!</button></p>
+    </div>
+    <div class="project-switcher-description hidden" id="project-thirtykmh">
+      <h2>NEW: Missing crosswalks</h2>
+      <p>Uses aerial imagery from 2022.</p>
+      <p>
+        This a new complement to the original "Safe Crossing" project.
+      </p>
+      <p>
+        The map shows missing pedestrian crossings in Luxembourg-City. This means that there are places where the law says there should be a
+        pedestrian crossing, but in fact there is none. In addition, the map also shows crosswalks that are there, but which should (and in
+        some cases have to) have a red background for increased visibility according to the law.
+      </p>
+      <p>
+        The missing (or not adequately marked) crossings are always at the intersection between 50km/h zones and 30km/h zones. In fact,
+        the Transport Ministry's guidelines dictate that there must be a pedestrian crossing at each entrance of a 30km/h zone. If the
+        road from which the driver enters the 30km/h zone is a national road, then the background of the pedestrian crossing must be
+        red (but it is always recommended).
+      </p>
+      <div class="spacer"></div>
+      <h3>How to read the map</h3>
+      <p>
+        Red and white dots mark the relevant crossings:
+      </p>
+      <p>
+        <span class="red">Red:</span> Crosswalk completely missing at entrance of 30km/h zone
+      </p>
+      <p>
+        <span class="white">White:</span> Crosswalk should have red background at entrance of 30km/h zone<br>
+      </p>
+      <p>
+        By hovering (or tapping) on a dot, you can check the street name and neighbourhood. You can
+        also check out the relevant OpenStreetMap node id.
+      </p>
+      <div class="spacer"></div>
+      <p>
+        Raw location data for the pedestrian crossings comes from OpenStreetMap. Satellite imagery comes from Geoportail.
+        Download link as GeoJSON coming soon.
+      </p>
     </div>
   </div>
   <div id="map"></div>
@@ -241,18 +305,18 @@
       const options = { opacity: 1 };
 
       if(crossing === 'unmarked') {
-        return layer.bindTooltip(`<h2>Missing crosswalk</h2><p>There must be a pedestrian crossing at this place, but it is completely missing.</p>`, options);
+        return layer.bindTooltip(`<h1>Missing crosswalk</h1><p>There must be a pedestrian crossing at this place, but it is completely missing.</p>`, options);
       }
 
       if(crossingMarking && crossingMarking === 'no') {
-        return layer.bindTooltip(`<h2>Crosswalk should be red</h2><p>There is a crosswalk at this spot, but it must have a red background.</p>`, options);
+        return layer.bindTooltip(`<h1>Crosswalk should be red</h1><p>There is a crosswalk at this spot, but it must have a red background.</p>`, options);
       }
     }
 
     function bindSafeCrossingTooltips(feature, layer) {
       const { street, neighbourhood, votesTotal, currentResult, osmnodeid } = feature.properties;
 
-      layer.bindTooltip(`<h2>${getLocationDescription(street, neighbourhood)}</h2><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: <a href="https://openstreetmap.org/${osmnodeid}">${osmnodeid}</a></p>`, { opacity: 1 });
+      layer.bindTooltip(`<h1>${getLocationDescription(street, neighbourhood)}</h1><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: <a href="https://openstreetmap.org/${osmnodeid}">${osmnodeid}</a></p>`, { opacity: 1 });
     }
 
     const map = L.map('map').setView([49.6061209088, 6.12493950024], 14);
@@ -262,7 +326,7 @@
       'https://wmts1.geoportail.lu/opendata/wmts/ortho_2020/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
       {
         attribution: '2020 aerial photography &copy; ' + mapLink,
-        maxZoom: 22,
+        maxZoom: 21,
       }
     );
 
@@ -270,7 +334,7 @@
       'https://wmts1.geoportail.lu/opendata/wmts/ortho_2022/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
       {
         attribution: '2022 aerial photography &copy; ' + mapLink,
-        maxZoom: 22,
+        maxZoom: 21,
       }
     );
 
@@ -429,6 +493,9 @@
         for (let i = 0; i < thirtyKmhButtons.length; i++) {
           thirtyKmhButtons.item(i).classList.remove("active");
         }
+
+        document.getElementById("project-thirtykmh").classList.add("hidden");
+        document.getElementById("project-safe-crossing").classList.remove("hidden");
     }
 
     function toggle30kmh() {
@@ -450,6 +517,9 @@
         for (let i = 0; i < safeCrossingButtons.length; i++) {
           safeCrossingButtons.item(i).classList.remove("active");
         }
+
+        document.getElementById("project-safe-crossing").classList.add("hidden");
+        document.getElementById("project-thirtykmh").classList.remove("hidden");
     }
   </script>
 </body>
