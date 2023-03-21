@@ -20,6 +20,10 @@
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
   <style>
+    @keyframes info-open-mobile {
+      from {height: 0;}
+      to {height: 70%;}
+    }
     html, body {
       height: 100%;
       width: 100%;
@@ -31,6 +35,12 @@
       display: flex;
       flex-direction: row;
       font-family: Arial, Helvetica, sans-serif;
+    }
+    @media only screen and (max-width: 768px) {
+      body {
+        display: block;
+        flex-direction: unset;
+      }
     }
     a {
       color: orange;
@@ -49,7 +59,7 @@
       border: 2px solid lightgray;
     }
     #info {
-      z-index: 999;
+      z-index: 9999;
       overflow: auto;
       padding: 2rem;
       max-width: 400px;
@@ -57,11 +67,27 @@
       color: lightgrey;
       box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;
     }
+    @media only screen and (max-width: 768px) {
+      #info {
+        height: 70%;
+        max-width: 100%;
+        position: absolute;
+        bottom: 0;
+        transition: .5s;
+        animation-name: info-open-mobile;
+        animation-duration: .5s;
+      }
+      #info.minimized {
+        height: 145px;
+      }
+    }
     #info h1 {
       color: orange;
     }
     #map {
       flex-grow: 1;
+      height: 100%;
+      width: 100%;
     }
     .invisible {
       display: none;
@@ -160,11 +186,17 @@
     .hidden {
       display: none;
     }
-    @media only screen and (max-width: 768px) {
-      #info {
-        height: 100%;
-        max-width: 100%;
-      }
+    .inline {
+      display: inline;
+    }
+    .maximize-button {
+      float: right;
+      border-radius: 10px;
+      height: 20px;
+      width: 20px;
+      color: orange;
+      border: 1px solid orange;
+      text-align: center;
     }
     @media only screen and (min-width: 769px) {
       .mobile {
@@ -177,7 +209,10 @@
 <body>
   <div id="info">
     <div class="project-switcher-title">
-      <h1>Safe Crossing</h1>
+      <div>
+        <h1 class="inline">Safe Crossing</h1>
+        <div class="maximize-button mobile" onClick="maximizeInfo()">⌃</div>
+      </div>
       <p>Please select the data you wish to see:</p>
     </div>
     <div class="project-switcher-head">
@@ -524,6 +559,17 @@
         document.getElementById("project-safe-crossing").classList.add("hidden");
         document.getElementById("project-thirtykmh").classList.remove("hidden");
     }
+
+    const maximizeInfo = (event) => {
+      document.getElementById("info").classList.remove("minimized")
+    };
+
+    const minimizeInfo = (event) => {
+      document.getElementById("info").classList.add("minimized")
+    };
+
+    document.getElementById("map").onmousedown = minimizeInfo;
+    map.on('movestart', minimizeInfo);
   </script>
 </body>
 </html>
