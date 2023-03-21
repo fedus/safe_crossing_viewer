@@ -38,6 +38,9 @@
     h1 {
       margin: 0;
     }
+    h1, h2, h3, h4, h5 {
+      color: orange;
+    }
     .leaflet-tooltip {
       border-radius: 20px;
       padding: 15px;
@@ -445,7 +448,7 @@
       }
     });
 
-    const safeCrossingLegend = L.control({position: 'bottomright'});
+    const safeCrossingLegend = L.control({position: 'topright'});
 
     safeCrossingLegend.onAdd = function(map) {
         const div = L.DomUtil.create('div', 'info legend');
@@ -460,7 +463,7 @@
 
     safeCrossingLegend.addTo(map);
 
-    const thirtyKmhLegend = L.control({position: 'bottomright'});
+    const thirtyKmhLegend = L.control({position: 'topright'});
 
     thirtyKmhLegend.onAdd = function(map) {
         const div = L.DomUtil.create('div', 'info legend');
