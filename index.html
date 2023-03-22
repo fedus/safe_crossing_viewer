@@ -56,7 +56,13 @@
       padding: 15px;
       background-color: #242121;
       color: lightgray;
-      border: 2px solid lightgray;
+      border: 0;
+    }
+    .leaflet-tooltip-left::before {
+      border-left-color: #242121;
+    }
+    .leaflet-tooltip-right::before {
+      border-right-color: #242121;
     }
     #info {
       z-index: 9999;
@@ -88,6 +94,12 @@
       }
       #info #btn-maximize {
         display: none;
+      }
+      .leaflet-tooltip {
+        width: 250px;
+      }
+      .leaflet-tooltip p, .leaflet-tooltip h3 {
+        white-space: normal;
       }
     }
     #info h1 {
