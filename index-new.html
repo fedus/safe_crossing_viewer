@@ -1,0 +1,595 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Safe Crossing - Map viewer</title>
+  <meta name="description" content="Safe Crossing viewer">
+  <meta name="author" content="ZUG">
+
+  <meta property="og:title" content="Safe Crossing - Unsafe pedestrian crossings in Luxembourg-City (Map)">
+  <meta property="og:site_name" content="Safe Crossing by ZUG (Zentrum fir Urban Gerechtegkeet)">
+  <meta property="og:url" content="https://www.zug.lu/safe-crossing">
+  <meta property="og:description" content="Safe Crossing is a project based on a crowd-sourced effort to assess if the setup of pedestrian crossings in Luxembourg-City complies with the Code de la Route.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://zug.lu/safe-crossing/img/banner.png">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+  <style>
+    @keyframes info-open-mobile {
+      from {height: 0;}
+      to {height: 70%;}
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+      background-color: #242121;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    @media only screen and (max-width: 768px) {
+      body {
+        display: block;
+        flex-direction: unset;
+      }
+    }
+    a {
+      color: orange;
+    }
+    h1 {
+      margin: 0;
+    }
+    h1, h2, h3, h4, h5 {
+      color: orange;
+    }
+    .leaflet-tooltip {
+      border-radius: 20px;
+      padding: 15px;
+      background-color: #242121;
+      color: lightgray;
+      border: 0;
+    }
+    .leaflet-tooltip-left::before {
+      border-left-color: #242121;
+    }
+    .leaflet-tooltip-right::before {
+      border-right-color: #242121;
+    }
+    #info {
+      z-index: 9999;
+      overflow: auto;
+      padding: 2rem;
+      max-width: 400px;
+      background-color: #242121;
+      color: lightgrey;
+      box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;
+    }
+    @media only screen and (max-width: 768px) {
+      #info {
+        height: 70%;
+        max-width: 100%;
+        position: absolute;
+        bottom: 0;
+        transition: .5s;
+        animation-name: info-open-mobile;
+        animation-duration: .5s;
+      }
+      #info.minimized {
+        height: 140px;
+      }
+      #info.minimized #btn-minimize {
+        display: none;
+      }
+      #info.minimized #btn-maximize {
+        display: block;
+      }
+      #info #btn-maximize {
+        display: none;
+      }
+      .leaflet-tooltip {
+        width: 250px;
+      }
+      .leaflet-tooltip p, .leaflet-tooltip h3 {
+        white-space: normal;
+      }
+    }
+    #info h1 {
+      color: orange;
+    }
+    #map {
+      flex-grow: 1;
+      height: 100%;
+      width: 100%;
+    }
+    .invisible {
+      display: none;
+    }
+    .red {
+      color: red;
+      font-weight: bold;
+    }
+    .yellow {
+      color: yellow;
+      font-weight: bold;
+    }
+    .white {
+      color: white;
+      font-weight: bold;
+    }
+    .more-information {
+      text-align: center;
+      background-color: #4b4646;
+      border-radius: 4px;
+      padding: 20px;
+      margin: 40px 0;
+    }
+    .btn {
+      border-radius: 20px;
+      padding: 15px;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: bold;
+      background-color: #242121;
+      color: orange;
+      border-color: orange;
+      border-style: solid;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      transition: .2s;
+    }
+    .btn.round {
+      padding: 0;
+      float: right;
+      border-radius: 15px;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+    }
+    .btn:hover {
+      background-color: orange;
+      color: #242121;
+    }
+    .info {
+      padding: 10px 14px;
+      font: 14px/16px Arial, Helvetica, sans-serif;
+      background: #242121;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 20px;
+    }
+    .legend {
+      line-height: 18px;
+      color: lightgrey;
+    }
+    .legend p {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+    .legend p i {
+      width: 18px;
+      height: 18px;
+      float: left;
+      margin-right: 8px;
+      opacity: 1;
+      border-radius: 9px;
+    }
+    .project-switcher-title {
+      margin-bottom: 20px;
+    }
+    .project-switcher-head {
+      margin-bottom: 20px;
+    }
+    .btn-group {
+      display: flex;
+      flex-direction: row;
+    }
+    .btn-group .btn {
+      border-radius: 0;
+    }
+    .btn-group .btn:first-child {
+      border-top-left-radius:20px;
+      border-bottom-left-radius:20px;
+    }
+    .btn-group .btn:last-child {
+      border-top-right-radius:20px;
+      border-bottom-right-radius:20px;
+      border-left-width: 0;
+    }
+    .btn-group .btn.active {
+      background-color: orange;
+      color: #242121;
+    }
+    .spacer {
+      margin-left: -2rem;
+      margin-right: -2rem;
+      border-bottom: 1px solid #484848;
+      margin-bottom: 20px;
+    }
+    .hidden {
+      display: none;
+    }
+    .inline {
+      display: inline;
+    }
+    @media only screen and (min-width: 769px) {
+      .mobile {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="info">
+    <div class="project-switcher-title">
+      <div>
+        <h1 class="inline">Safe Crossing</h1>
+        <button id="btn-maximize" class="btn round mobile" onClick="maximizeInfo()">↑</button>
+        <button id="btn-minimize" class="btn round mobile" onClick="minimizeInfo()">↓</button>
+      </div>
+      <p>Please select the data you wish to see:</p>
+    </div>
+    <div class="project-switcher-head">
+      <div class="btn-group">
+        <button class="btn btn-project-selector btn-safe-crossing active" onClick="toggleSafeCrossing()">Unsafe Crosswalks</button>
+        <button class="btn btn-project-selector btn-thirtykmh" onClick="toggle30kmh()">NEW: Missing crosswalks</button>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="project-switcher-description" id="project-safe-crossing">
+      <h2>Unsafe crosswalks</h2>
+      <p>Uses aerial imagery from 2020.</p>
+      <p>
+        This is the original "Safe Crossing" project, crowd-sourced and released in 2021.
+      </p>
+      <p>
+        The map shows dangerous pedestrian crossings in Luxembourg-City. They are dangerous because designated parking spots (including bus stops) are
+        located less than 5 metres away from them. This reduces drivers' visibility of the crosswalk and the people using it, putting them in
+        unnecessary danger. In fact, setting up parking spots so close to crosswalks is also in violation of the Highway Code ("Code de la route").
+      </p>
+      <div class="spacer"></div>
+      <h3>How to read the map</h3>
+      <p>
+        Red and orange dots mark the relevant crossings:
+      </p>
+      <p>
+        <span class="red">Red (475 crossings, 27%):</span> Dangerous crosswalk due to illegal parking spots nearby
+      </p>
+      <p>
+        <span class="yellow">Yellow (162 crossings, 9%):</span> Unable to determine whether the crosswalk is dangerous<br>
+      </p>
+      <p>
+        Safe crosswalks which are not affected by dangerously close parking spots are not shown on the map (1150 crossings, 64%).
+      </p>
+      <p>
+        By hovering (or tapping) on a dot, you can check the street name and neighbourhood, and how many users cast votes during the crowd-sourcing. You can
+        also check out the relevant OpenStreetMap node id.
+      </p>
+      <div class="spacer"></div>
+      <h3>How data was gathered</h3>
+      <p>The data for the project was gathered through a crowd-sourced effort with about 25 volunteers in 2021. You can find detailed information
+        about the process at the link at the bottom of this text.
+      </p>
+      <div class="spacer"></div>
+      <p>
+        Raw location data for the pedestrian crossings comes from OpenStreetMap. Satellite imagery comes from Geoportail. Download
+        the data <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson">as GeoJSON</a> or as
+        <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.csv">CSV</a>.
+      </p>
+      <p class="more-information">
+        <a href="more.html">Want to know more? Click here for all the nitty-gritty details of the project</a>
+      </p>
+    </div>
+    <div class="project-switcher-description hidden" id="project-thirtykmh">
+      <h2>NEW: Missing crosswalks</h2>
+      <p>Uses aerial imagery from 2022.</p>
+      <p>
+        This a new complement to the original "Safe Crossing" project.
+      </p>
+      <p>
+        The map shows missing pedestrian crossings in Luxembourg-City. This means that there are places where the law says there should be a
+        pedestrian crossing, but in fact there is none. In addition, the map also shows crosswalks that are there, but which should (and in
+        some cases have to) have a red background for increased visibility according to the law.
+      </p>
+      <p>
+        The missing (or not adequately marked) crossings are always at the intersection between 50km/h zones and 30km/h zones. In fact,
+        the Transport Ministry's guidelines dictate that there must be a pedestrian crossing at each entrance of a 30km/h zone. If the
+        road from which the driver enters the 30km/h zone is a national road, then the background of the pedestrian crossing must be
+        red (but it is always recommended).
+      </p>
+      <div class="spacer"></div>
+      <h3>How to read the map</h3>
+      <p>
+        Red and white dots mark the relevant crossings:
+      </p>
+      <p>
+        <span class="red">Red:</span> Crosswalk completely missing at entrance of 30km/h zone
+      </p>
+      <p>
+        <span class="white">White:</span> Crosswalk should have red background at entrance of 30km/h zone<br>
+      </p>
+      <p>
+        By hovering (or tapping) on a dot, you can check the street name and neighbourhood. You can
+        also check out the relevant OpenStreetMap node id.
+      </p>
+      <div class="spacer"></div>
+      <p>
+        Raw location data for the pedestrian crossings comes from OpenStreetMap. Satellite imagery comes from Geoportail.
+        Download link as GeoJSON coming soon.
+      </p>
+    </div>
+  </div>
+  <div id="map"></div>
+
+  <script type="text/javascript" src="30kmh.js"></script>
+  <script>
+    const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+    let ownPositionMarker;
+    let ownPositionRadiusMarker;
+
+    function getResultDescription(result) {
+      switch (result) {
+        case 2:
+          case 12:
+            return "Designated parking too close to crossing";
+            break;
+          default:
+            return "Ambiguous or impossible to see";
+      }
+    }
+
+    function getLocationDescription(street, neighbourhood) {
+      if (street && neighbourhood) return `${street} (${neighbourhood})`;
+      else if (street) return street;
+      else if (neighbourhood) return neighbourhood;
+      return "";
+    }
+
+    async function loadCrosswalksGeojson() {
+      const url = 'https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson';
+      return (await fetch(url)).json();
+    }
+
+    function bindThirtyKmhTooltips(feature, layer) {
+      const { crossing, 'crossing:marking': crossingMarking } = feature.properties;
+
+      const options = { opacity: 1 };
+
+      if(crossing === 'unmarked') {
+        return layer.bindTooltip(`<h3>Missing crosswalk</h3><p>There must be a pedestrian crossing at this place, but it is completely missing.</p>`, options);
+      }
+
+      if(crossingMarking && crossingMarking === 'no') {
+        return layer.bindTooltip(`<h3>Crosswalk should be red</h3><p>There is a crosswalk at this spot, but it must have a red background.</p>`, options);
+      }
+    }
+
+    function bindSafeCrossingTooltips(feature, layer) {
+      const { street, neighbourhood, votesTotal, currentResult, osmnodeid } = feature.properties;
+
+      layer.bindTooltip(`<h3>${getLocationDescription(street, neighbourhood)}</h3><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: <a href="https://openstreetmap.org/${osmnodeid}">${osmnodeid}</a></p>`, { opacity: 1 });
+    }
+
+    const map = L.map('map').setView([49.6061209088, 6.12493950024], 14);
+    const mapLink = '<a href="http://geoportail.lu">Geoportail</a>';
+
+    const ortho2020 = L.tileLayer(
+      'https://wmts1.geoportail.lu/opendata/wmts/ortho_2020/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
+      {
+        attribution: '2020 aerial photography &copy; ' + mapLink,
+        maxZoom: 21,
+      }
+    );
+
+    const ortho2022 = L.tileLayer(
+      'https://wmts1.geoportail.lu/opendata/wmts/ortho_2022/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
+      {
+        attribution: '2022 aerial photography &copy; ' + mapLink,
+        maxZoom: 21,
+      }
+    );
+
+    map.addLayer(ortho2020)
+
+    function onLocationFound(e) {
+      const radius = e.accuracy;
+
+      if (!ownPositionMarker) {
+        ownPositionMarker = L.marker(e.latlng).addTo(map);
+      } else {
+        ownPositionMarker.setLatLng(e.latlng)
+      }
+
+      if (!ownPositionRadiusMarker) {
+        ownPositionRadiusMarker = L.circle(e.latlng, { radius, interactive: false }).addTo(map);
+      } else {
+        ownPositionRadiusMarker.setLatLng(e.latlng)
+      }
+    }
+
+    map.on('locationfound', onLocationFound);
+
+    async function startLocation() {
+      map.locate({setView: false, watch: true, /* maxZoom: 17 */});
+    }
+
+    if (!isMobile) {
+      startLocation();
+    }
+
+    function hideInfoAndMaybeLocate() {
+      document.getElementById("info").className = "invisible";
+      map.invalidateSize();
+      if (isMobile) {
+        startLocation();
+      }
+    }
+
+
+    const notSureMarkerOptions = {
+      radius: 6,
+      color: "#fede42",
+      fillColor: "#242121",
+      weight: 3,
+      opacity: 1,
+      fillOpacity: 1
+    };
+
+    const tooCloseMarkerOptions = {
+      radius: 6,
+      color: "#ff0000",
+      fillColor: "#242121",
+      weight: 3,
+      opacity: 1,
+      fillOpacity: 1
+    };
+
+    const thirtyMarkerUnmarked = {
+      radius: 6,
+      color: "red",
+      fillColor: "#242121",
+      weight: 3,
+      opacity: 1,
+      fillOpacity: 1
+    };
+
+    const thirtyMarkerMarkedButNotRed = {
+      radius: 6,
+      color: "white",
+      fillColor: "#242121",
+      weight: 3,
+      opacity: 1,
+      fillOpacity: 1
+    };
+
+
+    const safeCrossingGroup = L.layerGroup().addTo(map);
+
+    loadCrosswalksGeojson().then(data => L.geoJson(data, {
+      onEachFeature: bindSafeCrossingTooltips,
+      pointToLayer: function (feature, latlng) {
+        switch (feature.properties.currentResult) {
+          case 2:
+          case 12:
+            return L.circleMarker(latlng, tooCloseMarkerOptions).addTo(safeCrossingGroup);
+            break;
+          default:
+            return L.circleMarker(latlng, notSureMarkerOptions).addTo(safeCrossingGroup);
+        }
+      }
+    }));
+
+    const thirtyKmhGroup = L.layerGroup();
+
+    L.geoJson(thirtyKmh, {
+      onEachFeature: bindThirtyKmhTooltips,
+      pointToLayer: function (feature, latlng) {
+        if(feature.properties.crossing === 'unmarked') {
+          return L.circleMarker(latlng, thirtyMarkerUnmarked).addTo(thirtyKmhGroup);
+        }
+
+        if(feature.properties['crossing:marking']) {
+          if((feature.properties['crossing:marking']) === 'no') {
+            return L.circleMarker(latlng, thirtyMarkerMarkedButNotRed).addTo(thirtyKmhGroup);
+          }
+        }
+      }
+    });
+
+    const safeCrossingLegend = L.control({position: 'topright'});
+
+    safeCrossingLegend.onAdd = function(map) {
+        const div = L.DomUtil.create('div', 'info legend');
+
+        div.innerHTML +=
+            '<p><i style="background: #ff0000"></i> Parking spots too close to crossing</p>';
+          div.innerHTML +=
+            '<p><i style="background: #fede42"></i> Unclear because aerial view is obstructed</p>';
+
+        return div;
+    };
+
+    safeCrossingLegend.addTo(map);
+
+    const thirtyKmhLegend = L.control({position: 'topright'});
+
+    thirtyKmhLegend.onAdd = function(map) {
+        const div = L.DomUtil.create('div', 'info legend');
+
+        div.innerHTML +=
+            '<p><i style="background: red"></i> Crosswalk completely missing</p>';
+          div.innerHTML +=
+            '<p><i style="background: white"></i> Red background missing from crosswalk</p>';
+
+        return div;
+    };
+
+
+    function toggleSafeCrossing() {
+        if (!map.hasLayer(safeCrossingGroup)) map.addLayer(safeCrossingGroup);
+        map.addControl(safeCrossingLegend);
+
+        map.removeLayer(thirtyKmhGroup);
+        map.removeControl(thirtyKmhLegend);
+
+        map.addLayer(ortho2020);
+        map.removeLayer(ortho2022);
+
+        const safeCrossingButtons = document.getElementsByClassName('btn-safe-crossing');
+        for (let i = 0; i < safeCrossingButtons.length; i++) {
+          safeCrossingButtons.item(i).classList.add("active");
+        }
+
+        const thirtyKmhButtons = document.getElementsByClassName('btn-thirtykmh');
+        for (let i = 0; i < thirtyKmhButtons.length; i++) {
+          thirtyKmhButtons.item(i).classList.remove("active");
+        }
+
+        document.getElementById("project-thirtykmh").classList.add("hidden");
+        document.getElementById("project-safe-crossing").classList.remove("hidden");
+    }
+
+    function toggle30kmh() {
+        if (!map.hasLayer(thirtyKmhGroup)) map.addLayer(thirtyKmhGroup);
+        map.addControl(thirtyKmhLegend);
+
+        map.removeLayer(safeCrossingGroup);
+        map.removeControl(safeCrossingLegend);
+
+        map.addLayer(ortho2022);
+        map.removeLayer(ortho2020);
+
+        const thirtyKmhButtons = document.getElementsByClassName('btn-thirtykmh');
+        for (let i = 0; i < thirtyKmhButtons.length; i++) {
+          thirtyKmhButtons.item(i).classList.add("active");
+        }
+
+        const safeCrossingButtons = document.getElementsByClassName('btn-safe-crossing');
+        for (let i = 0; i < safeCrossingButtons.length; i++) {
+          safeCrossingButtons.item(i).classList.remove("active");
+        }
+
+        document.getElementById("project-safe-crossing").classList.add("hidden");
+        document.getElementById("project-thirtykmh").classList.remove("hidden");
+    }
+
+    const maximizeInfo = (event) => {
+      document.getElementById("info").classList.remove("minimized")
+    };
+
+    const minimizeInfo = (event) => {
+      document.getElementById("info").classList.add("minimized")
+    };
+
+    document.getElementById("map").onmousedown = minimizeInfo;
+    map.on('movestart', minimizeInfo);
+  </script>
+</body>
+</html>
