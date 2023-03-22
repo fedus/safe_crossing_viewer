@@ -581,11 +581,12 @@
     }
 
     const maximizeInfo = (event) => {
-      document.getElementById("info").classList.remove("minimized")
+      document.getElementById("info").classList.remove("minimized");
     };
 
     const minimizeInfo = (event) => {
-      document.getElementById("info").classList.add("minimized")
+      document.getElementById("info").classList.add("minimized");
+      document.getElementById("info").scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     document.getElementById("map").onmousedown = minimizeInfo;
