@@ -67,7 +67,7 @@
     #info {
       z-index: 9999;
       overflow: auto;
-      padding: 2rem;
+      padding: 1.5rem;
       max-width: 400px;
       background-color: #242121;
       color: lightgrey;
@@ -84,13 +84,22 @@
         animation-duration: .5s;
       }
       #info.minimized {
-        height: 140px;
+        height: 170px;
+        background-color: transparent;
+        box-shadow: none;
+        pointer-events: none;
+        overflow: hidden;
       }
       #info.minimized #btn-minimize {
         display: none;
       }
       #info.minimized #btn-maximize {
         display: block;
+      }
+      #info.minimized .project-switcher-title,
+      #info.minimized .spacer,
+      #info.minimized .project-switcher-description {
+        opacity: 0;
       }
       #info #btn-maximize {
         display: none;
@@ -182,13 +191,18 @@
     }
     .project-switcher-title {
       margin-bottom: 20px;
+      transition: .5s;
     }
     .project-switcher-head {
       margin-bottom: 20px;
     }
+    .project-switcher-description {
+      transition: .5s;
+    }
     .btn-group {
       display: flex;
       flex-direction: row;
+      pointer-events: all;
     }
     .btn-group .btn {
       border-radius: 0;
@@ -554,6 +568,8 @@
 
         document.getElementById("project-thirtykmh").classList.add("hidden");
         document.getElementById("project-safe-crossing").classList.remove("hidden");
+
+        maximizeInfo();
     }
 
     function toggle30kmh() {
@@ -578,6 +594,8 @@
 
         document.getElementById("project-safe-crossing").classList.add("hidden");
         document.getElementById("project-thirtykmh").classList.remove("hidden");
+
+        maximizeInfo();
     }
 
     const maximizeInfo = (event) => {
