@@ -311,6 +311,8 @@
       <p>
         Without the red crossings, drivers might not realise they are entering a 30 zone, crossing the road is dangerous and uncomfortable for pedestrians, and walking gets discouraged.
       </p>
+      <div class="spacer"></div>
+      <h3>Examples</h3>
       <p>
       <img src="img/Chimay.jpg">
       </p>
@@ -381,12 +383,9 @@
 
       const options = { opacity: 1 };
 
-      if(crossing === 'unmarked') {
-        return layer.bindTooltip(`<h3>Missing crosswalk</h3><p>There must be a pedestrian crossing at this place, but it is completely missing.</p>`, options);
-      }
-
-      if(crossingMarking && crossingMarking === 'no') {
-        return layer.bindTooltip(`<h3>Crosswalk should be red</h3><p>There is a crosswalk at this spot, but it must have a red background.</p>`, options);
+      switch(feature.properties.crossing_marking) {
+        case 'unmarked': return layer.bindTooltip(`<h3>Missing crosswalk</h3><p>There must be a pedestrian crossing at this place, but it is completely missing.</p>`, options);
+        case 'no': return layer.bindTooltip(`<h3>Crosswalk should be red</h3><p>There is a crosswalk at this spot, but it must have a red background.</p>`, options);
       }
     }
 
@@ -510,14 +509,9 @@
     L.geoJson(thirtyKmh, {
       onEachFeature: bindThirtyKmhTooltips,
       pointToLayer: function (feature, latlng) {
-        if(feature.properties.crossing === 'unmarked') {
-          return L.circleMarker(latlng, thirtyMarkerUnmarked).addTo(thirtyKmhGroup);
-        }
-
-        if(feature.properties['crossing:marking']) {
-          if((feature.properties['crossing:marking']) === 'no') {
-            return L.circleMarker(latlng, thirtyMarkerMarkedButNotRed).addTo(thirtyKmhGroup);
-          }
+        switch(feature.properties.crossing_marking) {
+          case 'unmarked': return L.circleMarker(latlng, thirtyMarkerUnmarked).addTo(thirtyKmhGroup);
+          case 'no': return L.circleMarker(latlng, thirtyMarkerMarkedButNotRed).addTo(thirtyKmhGroup);
         }
       }
     });

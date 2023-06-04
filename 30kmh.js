@@ -1,8616 +1,6329 @@
 const thirtyKmh = {
   "type": "FeatureCollection",
-  "generator": "overpass-ide",
-  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2023-03-12T17:59:09Z",
   "features": [
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/69142486",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "8",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1375164,
-          49.5981214
+          6.137516,
+          49.598121
         ]
       },
-      "id": "node/69142486"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 69142486,
+        "osm_way_id": 891036515,
+        "rue": "Rue du Puits",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/69144212",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "7",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1431582,
-          49.5977392
+          6.143158,
+          49.597739
         ]
       },
-      "id": "node/69144212"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 69144212,
+        "osm_way_id": 9238946,
+        "rue": "Boulevard Robert Baden-Powell",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/69144291",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:30:17Z",
-        "@version": "4",
-        "@changeset": "117663157",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.142249,
-          49.5989556
+          49.598956
         ]
       },
-      "id": "node/69144291"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 69144291,
+        "osm_way_id": 9238932,
+        "rue": "Rue du Mur",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/71509863",
-        "bicycle": "yes",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-19T20:20:48Z",
-        "@version": "14",
-        "@changeset": "127805328",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1390351,
-          49.6065104
+          6.139035,
+          49.60651
         ]
       },
-      "id": "node/71509863"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 71509863,
+        "osm_way_id": 1031148589,
+        "rue": "Rue Marie et Pierre Curie",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/255370507",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "7",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1082373,
-          49.6226199
+          6.135817,
+          49.611801
         ]
       },
-      "id": "node/255370507"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 75389885,
+        "osm_way_id": 160000361,
+        "rue": "Rue Sosthène Weis",
+        "quartier": "Pfaffenthal"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/265807348",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.108237,
+          49.62262
+        ]
       },
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 255370507,
+        "osm_way_id": 23581964,
+        "rue": "Rue Tony Neuman",
+        "quartier": "Limpertsberg"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.12776,
-          49.6469872
+          49.646987
         ]
       },
-      "id": "node/265807348"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 265807348,
+        "osm_way_id": 185952925,
+        "rue": "Rue Mathias Hertert",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/269332952",
-        "crossing": "traffic_signals",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1173053,
-          49.6001698
+          6.117305,
+          49.60017
         ]
       },
-      "id": "node/269332952"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 269332952,
+        "osm_way_id": 95932241,
+        "rue": "Rue de l'Abattoir",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/276868665",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "5",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1061265,
-          49.6241948
+          6.106127,
+          49.624195
         ]
       },
-      "id": "node/276868665"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 276868665,
+        "osm_way_id": 542821818,
+        "rue": "Rue de Dormans",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/278516784",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "9",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1200042,
-          49.6056708
+          6.120004,
+          49.605671
         ]
       },
-      "id": "node/278516784"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 278516784,
+        "osm_way_id": 295253902,
+        "rue": "Rue des Jardiniers",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/278516831",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1209351,
-          49.6035236
+          6.120935,
+          49.603524
         ]
       },
-      "id": "node/278516831"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 278516831,
+        "osm_way_id": 1095900806,
+        "rue": "Rue de la Semois",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/278517952",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2023-03-11T11:13:18Z",
-        "@version": "8",
-        "@changeset": "133548479",
-        "@user": "Riccardo Stagni",
-        "@uid": "67621"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1181478,
-          49.6115307
+          6.118148,
+          49.611531
         ]
       },
-      "id": "node/278517952"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 278517952,
+        "osm_way_id": 25553174,
+        "rue": "Rue Nicolas Welter",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/281753430",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "10",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.0994431,
-          49.5856691
+          6.099443,
+          49.585669
         ]
       },
-      "id": "node/281753430"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 281753430,
+        "osm_way_id": 633313449,
+        "rue": "Rue Antoine",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/287034369",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "9",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1065275,
-          49.5891691
+          6.106528,
+          49.589169
         ]
       },
-      "id": "node/287034369"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 287034369,
+        "osm_way_id": 303297805,
+        "rue": "Rue de la Forêt",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/294932784",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "6",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1668753,
-          49.6374754
+          6.166864,
+          49.63751
         ]
       },
-      "id": "node/294932784"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 294932784,
+        "osm_way_id": 26864617,
+        "rue": "Rue Abbé Jos Keup",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/303136607",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "10",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1179014,
-          49.5972918
+          6.117901,
+          49.597292
         ]
       },
-      "id": "node/303136607"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 303136607,
+        "osm_way_id": 25204251,
+        "rue": "Rue de l'Aciérie",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/443864702",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T18:16:18Z",
-        "@version": "11",
-        "@changeset": "133451160",
-        "@user": "Riccardo Stagni",
-        "@uid": "67621"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.140961,
-          49.6135164
+          49.613516
         ]
       },
-      "id": "node/443864702"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 443864702,
+        "osm_way_id": 37847293,
+        "rue": "Sentier de l'Espérance",
+        "quartier": "Clausen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/568060349",
-        "bicycle": "no",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1118355,
-          49.6080505
+          6.111835,
+          49.60805
         ]
       },
-      "id": "node/568060349"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 568060349,
+        "osm_way_id": 44800539,
+        "rue": "Rue Maréchal Foch",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/568060357",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-17T19:30:56Z",
-        "@version": "10",
-        "@changeset": "127690440",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1136262,
+          6.113626,
           49.608473
         ]
       },
-      "id": "node/568060357"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 568060357,
+        "osm_way_id": 26336393,
+        "rue": "Rue des Franciscaines",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/617142703",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-16T07:50:56Z",
-        "@version": "8",
-        "@changeset": "127603050",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1143027,
+          6.114303,
           49.620845
         ]
       },
-      "id": "node/617142703"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 617142703,
+        "osm_way_id": 40525906,
+        "rue": "Rue Batty Weber",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/621640837",
-        "bicycle": "yes",
-        "crossing": "traffic_signals",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2023-03-10T23:12:52Z",
-        "@version": "12",
-        "@changeset": "133536516",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1608904,
-          49.6321405
+          6.16089,
+          49.63214
         ]
       },
-      "id": "node/621640837"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 621640837,
+        "osm_way_id": 35819625,
+        "rue": "Rue d'Avalon",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/621640850",
-        "bicycle": "yes",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-03-10T23:12:52Z",
-        "@version": "6",
-        "@changeset": "133536516",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1630175,
-          49.6331618
+          6.163017,
+          49.633162
         ]
       },
-      "id": "node/621640850"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 621640850,
+        "osm_way_id": 121639449,
+        "rue": "Allée des Poiriers",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/672526393",
-        "crossing": "traffic_signals",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-15T14:33:38Z",
-        "@version": "5",
-        "@changeset": "127573829",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.107685,
-          49.6152242
+          49.615224
         ]
       },
-      "id": "node/672526393"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 672526393,
+        "osm_way_id": 56018791,
+        "rue": "Rue des Foyers",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/720609515",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "8",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1174423,
-          49.6143601
+          6.117442,
+          49.61436
         ]
       },
-      "id": "node/720609515"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 720609515,
+        "osm_way_id": 58071055,
+        "rue": "Rue du Charly",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/728372860",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1259717,
-          49.6189983
+          6.125972,
+          49.618998
         ]
       },
-      "id": "node/728372860"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 728372860,
+        "osm_way_id": 25381676,
+        "rue": "Boulevard Paul Eyschen",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/729617919",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.107117,
-          49.5884681
+          49.588468
         ]
       },
-      "id": "node/729617919"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 729617919,
+        "osm_way_id": 25329172,
+        "rue": "Rue Tubis",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/798886008",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1181388,
+          6.118139,
           49.618453
         ]
       },
-      "id": "node/798886008"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 798886008,
+        "osm_way_id": 126342691,
+        "rue": "Rue Melchior Bourg-Gemen",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/806519330",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "9",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1411663,
-          49.6071278
+          6.141166,
+          49.607128
         ]
       },
-      "id": "node/806519330"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 806519330,
+        "osm_way_id": 1031294537,
+        "rue": "Boulevard General George S. Patton",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/901522747",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "8",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.0971271,
-          49.6021304
+          6.097127,
+          49.60213
         ]
       },
-      "id": "node/901522747"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 901522747,
+        "osm_way_id": 76465993,
+        "rue": "Rue de la Barrière",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1075237129",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "source": "reglement de la circulation 2012-0011",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1742997,
+          6.1743,
           49.628872
         ]
       },
-      "id": "node/1075237129"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1075237129,
+        "osm_way_id": 118335796,
+        "rue": "Rue André Vésale",
+        "quartier": "Neudorf / Weimershof"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1111509621",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2023-03-08T19:10:15Z",
-        "@version": "7",
-        "@changeset": "133452683",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1400498,
-          49.5984697
+          6.14005,
+          49.59847
         ]
       },
-      "id": "node/1111509621"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1111509621,
+        "osm_way_id": 9245288,
+        "rue": "Rue Irmine",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1111509685",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2023-03-08T19:10:15Z",
-        "@version": "6",
-        "@changeset": "133452683",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1400305,
-          49.5986719
+          6.14003,
+          49.598672
         ]
       },
-      "id": "node/1111509685"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1111509685,
+        "osm_way_id": 22955131,
+        "rue": "Rue des Trévires",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1111535246",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-19T20:20:48Z",
-        "@version": "5",
-        "@changeset": "127805328",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1224552,
-          49.5997428
+          6.122455,
+          49.599743
         ]
       },
-      "id": "node/1111535246"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1111535246,
+        "osm_way_id": 95933396,
+        "rue": "Rue Jean-Baptiste Merkels",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1111535416",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-19T20:20:48Z",
-        "@version": "7",
-        "@changeset": "127805328",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1226357,
-          49.5992663
+          6.122636,
+          49.599266
         ]
       },
-      "id": "node/1111535416"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1111535416,
+        "osm_way_id": 95933396,
+        "rue": "Rue Jean-Baptiste Merkels",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1118466501",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "8",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1363677,
-          49.6029106
+          6.136368,
+          49.602911
         ]
       },
-      "id": "node/1118466501"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1118466501,
+        "osm_way_id": 123658679,
+        "rue": "Rue du Laboratoire",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1130823104",
-        "bicycle": "yes",
-        "crossing": "uncontrolled",
-        "crossing:island": "yes",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "7",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1036898,
-          49.6012527
+          6.10369,
+          49.601253
         ]
       },
-      "id": "node/1130823104"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1130823104,
+        "osm_way_id": 1085176012,
+        "rue": "Rue Charles Martel",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1131024563",
-        "crossing": "traffic_signals",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.0936966,
-          49.6042139
+          6.093697,
+          49.604214
         ]
       },
-      "id": "node/1131024563"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1131024563,
+        "osm_way_id": 24939851,
+        "rue": "Rue de Saint-Hubert",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1235160582",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T19:10:15Z",
-        "@version": "5",
-        "@changeset": "133452683",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1401357,
-          49.5974936
+          6.140136,
+          49.597494
         ]
       },
-      "id": "node/1235160582"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1235160582,
+        "osm_way_id": 9245288,
+        "rue": "Rue Irmine",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1252410569",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-17T11:21:49Z",
-        "@version": "9",
-        "@changeset": "127666334",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1064182,
-          49.6063028
+          6.106418,
+          49.606303
         ]
       },
-      "id": "node/1252410569"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1252410569,
+        "osm_way_id": 9230773,
+        "rue": "Rue Giselbert",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1252557190",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-17T11:21:49Z",
-        "@version": "6",
-        "@changeset": "127666334",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1024981,
+          6.102498,
           49.605889
         ]
       },
-      "id": "node/1252557190"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1252557190,
+        "osm_way_id": 25392950,
+        "rue": "Rue d'Orval",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1258947375",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-01-11T17:57:23Z",
-        "@version": "5",
-        "@changeset": "131156487",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1100561,
-          49.5946245
+          6.110056,
+          49.594625
         ]
       },
-      "id": "node/1258947375"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1258947375,
+        "osm_way_id": 26244964,
+        "rue": "Rue des Artisans",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1280809223",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2023-03-07T16:08:18Z",
-        "@version": "8",
-        "@changeset": "133409009",
-        "@user": "Riccardo Stagni",
-        "@uid": "67621"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1251699,
-          49.6185079
+          6.12517,
+          49.618508
         ]
       },
-      "id": "node/1280809223"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1280809223,
+        "osm_way_id": 1131772028,
+        "rue": "Avenue Victor Hugo",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1280809232",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1207972,
-          49.6143833
+          6.120797,
+          49.614383
         ]
       },
-      "id": "node/1280809232"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1280809232,
+        "osm_way_id": 542821825,
+        "rue": "Rue de la Chapelle",
+        "quartier": "Ville Haute"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1280809244",
-        "button_operated": "yes",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "traffic_signals:sound": "no",
-        "traffic_signals:vibration": "no",
-        "@timestamp": "2022-10-14T06:02:54Z",
-        "@version": "14",
-        "@changeset": "127504155",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1229953,
-          49.6155131
+          6.122995,
+          49.615513
         ]
       },
-      "id": "node/1280809244"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1280809244,
+        "osm_way_id": 77813708,
+        "rue": "Rue Nicolas Adames",
+        "quartier": "Ville Haute"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1298780015",
-        "check_date:crossing": "2021-03-16",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-10-15T14:33:38Z",
-        "@version": "6",
-        "@changeset": "127573829",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.0984578,
-          49.6023706
+          6.098458,
+          49.602371
         ]
       },
-      "id": "node/1298780015"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1298780015,
+        "osm_way_id": 24234048,
+        "rue": "Rue Nicolas Mameranus",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1308229683",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-17T19:30:56Z",
-        "@version": "5",
-        "@changeset": "127690440",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1081347,
-          49.6067924
+          6.108135,
+          49.606792
         ]
       },
-      "id": "node/1308229683"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1308229683,
+        "osm_way_id": 374829921,
+        "rue": "Rue Walram",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1308229685",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-17T19:30:56Z",
-        "@version": "7",
-        "@changeset": "127690440",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1080315,
-          49.6069318
+          6.108032,
+          49.606932
         ]
       },
-      "id": "node/1308229685"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1308229685,
+        "osm_way_id": 374829920,
+        "rue": "Rue d'Oradour",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1319531748",
-        "check_date:crossing": "2021-03-01",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "source": "survey",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "7",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.0934825,
-          49.6029256
+          6.093483,
+          49.602926
         ]
       },
-      "id": "node/1319531748"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1319531748,
+        "osm_way_id": 24939851,
+        "rue": "Rue de Saint-Hubert",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1319849153",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "foot": "designated",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "11",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1289028,
-          49.6057974
+          6.128903,
+          49.605797
         ]
       },
-      "id": "node/1319849153"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1319849153,
+        "osm_way_id": 23625562,
+        "rue": "Rue de la Grève",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1319849159",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "8",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1296001,
-          49.6050015
+          6.1296,
+          49.605002
         ]
       },
-      "id": "node/1319849159"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1319849159,
+        "osm_way_id": 24789424,
+        "rue": "Rue du Plébiscite",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1321645380",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "source": "survey",
-        "@timestamp": "2022-10-16T07:50:56Z",
-        "@version": "7",
-        "@changeset": "127603050",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1109579,
-          49.6147164
+          6.110958,
+          49.614716
         ]
       },
-      "id": "node/1321645380"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1321645380,
+        "osm_way_id": 56018793,
+        "rue": "Rue du Stade",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1330935303",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "9",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1732657,
+          6.173266,
           49.629165
         ]
       },
-      "id": "node/1330935303"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1330935303,
+        "osm_way_id": 31303861,
+        "rue": "Rue Joseph Leydenbach",
+        "quartier": "Neudorf / Weimershof"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1335780752",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "traffic_signals:sound": "no",
-        "@timestamp": "2022-10-17T19:30:56Z",
-        "@version": "9",
-        "@changeset": "127690440",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1155141,
-          49.6086981
+          6.115514,
+          49.608698
         ]
       },
-      "id": "node/1335780752"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1335780752,
+        "osm_way_id": 78088569,
+        "rue": "Rue des Dahlias",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1335780755",
-        "bicycle": "no",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1120016,
-          49.6080906
+          6.112002,
+          49.608091
         ]
       },
-      "id": "node/1335780755"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1335780755,
+        "osm_way_id": 23283859,
+        "rue": "Rue Maréchal Foch",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1335780780",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1154925,
-          49.6085455
+          6.115493,
+          49.608545
         ]
       },
-      "id": "node/1335780780"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1335780780,
+        "osm_way_id": 373573545,
+        "rue": "Rue d'Orange",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1335802625",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1195034,
+          6.119503,
           49.60577
         ]
       },
-      "id": "node/1335802625"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1335802625,
+        "osm_way_id": 50015376,
+        "rue": "Route d'Esch",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1335802626",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1195436,
-          49.6063552
+          6.119544,
+          49.606355
         ]
       },
-      "id": "node/1335802626"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1335802626,
+        "osm_way_id": 1095900803,
+        "rue": "Route d'Esch",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1336139951",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1441075,
+          6.144107,
           49.635562
         ]
       },
-      "id": "node/1336139951"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1336139951,
+        "osm_way_id": 557484013,
+        "rue": "Rue des Sources",
+        "quartier": "Weimerskirch"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1361071895",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-05-27T17:10:13Z",
-        "@version": "5",
-        "@changeset": "121586410",
-        "@user": "SHARCRASH",
-        "@uid": "1808015"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1611433,
-          49.6319931
+          6.161143,
+          49.631993
         ]
       },
-      "id": "node/1361071895"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 1361071895,
+        "osm_way_id": 35819625,
+        "rue": "Rue d'Avalon",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1361071912",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1626187,
+          6.162619,
           49.633352
         ]
       },
-      "id": "node/1361071912"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1361071912,
+        "osm_way_id": 121641864,
+        "rue": "Rue Jean-Pierre Erpelding",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1361071943",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1624689,
-          49.6333067
+          6.162469,
+          49.633307
         ]
       },
-      "id": "node/1361071943"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1361071943,
+        "osm_way_id": 26864454,
+        "rue": "Rue Jean-Pierre Erpelding",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1378101867",
-        "check_date:crossing": "2021-08-26",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "8",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1357232,
-          49.6026069
+          6.135723,
+          49.602607
         ]
       },
-      "id": "node/1378101867"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1378101867,
+        "osm_way_id": 123658677,
+        "rue": "Rue du Chemin de Fer",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1378228893",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-14T06:02:54Z",
-        "@version": "11",
-        "@changeset": "127504155",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.132806,
-          49.5995353
+          49.599535
         ]
       },
-      "id": "node/1378228893"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1378228893,
+        "osm_way_id": 30985289,
+        "rue": "Rue d'Épernay",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1395967994",
-        "crossing": "traffic_signals",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1456273,
-          49.6016372
+          6.145627,
+          49.601637
         ]
       },
-      "id": "node/1395967994"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1395967994,
+        "osm_way_id": 9208694,
+        "rue": "Rue Godchaux",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1395967995",
-        "crossing": "traffic_signals",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1453875,
-          49.6017081
+          6.145388,
+          49.601708
         ]
       },
-      "id": "node/1395967995"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1395967995,
+        "osm_way_id": 82254353,
+        "rue": "Rue de Pulvermühl",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1400613536",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1177466,
-          49.6295037
+          6.117747,
+          49.629504
         ]
       },
-      "id": "node/1400613536"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1400613536,
+        "osm_way_id": 126320839,
+        "rue": "Rue Jean-Pierre Huberty",
+        "quartier": "Muhlenbach"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1401567257",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1259542,
-          49.6016657
+          6.125954,
+          49.601666
         ]
       },
-      "id": "node/1401567257"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1401567257,
+        "osm_way_id": 9343603,
+        "rue": "Rue des États-Unis",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1401567268",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1260324,
-          49.6018055
+          6.126032,
+          49.601805
         ]
       },
-      "id": "node/1401567268"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1401567268,
+        "osm_way_id": 30985393,
+        "rue": "Rue d'Anvers",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1401567273",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1252451,
-          49.6019134
+          6.125245,
+          49.601913
         ]
       },
-      "id": "node/1401567273"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1401567273,
+        "osm_way_id": 96020850,
+        "rue": "Rue d'Anvers",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1401567352",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1196228,
-          49.6057133
+          6.119623,
+          49.605713
         ]
       },
-      "id": "node/1401567352"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1401567352,
+        "osm_way_id": 50015374,
+        "rue": "Rue Marie-Adélaïde",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1401588360",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-19T20:20:48Z",
-        "@version": "5",
-        "@changeset": "127805328",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1678278,
-          49.6099472
+          6.167828,
+          49.609947
         ]
       },
-      "id": "node/1401588360"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1401588360,
+        "osm_way_id": 167098843,
+        "rue": "Rue de la Montagne",
+        "quartier": "Hamm"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1401923690",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "9",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1420924,
-          49.6076216
+          6.142092,
+          49.607622
         ]
       },
-      "id": "node/1401923690"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1401923690,
+        "osm_way_id": 333329842,
+        "rue": "Rue des Genêts",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1401923702",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1419595,
-          49.6077616
+          6.141959,
+          49.607762
         ]
       },
-      "id": "node/1401923702"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1401923702,
+        "osm_way_id": 333329844,
+        "rue": "Boulevard General George S. Patton",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1402297198",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.137628,
-          49.6046574
+          6.132646,
+          49.615845
         ]
       },
-      "id": "node/1402297198"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1412443583,
+        "osm_way_id": 9646686,
+        "rue": "Rue du Pont",
+        "quartier": "Pfaffenthal"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1412443583",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "7",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1326463,
-          49.6158455
+          6.107004,
+          49.589085
         ]
       },
-      "id": "node/1412443583"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1445072731,
+        "osm_way_id": 131270115,
+        "rue": "Rue Verte",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1445072799",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1064131,
-          49.5901037
+          6.106413,
+          49.590104
         ]
       },
-      "id": "node/1445072799"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1445072799,
+        "osm_way_id": 27536555,
+        "rue": "Rue Saint-Joseph",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1445072814",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1056951,
-          49.5909639
+          6.105695,
+          49.590964
         ]
       },
-      "id": "node/1445072814"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1445072814,
+        "osm_way_id": 51783648,
+        "rue": "Rue Ausone",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1445687456",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-14T08:58:19Z",
-        "@version": "8",
-        "@changeset": "127512264",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1170944,
-          49.5928574
+          6.117094,
+          49.592857
         ]
       },
-      "id": "node/1445687456"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1445687456,
+        "osm_way_id": 25328902,
+        "rue": "Rue Henri Pensis",
+        "quartier": "Gasperich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1508527249",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "3",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1382383,
-          49.5970729
+          6.138238,
+          49.597073
         ]
       },
-      "id": "node/1508527249"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 1508527249,
+        "osm_way_id": 66022254,
+        "rue": "Rue de Bonnevoie",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1508527253",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "7",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1248814,
-          49.5988916
+          6.124881,
+          49.598892
         ]
       },
-      "id": "node/1508527253"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1508527253,
+        "osm_way_id": 9230263,
+        "rue": "Rue de la Fonderie",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1508527254",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1372054,
-          49.5994804
+          6.137205,
+          49.59948
         ]
       },
-      "id": "node/1508527254"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1508527254,
+        "osm_way_id": 9238904,
+        "rue": "Rue Antoine Godart",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1508527255",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1373947,
-          49.5995313
+          6.137395,
+          49.599531
         ]
       },
-      "id": "node/1508527255"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1508527255,
+        "osm_way_id": 9397836,
+        "rue": "Rue des Romains",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1508527299",
-        "crossing": "traffic_signals",
-        "crossing:island": "yes",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2023-03-10T23:12:52Z",
-        "@version": "11",
-        "@changeset": "133536516",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.137047,
-          49.6019931
+          49.601993
         ]
       },
-      "id": "node/1508527299"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1508527299,
+        "osm_way_id": 171784304,
+        "rue": "Rue du Verger",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1510221981",
-        "check_date:crossing": "2021-02-27",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.0957904,
-          49.6022528
+          6.09579,
+          49.602253
         ]
       },
-      "id": "node/1510221981"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1510221981,
+        "osm_way_id": 32521005,
+        "rue": "Rue de Virton",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1511944343",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1247213,
-          49.5995465
+          6.124721,
+          49.599547
         ]
       },
-      "id": "node/1511944343"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1511944343,
+        "osm_way_id": 9230263,
+        "rue": "Rue de la Fonderie",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1511944366",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2023-03-08T19:36:07Z",
-        "@version": "5",
-        "@changeset": "133453446",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1280556,
-          49.6003157
+          6.128056,
+          49.600316
         ]
       },
-      "id": "node/1511944366"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1511944366,
+        "osm_way_id": 23269907,
+        "rue": "Rue Adolphe Fischer",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1511944373",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1279957,
-          49.6004633
+          6.127996,
+          49.600463
         ]
       },
-      "id": "node/1511944373"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1511944373,
+        "osm_way_id": 23269919,
+        "rue": "Rue Adolphe Fischer",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1511944374",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-29T13:40:27Z",
-        "@version": "4",
-        "@changeset": "125522642",
-        "@user": "Ekeefoof",
-        "@uid": "16076489"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1241802,
-          49.6004771
+          6.12418,
+          49.600477
         ]
       },
-      "id": "node/1511944374"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1511944374,
+        "osm_way_id": 22874264,
+        "rue": "Rue Jean-Pierre David Heldenstein",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1511944427",
-        "crossing": "traffic_signals",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1205812,
-          49.6037008
+          6.120581,
+          49.603701
         ]
       },
-      "id": "node/1511944427"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1511944427,
+        "osm_way_id": 50015390,
+        "rue": "Rue Jean Jaurès",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1512029069",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.107107,
-          49.6191843
+          49.619184
         ]
       },
-      "id": "node/1512029069"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1512029069,
+        "osm_way_id": 23283903,
+        "rue": "Val Fleuri",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1517844090",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1180649,
-          49.6068315
+          6.118065,
+          49.606831
         ]
       },
-      "id": "node/1517844090"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1517844090,
+        "osm_way_id": 373573551,
+        "rue": "Rue Albert 1er",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1517844093",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1161336,
-          49.6069691
+          6.116134,
+          49.606969
         ]
       },
-      "id": "node/1517844093"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1517844093,
+        "osm_way_id": 23627825,
+        "rue": "Rue de Vianden",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1587862007",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "7",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1221401,
+          6.12214,
           49.615033
         ]
       },
-      "id": "node/1587862007"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1587862007,
+        "osm_way_id": 9768485,
+        "rue": "Rue Nicolas Adames",
+        "quartier": "Ville Haute"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1591487456",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-08-11T03:35:14Z",
-        "@version": "6",
-        "@changeset": "124755172",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.132818,
-          49.5982425
+          49.598242
         ]
       },
-      "id": "node/1591487456"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1591487456,
+        "osm_way_id": 749561229,
+        "rue": "Unnamed",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1613817415",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1040343,
-          49.6060494
+          6.104034,
+          49.606049
         ]
       },
-      "id": "node/1613817415"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1613817415,
+        "osm_way_id": 123469601,
+        "rue": "Rue Jean Schoetter",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1613817423",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1184353,
-          49.6107446
+          6.118435,
+          49.610745
         ]
       },
-      "id": "node/1613817423"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1613817423,
+        "osm_way_id": 24234095,
+        "rue": "Rue Jean Bertholet",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1626348897",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1362049,
-          49.6255738
+          6.136205,
+          49.625574
         ]
       },
-      "id": "node/1626348897"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1626348897,
+        "osm_way_id": 25634928,
+        "rue": "Rue des Forains",
+        "quartier": "Weimerskirch"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1626348906",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "3",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1373674,
-          49.6255809
+          6.137367,
+          49.625581
         ]
       },
-      "id": "node/1626348906"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 1626348906,
+        "osm_way_id": 98005514,
+        "rue": "Rue de Saint-Vith",
+        "quartier": "Weimerskirch"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1626349055",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "2",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1442035,
-          49.6278991
+          6.144203,
+          49.627899
         ]
       },
-      "id": "node/1626349055"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 1626349055,
+        "osm_way_id": 482114912,
+        "rue": "Rue de Kirchberg",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1626349079",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "2",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1403487,
-          49.6280842
+          6.140349,
+          49.628084
         ]
       },
-      "id": "node/1626349079"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 1626349079,
+        "osm_way_id": 227909768,
+        "rue": "Fond Saint-Martin",
+        "quartier": "Weimerskirch"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1626688930",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1270411,
+          6.127041,
           49.626965
         ]
       },
-      "id": "node/1626688930"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1626688930,
+        "osm_way_id": 50044493,
+        "rue": "Rue Charlotte Engels",
+        "quartier": "Eich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1626688965",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T19:36:07Z",
-        "@version": "2",
-        "@changeset": "133453446",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1224754,
-          49.6276228
+          6.122475,
+          49.627623
         ]
       },
-      "id": "node/1626688965"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1626688965,
+        "osm_way_id": 149720609,
+        "rue": "Rue de Mühlenbach",
+        "quartier": "Muhlenbach"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1630169776",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-12T14:48:52Z",
-        "@version": "4",
-        "@changeset": "127420702",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1123557,
-          49.6143585
+          6.112356,
+          49.614359
         ]
       },
-      "id": "node/1630169776"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1630169776,
+        "osm_way_id": 25329747,
+        "rue": "Rue Nicolas Simmer",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1630169791",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-13T20:11:06Z",
-        "@version": "7",
-        "@changeset": "127489212",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1194313,
-          49.6179801
+          6.119431,
+          49.61798
         ]
       },
-      "id": "node/1630169791"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1630169791,
+        "osm_way_id": 9653377,
+        "rue": "Rue Henri VII",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1630169827",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1171749,
-          49.6192265
+          6.117175,
+          49.619227
         ]
       },
-      "id": "node/1630169827"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1630169827,
+        "osm_way_id": 525318509,
+        "rue": "Rue Ermesinde",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1630169847",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1161504,
-          49.6195283
+          6.11615,
+          49.619528
         ]
       },
-      "id": "node/1630169847"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1630169847,
+        "osm_way_id": 25405224,
+        "rue": "Rue François Faber",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1630169881",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1158726,
-          49.6199113
+          6.115873,
+          49.619911
         ]
       },
-      "id": "node/1630169881"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1630169881,
+        "osm_way_id": 25381398,
+        "rue": "Rue Nicolas Steffen-Pierret",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1630169882",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1149393,
-          49.6204168
+          6.114939,
+          49.620417
         ]
       },
-      "id": "node/1630169882"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1630169882,
+        "osm_way_id": 5018148,
+        "rue": "Rue Evrard Ketten",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1630170156",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1329838,
-          49.6306901
+          6.132984,
+          49.63069
         ]
       },
-      "id": "node/1630170156"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1630170156,
+        "osm_way_id": 26452488,
+        "rue": "Montée Pilate",
+        "quartier": "Eich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1630456327",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.134789,
-          49.6441764
+          49.644176
         ]
       },
-      "id": "node/1630456327"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1630456327,
+        "osm_way_id": 29051386,
+        "rue": "Rue Cyprien Merjai",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1630456336",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1344428,
-          49.6441619
+          6.134443,
+          49.644162
         ]
       },
-      "id": "node/1630456336"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1630456336,
+        "osm_way_id": 25192378,
+        "rue": "Rue Cyprien Merjai",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1649303405",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1248959,
-          49.6049316
+          6.124896,
+          49.604932
         ]
       },
-      "id": "node/1649303405"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1649303405,
+        "osm_way_id": 126475749,
+        "rue": "Rue Michel Welter",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1700390841",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.097371,
-          49.5819988
+          49.581999
         ]
       },
-      "id": "node/1700390841"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1700390841,
+        "osm_way_id": 179748691,
+        "rue": "Kohlenberg",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716137892",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1291749,
-          49.6003741
+          6.129175,
+          49.600374
         ]
       },
-      "id": "node/1716137892"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1716137892,
+        "osm_way_id": 30985139,
+        "rue": "Rue du Commerce",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716137902",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1291875,
-          49.6005795
+          6.129187,
+          49.60058
         ]
       },
-      "id": "node/1716137902"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1716137902,
+        "osm_way_id": 30985139,
+        "rue": "Rue du Commerce",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716137903",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1287982,
-          49.6006446
+          6.128798,
+          49.600645
         ]
       },
-      "id": "node/1716137903"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1716137903,
+        "osm_way_id": 22955158,
+        "rue": "Rue Mil Neuf Cents",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716137935",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-10-14T06:02:54Z",
-        "@version": "5",
-        "@changeset": "127504155",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1305794,
-          49.6007947
+          6.130579,
+          49.600795
         ]
       },
-      "id": "node/1716137935"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1716137935,
+        "osm_way_id": 31001103,
+        "rue": "Rue Joseph Junck",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716137942",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1305961,
-          49.6010327
+          6.130596,
+          49.601033
         ]
       },
-      "id": "node/1716137942"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1716137942,
+        "osm_way_id": 30985324,
+        "rue": "Rue de Strasbourg",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716406250",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1609793,
-          49.6154501
+          6.160979,
+          49.61545
         ]
       },
-      "id": "node/1716406250"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1716406250,
+        "osm_way_id": 5123410,
+        "rue": "Rue Père Dominique Pire",
+        "quartier": "Cents"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716406572",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1763987,
-          49.6194207
+          6.176399,
+          49.619421
         ]
       },
-      "id": "node/1716406572"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1716406572,
+        "osm_way_id": 52096614,
+        "rue": "Rue Camille Polfer",
+        "quartier": "Cents"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716482751",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.148647,
-          49.6039221
+          49.603922
         ]
       },
-      "id": "node/1716482751"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1716482751,
+        "osm_way_id": 723726943,
+        "rue": "Rue de Montmédy",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716482804",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T19:10:15Z",
-        "@version": "3",
-        "@changeset": "133452683",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1550196,
-          49.6068625
+          6.15502,
+          49.606862
         ]
       },
-      "id": "node/1716482804"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1716482804,
+        "osm_way_id": 8899943,
+        "rue": "Rue Mihály Munkácsy",
+        "quartier": "Hamm"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716482827",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T19:10:15Z",
-        "@version": "2",
-        "@changeset": "133452683",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1570202,
+          6.15702,
           49.607539
         ]
       },
-      "id": "node/1716482827"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1716482827,
+        "osm_way_id": 8899942,
+        "rue": "Rue Thomas Byrne",
+        "quartier": "Hamm"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716482839",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T19:10:15Z",
-        "@version": "4",
-        "@changeset": "133452683",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1578533,
-          49.6078226
+          6.157853,
+          49.607823
         ]
       },
-      "id": "node/1716482839"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1716482839,
+        "osm_way_id": 23748521,
+        "rue": "Rue Eugène Wolff",
+        "quartier": "Hamm"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716482842",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1490577,
-          49.6080109
+          6.149058,
+          49.608011
         ]
       },
-      "id": "node/1716482842"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1716482842,
+        "osm_way_id": 35283409,
+        "rue": "Rue du Fort Dumoulin",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716493668",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-13T12:13:47Z",
-        "@version": "6",
-        "@changeset": "124850905",
-        "@user": "danwax",
-        "@uid": "3242890"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1316552,
-          49.6049527
+          6.161416,
+          49.609151
         ]
       },
-      "id": "node/1716493668"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1716482874,
+        "osm_way_id": 8907522,
+        "rue": "Rue de Hamm",
+        "quartier": "Hamm"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1716620096",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-11-26T19:06:03Z",
-        "@version": "8",
-        "@changeset": "129412607",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1397449,
-          49.5928098
+          6.131655,
+          49.604953
         ]
       },
-      "id": "node/1716620096"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1716493668,
+        "osm_way_id": 31001222,
+        "rue": "Rue Dicks",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1718417148",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1146822,
-          49.6172592
+          6.139745,
+          49.59281
         ]
       },
-      "id": "node/1718417148"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1716620096,
+        "osm_way_id": 9238912,
+        "rue": "Rue de Wiltz",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1718417165",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1083575,
-          49.6191616
+          6.114682,
+          49.617259
         ]
       },
-      "id": "node/1718417165"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1718417148,
+        "osm_way_id": 46266759,
+        "rue": "Rue Henri Tudor",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1718530049",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1244827,
-          49.6268858
+          6.108358,
+          49.619162
         ]
       },
-      "id": "node/1718530049"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1718417165,
+        "osm_way_id": 23581958,
+        "rue": "Rue Jean-François Boch",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1719185396",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-11-24T14:58:26Z",
-        "@version": "6",
-        "@changeset": "129330141",
-        "@user": "marcinx1",
-        "@uid": "12752863"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1315884,
-          49.6207886
+          6.124483,
+          49.626886
         ]
       },
-      "id": "node/1719185396"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1718530049,
+        "osm_way_id": 107435897,
+        "rue": "Rue Eecherschmelz",
+        "quartier": "Eich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1739420330",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T06:26:13Z",
-        "@version": "4",
-        "@changeset": "117664494",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1314923,
-          49.6055408
+          6.131588,
+          49.620789
         ]
       },
-      "id": "node/1739420330"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1719185396,
+        "osm_way_id": 755543182,
+        "rue": "Rue Laurent Menager",
+        "quartier": "Pfaffenthal"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1762553201",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "2",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1059428,
-          49.6209249
+          6.131492,
+          49.605541
         ]
       },
-      "id": "node/1762553201"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 1739420330,
+        "osm_way_id": 50786524,
+        "rue": "Rue Mathias Hardt",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1769174772",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-18T20:11:02Z",
-        "@version": "8",
-        "@changeset": "127746072",
-        "@user": "EUMapper",
-        "@uid": "11746909"
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.105943,
+          49.620925
+        ]
       },
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 1762553201,
+        "osm_way_id": 30326131,
+        "rue": "Montée Thommes",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.126756,
-          49.6068093
+          49.606809
         ]
       },
-      "id": "node/1769174772"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1769174772,
+        "osm_way_id": 126475760,
+        "rue": "Rue Sainte-Zithe",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1772736976",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T03:09:23Z",
-        "@version": "4",
-        "@changeset": "117660631",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1264462,
-          49.6202061
+          6.126446,
+          49.620206
         ]
       },
-      "id": "node/1772736976"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 1772736976,
+        "osm_way_id": 49916149,
+        "rue": "Ancienne Côte d'Eich",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1781357016",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.142593,
-          49.6145143
+          49.614514
         ]
       },
-      "id": "node/1781357016"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1781357016,
+        "osm_way_id": 48994116,
+        "rue": "Place Sainte-Cunégonde",
+        "quartier": "Clausen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1781390988",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-09-09T08:38:36Z",
-        "@version": "5",
-        "@changeset": "125971364",
-        "@user": "danwax",
-        "@uid": "3242890"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1383217,
-          49.5941347
+          6.138322,
+          49.594135
         ]
       },
-      "id": "node/1781390988"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1781390988,
+        "osm_way_id": 9238909,
+        "rue": "Rue de l'Hippodrome",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1781391008",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1402356,
-          49.5973371
+          6.140236,
+          49.597337
         ]
       },
-      "id": "node/1781391008"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1781391008,
+        "osm_way_id": 50009187,
+        "rue": "Rue Jean-Baptiste Gellé",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1781391053",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2023-03-08T19:10:15Z",
-        "@version": "9",
-        "@changeset": "133452683",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1369723,
-          49.6037456
+          6.136972,
+          49.603746
         ]
       },
-      "id": "node/1781391053"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1781391053,
+        "osm_way_id": 50010692,
+        "rue": "Rue des Trévires",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1781391057",
-        "bicycle": "yes",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "7",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1347832,
-          49.6047505
+          6.134783,
+          49.604751
         ]
       },
-      "id": "node/1781391057"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1781391057,
+        "osm_way_id": 353430573,
+        "rue": "Rue du Fort Wallis",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1783876424",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-10-14T06:02:54Z",
-        "@version": "8",
-        "@changeset": "127504155",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1324311,
-          49.5988783
+          6.132431,
+          49.598878
         ]
       },
-      "id": "node/1783876424"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1783876424,
+        "osm_way_id": 23625515,
+        "rue": "Rue du Commerce",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1783876478",
-        "button_operated": "yes",
-        "crossing": "traffic_signals",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "traffic_signals:sound": "yes",
-        "@timestamp": "2023-03-08T19:48:16Z",
-        "@version": "9",
-        "@changeset": "133453802",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1292526,
-          49.6059864
+          6.129253,
+          49.605986
         ]
       },
-      "id": "node/1783876478"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1783876478,
+        "osm_way_id": 23627639,
+        "rue": "Rue Schiller",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1783876508",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "9",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1283714,
-          49.6064773
+          6.128371,
+          49.606477
         ]
       },
-      "id": "node/1783876508"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1783876508,
+        "osm_way_id": 126475750,
+        "rue": "Rue Goethe",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1783876525",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-18T20:11:02Z",
-        "@version": "13",
-        "@changeset": "127746072",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.128728,
-          49.6065798
+          49.60658
         ]
       },
-      "id": "node/1783876525"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1783876525,
+        "osm_way_id": 167447472,
+        "rue": "Rue Goethe",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1783982245",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T19:36:07Z",
-        "@version": "6",
-        "@changeset": "133453446",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1249343,
-          49.5986509
+          6.124934,
+          49.598651
         ]
       },
-      "id": "node/1783982245"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1783982245,
+        "osm_way_id": 25329131,
+        "rue": "Rue de la Fonderie",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1786761136",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.124592,
-          49.6201327
+          49.620133
         ]
       },
-      "id": "node/1786761136"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1786761136,
+        "osm_way_id": 126342670,
+        "rue": "Rue Guillaume Schneider",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1786761158",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "8",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1291566,
-          49.6227703
+          6.129157,
+          49.62277
         ]
       },
-      "id": "node/1786761158"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1786761158,
+        "osm_way_id": 1131772024,
+        "rue": "Rue Belle-Vue",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1793462454",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "12",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1350766,
-          49.6027169
+          6.135077,
+          49.602717
         ]
       },
-      "id": "node/1793462454"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1793462454,
+        "osm_way_id": 351194531,
+        "rue": "Rue du Fort Neipperg",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1793462467",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1351665,
-          49.6028941
+          6.135167,
+          49.602894
         ]
       },
-      "id": "node/1793462467"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1793462467,
+        "osm_way_id": 168035160,
+        "rue": "Rue du Fort Neipperg",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1796468560",
-        "button_operated": "yes",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "traffic_signals:sound": "no",
-        "traffic_signals:vibration": "no",
-        "@timestamp": "2022-09-19T12:01:37Z",
-        "@version": "11",
-        "@changeset": "126368820",
-        "@user": "SHARCRASH",
-        "@uid": "1808015"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1149093,
-          49.6072067
+          6.114909,
+          49.607207
         ]
       },
-      "id": "node/1796468560"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1796468560,
+        "osm_way_id": 373573546,
+        "rue": "Rue de Bragance",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1801023446",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1428717,
-          49.6144205
+          6.142872,
+          49.614421
         ]
       },
-      "id": "node/1801023446"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1801023446,
+        "osm_way_id": 48994116,
+        "rue": "Place Sainte-Cunégonde",
+        "quartier": "Clausen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1802924599",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1239078,
-          49.6206768
+          6.123908,
+          49.620677
         ]
       },
-      "id": "node/1802924599"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1802924599,
+        "osm_way_id": 126342680,
+        "rue": "Rue Henri VII",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1802924612",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-16T07:50:56Z",
-        "@version": "6",
-        "@changeset": "127603050",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.123855,
-          49.6212718
+          49.621272
         ]
       },
-      "id": "node/1802924612"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1802924612,
+        "osm_way_id": 49916033,
+        "rue": "Rue Lamartine",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1802924616",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1229155,
-          49.6224453
+          6.122916,
+          49.622445
         ]
       },
-      "id": "node/1802924616"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1802924616,
+        "osm_way_id": 83379410,
+        "rue": "Rue Ermesinde",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1803351609",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-16T07:50:56Z",
-        "@version": "9",
-        "@changeset": "127603050",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.122204,
-          49.6239066
+          49.623907
         ]
       },
-      "id": "node/1803351609"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1803351609,
+        "osm_way_id": 9653606,
+        "rue": "Rue Frantz Seimetz",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1803351610",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1225257,
-          49.6239345
+          6.122526,
+          49.623934
         ]
       },
-      "id": "node/1803351610"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1803351610,
+        "osm_way_id": 664415707,
+        "rue": "Rue Jean-Georges Willmar",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1803351613",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-10-20T20:39:22Z",
-        "@version": "3",
-        "@changeset": "127854765",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1219811,
-          49.6245929
+          6.121981,
+          49.624593
         ]
       },
-      "id": "node/1803351613"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1803351613,
+        "osm_way_id": 49917304,
+        "rue": "Boulevard John J. Pershing",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1803351614",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-20T20:39:22Z",
-        "@version": "3",
-        "@changeset": "127854765",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1222703,
-          49.6245893
+          6.12227,
+          49.624589
         ]
       },
-      "id": "node/1803351614"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1803351614,
+        "osm_way_id": 49917301,
+        "rue": "Boulevard Docteur Ernest Feltgen",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1813875062",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1697466,
-          49.6294208
+          6.169747,
+          49.629421
         ]
       },
-      "id": "node/1813875062"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1813875062,
+        "osm_way_id": 20862673,
+        "rue": "Rue des Carrières",
+        "quartier": "Neudorf / Weimershof"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1819016542",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-20T20:39:22Z",
-        "@version": "8",
-        "@changeset": "127854765",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1199779,
-          49.6018014
+          6.119978,
+          49.601801
         ]
       },
-      "id": "node/1819016542"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1819016542,
+        "osm_way_id": 23627799,
+        "rue": "Rue Nicolas van Werveke",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1835149404",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1061347,
-          49.6154558
+          6.106135,
+          49.615456
         ]
       },
-      "id": "node/1835149404"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1835149404,
+        "osm_way_id": 23283897,
+        "rue": "Rue Nicolas Petit",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1835149406",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1007513,
-          49.6162527
+          6.100751,
+          49.616253
         ]
       },
-      "id": "node/1835149406"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1835149406,
+        "osm_way_id": 137892083,
+        "rue": "Val Fleuri",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1835509850",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1357955,
-          49.6286129
+          6.135796,
+          49.628613
         ]
       },
-      "id": "node/1835509850"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1835509850,
+        "osm_way_id": 28959165,
+        "rue": "Rue Schetzel",
+        "quartier": "Weimerskirch"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1835509851",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2023-03-07T20:45:14Z",
-        "@version": "4",
-        "@changeset": "133418145",
-        "@user": "Riccardo Stagni",
-        "@uid": "67621"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1355248,
-          49.6287207
+          6.135525,
+          49.628721
         ]
       },
-      "id": "node/1835509851"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1835509851,
+        "osm_way_id": 82886401,
+        "rue": "Rue des Sources",
+        "quartier": "Weimerskirch"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1845423578",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.115029,
-          49.6074204
+          49.60742
         ]
       },
-      "id": "node/1845423578"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1845423578,
+        "osm_way_id": 373573545,
+        "rue": "Rue d'Orange",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1846794898",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-14T06:02:54Z",
-        "@version": "9",
-        "@changeset": "127504155",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1331867,
-          49.6002421
+          6.133187,
+          49.600242
         ]
       },
-      "id": "node/1846794898"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1846794898,
+        "osm_way_id": 31001103,
+        "rue": "Rue Joseph Junck",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1846794902",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "10",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1325846,
-          49.6015236
+          6.132585,
+          49.601524
         ]
       },
-      "id": "node/1846794902"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1846794902,
+        "osm_way_id": 30985324,
+        "rue": "Rue de Strasbourg",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1846794903",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "traffic_signals:direction": "forward",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "8",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1317829,
+          6.131783,
           49.602487
         ]
       },
-      "id": "node/1846794903"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1846794903,
+        "osm_way_id": 1168540354,
+        "rue": "Rue Glesener",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1846794905",
-        "crossing": "traffic_signals",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-13T20:11:06Z",
-        "@version": "8",
-        "@changeset": "127489212",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1301588,
-          49.6043347
+          6.130159,
+          49.604335
         ]
       },
-      "id": "node/1846794905"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1846794905,
+        "osm_way_id": 24789413,
+        "rue": "Rue Dicks",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1846794906",
-        "button_operated": "yes",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "traffic_signals:sound": "yes",
-        "@timestamp": "2022-10-18T20:11:02Z",
-        "@version": "11",
-        "@changeset": "127746072",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1305214,
-          49.6044617
+          6.130521,
+          49.604462
         ]
       },
-      "id": "node/1846794906"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 1846794906,
+        "osm_way_id": 50760998,
+        "rue": "Rue Dicks",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1856969478",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1375856,
+          6.137586,
           49.613629
         ]
       },
-      "id": "node/1856969478"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1856969478,
+        "osm_way_id": 26621044,
+        "rue": "Rue du Fort Olisy",
+        "quartier": "Pfaffenthal"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1874627814",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2018-04-06T10:48:56Z",
-        "@version": "3",
-        "@changeset": "57861488",
-        "@user": "SHARCRASH",
-        "@uid": "1808015"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1294967,
+          6.129497,
           49.616316
         ]
       },
-      "id": "node/1874627814"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 1874627814,
+        "osm_way_id": 755543190,
+        "rue": "Boulevard Paul Eyschen",
+        "quartier": "Ville Haute"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/1993983590",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "8",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1775826,
-          49.6318061
+          6.177583,
+          49.631806
         ]
       },
-      "id": "node/1993983590"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 1993983590,
+        "osm_way_id": 50086364,
+        "rue": "Rue Joseph Leydenbach",
+        "quartier": "Neudorf / Weimershof"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2007461003",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T03:09:23Z",
-        "@version": "3",
-        "@changeset": "117660631",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1400736,
-          49.5982201
+          6.140074,
+          49.59822
         ]
       },
-      "id": "node/2007461003"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 2007461003,
+        "osm_way_id": 9245288,
+        "rue": "Rue Irmine",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2019936762",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-10-29T08:54:35Z",
-        "@version": "9",
-        "@changeset": "128201998",
-        "@user": "Matheus Barboza",
-        "@uid": "3193036"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1293729,
-          49.6208568
+          6.129373,
+          49.620857
         ]
       },
-      "id": "node/2019936762"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 2019936762,
+        "osm_way_id": 49916149,
+        "rue": "Ancienne Côte d'Eich",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2285138072",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-03-10T23:46:10Z",
-        "@version": "4",
-        "@changeset": "133536942",
-        "@user": "Riccardo Stagni",
-        "@uid": "67621"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1294077,
-          49.6439021
+          6.129408,
+          49.643902
         ]
       },
-      "id": "node/2285138072"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 2285138072,
+        "osm_way_id": 25192376,
+        "rue": "Rue Cyprien Merjai",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2285138091",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1283836,
-          49.6453579
+          6.128384,
+          49.645358
         ]
       },
-      "id": "node/2285138091"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 2285138091,
+        "osm_way_id": 26140871,
+        "rue": "Rue de Halanzy",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2288153343",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T03:09:23Z",
-        "@version": "3",
-        "@changeset": "117660631",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1263611,
-          49.6200252
+          6.126361,
+          49.620025
         ]
       },
-      "id": "node/2288153343"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 2288153343,
+        "osm_way_id": 49916150,
+        "rue": "Boulevard Paul Eyschen",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2288153843",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "4",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1417946,
-          49.6343911
+          6.141795,
+          49.634391
         ]
       },
-      "id": "node/2288153843"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 2288153843,
+        "osm_way_id": 50044764,
+        "rue": "Sentier de la Scierie",
+        "quartier": "Dommeldange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2345071623",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T19:36:07Z",
-        "@version": "4",
-        "@changeset": "133453446",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1496688,
+          6.149669,
           49.598754
         ]
       },
-      "id": "node/2345071623"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 2345071623,
+        "osm_way_id": 192107329,
+        "rue": "Rue Anatole France",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2345071626",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-01-11T17:57:23Z",
-        "@version": "3",
-        "@changeset": "131156487",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1494419,
-          49.5988368
+          6.149442,
+          49.598837
         ]
       },
-      "id": "node/2345071626"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 2345071626,
+        "osm_way_id": 9238945,
+        "rue": "Rue Jean Chalop",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2347242827",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-10-17T11:21:49Z",
-        "@version": "7",
-        "@changeset": "127666334",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.131085,
-          49.6234528
+          49.623453
         ]
       },
-      "id": "node/2347242827"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 2347242827,
+        "osm_way_id": 127664230,
+        "rue": "Rue Michel Hülsemann",
+        "quartier": "Pfaffenthal"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2347242828",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-10-17T11:21:49Z",
-        "@version": "7",
-        "@changeset": "127666334",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1312293,
-          49.6230459
+          6.131229,
+          49.623046
         ]
       },
-      "id": "node/2347242828"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 2347242828,
+        "osm_way_id": 127664230,
+        "rue": "Rue Michel Hülsemann",
+        "quartier": "Pfaffenthal"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2361065052",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-14T08:58:19Z",
-        "@version": "6",
-        "@changeset": "127512264",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1180375,
-          49.5982994
+          6.118037,
+          49.598299
         ]
       },
-      "id": "node/2361065052"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 2361065052,
+        "osm_way_id": 227441604,
+        "rue": "Rue Baudouin",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2794621606",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "4",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1243985,
-          49.6048125
+          6.124398,
+          49.604813
         ]
       },
-      "id": "node/2794621606"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 2794621606,
+        "osm_way_id": 742504050,
+        "rue": "Rue Goethe",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2796340346",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "4",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1392395,
-          49.6139423
+          6.13924,
+          49.613942
         ]
       },
-      "id": "node/2796340346"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 2796340346,
+        "osm_way_id": 274961870,
+        "rue": "Rue des Dominicains",
+        "quartier": "Clausen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2851771472",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-04-04T17:35:19Z",
-        "@version": "4",
-        "@changeset": "119310910",
-        "@user": "Tobias1996",
-        "@uid": "2907091"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1336678,
+          6.133668,
           49.604808
         ]
       },
-      "id": "node/2851771472"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 2851771472,
+        "osm_way_id": 28970278,
+        "rue": "Montée de la Pétrusse",
+        "quartier": "Grund"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2894509163",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2023-01-11T17:57:23Z",
-        "@version": "5",
-        "@changeset": "131156487",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1416824,
-          49.5975427
+          6.141682,
+          49.597543
         ]
       },
-      "id": "node/2894509163"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 2894509163,
+        "osm_way_id": 66022237,
+        "rue": "Place du Parc",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2894509164",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.14393,
-          49.5977035
+          49.597704
         ]
       },
-      "id": "node/2894509164"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 2894509164,
+        "osm_way_id": 27755061,
+        "rue": "Rue des Prés",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/2894509167",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1447502,
-          49.5980259
+          6.14475,
+          49.598026
         ]
       },
-      "id": "node/2894509167"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 2894509167,
+        "osm_way_id": 9238943,
+        "rue": "Rue Émile Duployé",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3205936470",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "10",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1325661,
-          49.5981733
+          6.132566,
+          49.598173
         ]
       },
-      "id": "node/3205936470"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 3205936470,
+        "osm_way_id": 1050476020,
+        "rue": "Unnamed",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3205936481",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-11T03:35:14Z",
-        "@version": "5",
-        "@changeset": "124755172",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1330682,
-          49.5986989
+          6.133068,
+          49.598699
         ]
       },
-      "id": "node/3205936481"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 3205936481,
+        "osm_way_id": 777449343,
+        "rue": "Unnamed",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3207406058",
-        "crossing": "traffic_signals",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "8",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1299984,
-          49.6050785
+          6.129998,
+          49.605078
         ]
       },
-      "id": "node/3207406058"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 3207406058,
+        "osm_way_id": 23627642,
+        "rue": "Rue Heinrich Heine",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3344887571",
-        "bicycle": "yes",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-10T23:12:52Z",
-        "@version": "9",
-        "@changeset": "133536516",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.129614,
-          49.6096689
+          49.609669
         ]
       },
-      "id": "node/3344887571"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3344887571,
+        "osm_way_id": 333426960,
+        "rue": "Rue Chimay",
+        "quartier": "Ville Haute"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3344932259",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1285606,
-          49.6455886
+          6.128561,
+          49.645589
         ]
       },
-      "id": "node/3344932259"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 3344932259,
+        "osm_way_id": 219396492,
+        "rue": "Rue de Bastogne",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3391323605",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "3",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1340283,
-          49.6469818
+          6.134028,
+          49.646982
         ]
       },
-      "id": "node/3391323605"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3391323605,
+        "osm_way_id": 971401159,
+        "rue": "Rue de Bastogne",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3400421009",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-11-26T19:06:03Z",
-        "@version": "5",
-        "@changeset": "129412607",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1399894,
-          49.5919555
+          6.139989,
+          49.591955
         ]
       },
-      "id": "node/3400421009"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 3400421009,
+        "osm_way_id": 9238918,
+        "rue": "Rue de Houffalize",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3400421030",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2021-12-11T18:06:59Z",
-        "@version": "4",
-        "@changeset": "114826449",
-        "@user": "SHARCRASH",
-        "@uid": "1808015"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1390946,
-          49.5934082
+          6.139095,
+          49.593408
         ]
       },
-      "id": "node/3400421030"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3400421030,
+        "osm_way_id": 9238915,
+        "rue": "Rue Saint-Willibrord",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3400421038",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-10-17T15:09:50Z",
-        "@version": "6",
-        "@changeset": "127679029",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1400887,
-          49.5923217
+          6.140089,
+          49.592322
         ]
       },
-      "id": "node/3400421038"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3400421038,
+        "osm_way_id": 9238913,
+        "rue": "Rue de Clervaux",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3404501001",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "3",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1424001,
-          49.6077835
+          6.1424,
+          49.607783
         ]
       },
-      "id": "node/3404501001"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3404501001,
+        "osm_way_id": 1031294536,
+        "rue": "Boulevard General George S. Patton",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3405340186",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T03:09:23Z",
-        "@version": "4",
-        "@changeset": "117660631",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.145765,
-          49.6084572
+          49.608457
         ]
       },
-      "id": "node/3405340186"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3405340186,
+        "osm_way_id": 126470835,
+        "rue": "Boulevard General George S. Patton",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3405340187",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-10-19T20:20:48Z",
-        "@version": "6",
-        "@changeset": "127805328",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1453375,
-          49.6084776
+          6.145338,
+          49.608478
         ]
       },
-      "id": "node/3405340187"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3405340187,
+        "osm_way_id": 9397869,
+        "rue": "Boulevard General George S. Patton",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3405340410",
-        "button_operated": "yes",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "traffic_signals:sound": "yes",
-        "traffic_signals:vibration": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "8",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1330721,
-          49.6036889
+          6.133072,
+          49.603689
         ]
       },
-      "id": "node/3405340410"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 3405340410,
+        "osm_way_id": 24789362,
+        "rue": "Rue du Fort Bourbon",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3405370529",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "traffic_calming": "table",
-        "@timestamp": "2022-04-04T17:11:40Z",
-        "@version": "9",
-        "@changeset": "119310910",
-        "@user": "Tobias1996",
-        "@uid": "2907091"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1333244,
-          49.6013324
+          6.133324,
+          49.601332
         ]
       },
-      "id": "node/3405370529"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3405370529,
+        "osm_way_id": 225172112,
+        "rue": "Rue du Fort Neipperg",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3405395614",
-        "crossing": "unmarked",
-        "crossing:island": "no",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-04-04T17:47:06Z",
-        "@version": "5",
-        "@changeset": "119310910",
-        "@user": "Tobias1996",
-        "@uid": "2907091"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1319645,
-          49.6087543
+          6.131964,
+          49.608754
         ]
       },
-      "id": "node/3405395614"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3405395614,
+        "osm_way_id": 55544126,
+        "rue": "Rue de la Congrégation",
+        "quartier": "Ville Haute"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3444550812",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T04:38:45Z",
-        "@version": "5",
-        "@changeset": "117662096",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1245121,
-          49.6161881
+          6.124512,
+          49.616188
         ]
       },
-      "id": "node/3444550812"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3444550812,
+        "osm_way_id": 9044737,
+        "rue": "Rue Nicolas Adames",
+        "quartier": "Ville Haute"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3448320297",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2023-03-08T18:15:02Z",
-        "@version": "8",
-        "@changeset": "133451160",
-        "@user": "Riccardo Stagni",
-        "@uid": "67621"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1333292,
-          49.6127376
+          6.133329,
+          49.612738
         ]
       },
-      "id": "node/3448320297"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 3448320297,
+        "osm_way_id": 1068810820,
+        "rue": "Montée de Pfaffenthal",
+        "quartier": "Pfaffenthal"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3448493926",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-10-14T08:58:19Z",
-        "@version": "9",
-        "@changeset": "127512264",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1209928,
+          6.120993,
           49.614283
         ]
       },
-      "id": "node/3448493926"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 3448493926,
+        "osm_way_id": 9653341,
+        "rue": "Rue de la Chapelle",
+        "quartier": "Ville Haute"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3448544252",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1187384,
-          49.6122728
+          6.118738,
+          49.612273
         ]
       },
-      "id": "node/3448544252"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 3448544252,
+        "osm_way_id": 25553169,
+        "rue": "Rue Jean-Pierre Brasseur",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3457429031",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1193163,
-          49.6000362
+          6.119316,
+          49.600036
         ]
       },
-      "id": "node/3457429031"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 3457429031,
+        "osm_way_id": 610781812,
+        "rue": "Rue de la Vallée",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3457429057",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-20T20:39:22Z",
-        "@version": "9",
-        "@changeset": "127854765",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1196198,
-          49.6011966
+          6.11962,
+          49.601197
         ]
       },
-      "id": "node/3457429057"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 3457429057,
+        "osm_way_id": 85397453,
+        "rue": "Rue Antoine Meyer",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3457429066",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-10-20T20:39:22Z",
-        "@version": "6",
-        "@changeset": "127854765",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1203081,
-          49.6024774
+          6.120308,
+          49.602477
         ]
       },
-      "id": "node/3457429066"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 3457429066,
+        "osm_way_id": 23627796,
+        "rue": "Rue des Girondins",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3457429312",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "2",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1187795,
-          49.5988854
+          6.118779,
+          49.598885
         ]
       },
-      "id": "node/3457429312"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3457429312,
+        "osm_way_id": 52685107,
+        "rue": "Rue de l'Église",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3457429331",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1281814,
-          49.5983174
+          6.128181,
+          49.598317
         ]
       },
-      "id": "node/3457429331"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 3457429331,
+        "osm_way_id": 338800838,
+        "rue": "Rue Joseph Heintz",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3459378427",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "4",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1282213,
-          49.5984689
+          6.128221,
+          49.598469
         ]
       },
-      "id": "node/3459378427"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3459378427,
+        "osm_way_id": 338800835,
+        "rue": "Rue Adolphe Fischer",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3463123998",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.161559,
-          49.6328918
+          49.632892
         ]
       },
-      "id": "node/3463123998"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 3463123998,
+        "osm_way_id": 256250946,
+        "rue": "Rue Simone de Beauvoir",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3471083220",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1649937,
-          49.6371853
+          6.164994,
+          49.637185
         ]
       },
-      "id": "node/3471083220"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 3471083220,
+        "osm_way_id": 151634466,
+        "rue": "Rue Léon Thyes",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3482247805",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T03:09:23Z",
-        "@version": "3",
-        "@changeset": "117660631",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1209874,
+          6.120987,
           49.62895
         ]
       },
-      "id": "node/3482247805"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3482247805,
+        "osm_way_id": 79211276,
+        "rue": "Unnamed",
+        "quartier": "Muhlenbach"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3482247810",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T03:09:23Z",
-        "@version": "4",
-        "@changeset": "117660631",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1278994,
-          49.6269507
+          6.127899,
+          49.626951
         ]
       },
-      "id": "node/3482247810"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3482247810,
+        "osm_way_id": 50044492,
+        "rue": "Rue de la Forge",
+        "quartier": "Eich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3482247822",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2017-07-22T18:02:31Z",
-        "@version": "2",
-        "@changeset": "50486404",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.125048,
-          49.6266269
+          49.626627
         ]
       },
-      "id": "node/3482247822"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3482247822,
+        "osm_way_id": 50044491,
+        "rue": "Rue Victor Ferrant",
+        "quartier": "Eich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3482247836",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T19:36:07Z",
-        "@version": "3",
-        "@changeset": "133453446",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1220825,
-          49.6280057
+          6.122083,
+          49.628006
         ]
       },
-      "id": "node/3482247836"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 3482247836,
+        "osm_way_id": 149720609,
+        "rue": "Rue de Mühlenbach",
+        "quartier": "Muhlenbach"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3482247844",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1208078,
-          49.6288235
+          6.120808,
+          49.628824
         ]
       },
-      "id": "node/3482247844"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 3482247844,
+        "osm_way_id": 107425335,
+        "rue": "Rue Jules Mersch",
+        "quartier": "Muhlenbach"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3508637641",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T04:38:45Z",
-        "@version": "4",
-        "@changeset": "117662096",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.103089,
-          49.6268378
+          49.626838
         ]
       },
-      "id": "node/3508637641"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3508637641,
+        "osm_way_id": 132442664,
+        "rue": "Rue des Sept-Fontaines",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3517351091",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "4",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1082019,
-          49.6190118
+          6.108202,
+          49.619012
         ]
       },
-      "id": "node/3517351091"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3517351091,
+        "osm_way_id": 28959407,
+        "rue": "Knäppchen",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3517353102",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "3",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1109358,
-          49.6180308
+          6.110936,
+          49.618031
         ]
       },
-      "id": "node/3517353102"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3517353102,
+        "osm_way_id": 28959407,
+        "rue": "Knäppchen",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3517353242",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T19:36:07Z",
-        "@version": "3",
-        "@changeset": "133453446",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1071478,
-          49.6193326
+          6.107148,
+          49.619333
         ]
       },
-      "id": "node/3517353242"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3517353242,
+        "osm_way_id": 80057868,
+        "rue": "Place Maurice Pescatore",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3544465960",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.180789,
-          49.6205112
+          49.620511
         ]
       },
-      "id": "node/3544465960"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 3544465960,
+        "osm_way_id": 23595122,
+        "rue": "Rue Pierre Kohner",
+        "quartier": "Cents"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3544465970",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "6",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1780515,
-          49.6197952
+          6.178051,
+          49.619795
         ]
       },
-      "id": "node/3544465970"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 3544465970,
+        "osm_way_id": 27753396,
+        "rue": "Op der Heed",
+        "quartier": "Cents"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3544465992",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "7",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1729693,
-          49.6186207
+          6.172969,
+          49.618621
         ]
       },
-      "id": "node/3544465992"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 3544465992,
+        "osm_way_id": 23595118,
+        "rue": "Allée du Carmel",
+        "quartier": "Cents"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3770143869",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T04:38:45Z",
-        "@version": "2",
-        "@changeset": "117662096",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1186101,
-          49.6093259
+          6.11861,
+          49.609326
         ]
       },
-      "id": "node/3770143869"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3770143869,
+        "osm_way_id": 373573551,
+        "rue": "Rue Albert 1er",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3770143871",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-04-17T05:56:52Z",
-        "@version": "2",
-        "@changeset": "119804579",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1173318,
-          49.6089505
+          6.117332,
+          49.60895
         ]
       },
-      "id": "node/3770143871"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3770143871,
+        "osm_way_id": 23627912,
+        "rue": "Rue de Crécy",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3770143913",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2017-11-27T04:09:14Z",
-        "@version": "2",
-        "@changeset": "54110412",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1129267,
+          6.112927,
           49.60834
         ]
       },
-      "id": "node/3770143913"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3770143913,
+        "osm_way_id": 123159634,
+        "rue": "Rue Abbé Lemire",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3770148331",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-09-19T12:01:37Z",
-        "@version": "3",
-        "@changeset": "126368820",
-        "@user": "SHARCRASH",
-        "@uid": "1808015"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1180182,
-          49.6066359
+          6.118018,
+          49.606636
         ]
       },
-      "id": "node/3770148331"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3770148331,
+        "osm_way_id": 373573549,
+        "rue": "Rue Albert 1er",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3782089422",
-        "crossing": "unmarked",
-        "crossing:island": "no",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-10-17T19:30:56Z",
-        "@version": "6",
-        "@changeset": "127690440",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1100359,
-          49.6075068
+          6.110036,
+          49.607507
         ]
       },
-      "id": "node/3782089422"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3782089422,
+        "osm_way_id": 23283861,
+        "rue": "Rue des Primevères",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3783772935",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T04:38:45Z",
-        "@version": "2",
-        "@changeset": "117662096",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1004007,
-          49.6055748
+          6.100401,
+          49.605575
         ]
       },
-      "id": "node/3783772935"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3783772935,
+        "osm_way_id": 9381990,
+        "rue": "Rue Béatrix de Bourbon",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3783772939",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-10-20T20:39:22Z",
-        "@version": "3",
-        "@changeset": "127854765",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1033782,
-          49.6058656
+          6.103378,
+          49.605866
         ]
       },
-      "id": "node/3783772939"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3783772939,
+        "osm_way_id": 145289224,
+        "rue": "Rue Guillaume de Machault",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3880578503",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T04:38:45Z",
-        "@version": "3",
-        "@changeset": "117662096",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1278085,
-          49.6464347
+          6.127809,
+          49.646435
         ]
       },
-      "id": "node/3880578503"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3880578503,
+        "osm_way_id": 40876506,
+        "rue": "Rue de Neuerburg",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3880845359",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-03-10T23:44:35Z",
-        "@version": "5",
-        "@changeset": "133536942",
-        "@user": "Riccardo Stagni",
-        "@uid": "67621"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1319001,
-          49.6381109
+          6.1319,
+          49.638111
         ]
       },
-      "id": "node/3880845359"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 3880845359,
+        "osm_way_id": 26140841,
+        "rue": "Rue Henri Heymanns",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3880845368",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1329551,
-          49.6365273
+          6.132955,
+          49.636527
         ]
       },
-      "id": "node/3880845368"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 3880845368,
+        "osm_way_id": 26140840,
+        "rue": "Rue de Salm",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3880845460",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T04:38:45Z",
-        "@version": "4",
-        "@changeset": "117662096",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1308503,
-          49.6288124
+          6.13085,
+          49.628812
         ]
       },
-      "id": "node/3880845460"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3880845460,
+        "osm_way_id": 169050040,
+        "rue": "Rue Émile Metz",
+        "quartier": "Eich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/3880845485",
-        "crossing": "unmarked",
-        "crossing:island": "no",
-        "highway": "crossing",
-        "@timestamp": "2023-03-10T23:42:42Z",
-        "@version": "3",
-        "@changeset": "133536942",
-        "@user": "Riccardo Stagni",
-        "@uid": "67621"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1342009,
-          49.6315165
+          6.134201,
+          49.631516
         ]
       },
-      "id": "node/3880845485"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 3880845485,
+        "osm_way_id": 29189010,
+        "rue": "Rue des Grottes",
+        "quartier": "Eich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/4144003502",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-10-16T07:50:56Z",
-        "@version": "6",
-        "@changeset": "127603050",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.113354,
-          49.6215314
+          49.621531
         ]
       },
-      "id": "node/4144003502"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 4144003502,
+        "osm_way_id": 25381392,
+        "rue": "Rue Léandre Lacroix",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/4196740708",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1117939,
-          49.6082623
+          6.111794,
+          49.608262
         ]
       },
-      "id": "node/4196740708"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 4196740708,
+        "osm_way_id": 26336390,
+        "rue": "Rue Bernard Haal",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/4268690981",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "7",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1256471,
-          49.6184682
+          6.125647,
+          49.618468
         ]
       },
-      "id": "node/4268690981"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 4268690981,
+        "osm_way_id": 1131772032,
+        "rue": "Boulevard Emmanuel Servais",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/4384664737",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1711352,
-          49.6292308
+          6.171135,
+          49.629231
         ]
       },
-      "id": "node/4384664737"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 4384664737,
+        "osm_way_id": 31303889,
+        "rue": "Rue Charles Bernhoeft",
+        "quartier": "Neudorf / Weimershof"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/4384664874",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "4",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1677451,
-          49.6290516
+          6.13409,
+          49.614921
         ]
       },
-      "id": "node/4384664874"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 4526387279,
+        "osm_way_id": 34122537,
+        "rue": "Rue des Trois Glands",
+        "quartier": "Pfaffenthal"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/4526387279",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "3",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1340902,
-          49.6149214
+          6.139792,
+          49.610641
         ]
       },
-      "id": "node/4526387279"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 4723123383,
+        "osm_way_id": 9646419,
+        "rue": "Rue du Rham",
+        "quartier": "Grund"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/4723123383",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "4",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.1397917,
-          49.6106413
-        ]
-      },
-      "id": "node/4723123383"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/4930187527",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "7",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.131095,
-          49.6032537
+          49.603254
         ]
       },
-      "id": "node/4930187527"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 4930187527,
+        "osm_way_id": 314693944,
+        "rue": "Place de Paris",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/5050062310",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1309666,
-          49.6054069
+          6.130967,
+          49.605407
         ]
       },
-      "id": "node/5050062310"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 5050062310,
+        "osm_way_id": 517511053,
+        "rue": "Rue Heinrich Heine",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/5114681851",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T06:26:13Z",
-        "@version": "2",
-        "@changeset": "117664494",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.137831,
-          49.6045222
+          6.153819,
+          49.60642
         ]
       },
-      "id": "node/5114681851"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 5120109528,
+        "osm_way_id": 8914069,
+        "rue": "Ierzewee",
+        "quartier": "Hamm"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/5220136775",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "3",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1445312,
-          49.6135772
+          6.144531,
+          49.613577
         ]
       },
-      "id": "node/5220136775"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 5220136775,
+        "osm_way_id": 9646503,
+        "rue": "Rue de la Tour Jacob",
+        "quartier": "Clausen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/5243223650",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1492735,
-          49.6126952
+          6.149273,
+          49.612695
         ]
       },
-      "id": "node/5243223650"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 5243223650,
+        "osm_way_id": 22982474,
+        "rue": "Rue Nicolas Margue",
+        "quartier": "Cents"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/5298285640",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-17T12:48:38Z",
-        "@version": "7",
-        "@changeset": "127670823",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1497713,
-          49.5979981
+          6.149771,
+          49.597998
         ]
       },
-      "id": "node/5298285640"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 5298285640,
+        "osm_way_id": 9245311,
+        "rue": "Rue Tony Dutreux",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/5375154846",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1426604,
-          49.5989369
+          6.14266,
+          49.598937
         ]
       },
-      "id": "node/5375154846"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 5375154846,
+        "osm_way_id": 87730402,
+        "rue": "Rue Gabriel Lippmann",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/5378910241",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "2",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1393683,
-          49.6214272
-        ]
-      },
-      "id": "node/5378910241"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/5464515427",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "4",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.1674828,
-          49.6286494
-        ]
-      },
-      "id": "node/5464515427"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/5796531840",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-29T13:40:20Z",
-        "@version": "5",
-        "@changeset": "125522642",
-        "@user": "Ekeefoof",
-        "@uid": "16076489"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.1267937,
+          6.126794,
           49.600177
         ]
       },
-      "id": "node/5796531840"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 5796531840,
+        "osm_way_id": 9343603,
+        "rue": "Rue des États-Unis",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/5893140527",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1007384,
-          49.6243885
+          6.100738,
+          49.624389
         ]
       },
-      "id": "node/5893140527"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 5893140527,
+        "osm_way_id": 157696836,
+        "rue": "Reckenthal",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/5991636130",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-03-11T11:20:37Z",
-        "@version": "6",
-        "@changeset": "133548521",
-        "@user": "Riccardo Stagni",
-        "@uid": "67621"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1292198,
-          49.5984076
+          6.12922,
+          49.598408
         ]
       },
-      "id": "node/5991636130"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 5991636130,
+        "osm_way_id": 24787924,
+        "rue": "Rue du Fort Wedell",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6028550606",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "7",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1304592,
-          49.6009014
+          6.130459,
+          49.600901
         ]
       },
-      "id": "node/6028550606"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6028550606,
+        "osm_way_id": 50771727,
+        "rue": "Rue du Fort Wedell",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6028550608",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "tactile_paving": "incorrect",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1409931,
-          49.5986953
+          6.140993,
+          49.598695
         ]
       },
-      "id": "node/6028550608"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6028550608,
+        "osm_way_id": 9397827,
+        "rue": "Rue Pierre Blanc",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6028550610",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-10-15T19:18:21Z",
-        "@version": "5",
-        "@changeset": "127585787",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1300295,
-          49.6062694
+          6.13003,
+          49.606269
         ]
       },
-      "id": "node/6028550610"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6028550610,
+        "osm_way_id": 1026011575,
+        "rue": "Rue Schiller",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6028550611",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-10-18T20:11:02Z",
-        "@version": "5",
-        "@changeset": "127746072",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1294568,
-          49.6068345
+          6.129457,
+          49.606834
         ]
       },
-      "id": "node/6028550611"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 6028550611,
+        "osm_way_id": 167447472,
+        "rue": "Rue Goethe",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6064671025",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-11T03:35:14Z",
-        "@version": "5",
-        "@changeset": "124755172",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1355223,
-          49.6115281
+          6.135522,
+          49.611528
         ]
       },
-      "id": "node/6064671025"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 6064671025,
+        "osm_way_id": 147557544,
+        "rue": "Chemin de la Corniche",
+        "quartier": "Pfaffenthal"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6069810413",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "8",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1504492,
-          49.5973374
+          6.150449,
+          49.597337
         ]
       },
-      "id": "node/6069810413"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6069810413,
+        "osm_way_id": 8956515,
+        "rue": "Rue Michel Gehrend",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6069810418",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-29T13:40:25Z",
-        "@version": "5",
-        "@changeset": "125522642",
-        "@user": "Ekeefoof",
-        "@uid": "16076489"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1250565,
-          49.5997662
+          6.125057,
+          49.599766
         ]
       },
-      "id": "node/6069810418"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6069810418,
+        "osm_way_id": 22874264,
+        "rue": "Rue Jean-Pierre David Heldenstein",
+        "quartier": "Hollerich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6070606028",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1413257,
-          49.5985437
+          6.141326,
+          49.598544
         ]
       },
-      "id": "node/6070606028"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6070606028,
+        "osm_way_id": 9245287,
+        "rue": "Rue de Carignan",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6088461374",
-        "crossing": "unmarked",
-        "crossing:island": "no",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2023-03-10T16:47:39Z",
-        "@version": "6",
-        "@changeset": "133526294",
-        "@user": "Riccardo Stagni",
-        "@uid": "67621"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1260881,
-          49.6200325
+          6.119843,
+          49.613475
         ]
       },
-      "id": "node/6088461374"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 6070814734,
+        "osm_way_id": 984811101,
+        "rue": "Rue Jean-Pierre Probst",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6142335342",
-        "bicycle": "yes",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-01-16T08:00:17Z",
-        "@version": "10",
-        "@changeset": "131326136",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1280261,
-          49.6096333
+          6.11928,
+          49.613477
         ]
       },
-      "id": "node/6142335342"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 6070814735,
+        "osm_way_id": 44678957,
+        "rue": "Rue de Rollingergrund",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6167722490",
-        "crossing": "unmarked",
-        "crossing:island": "no",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-29T16:45:13Z",
-        "@version": "6",
-        "@changeset": "125532748",
-        "@user": "Ekeefoof",
-        "@uid": "16076489"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1250935,
-          49.6089356
+          6.126088,
+          49.620033
         ]
       },
-      "id": "node/6167722490"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 6088461374,
+        "osm_way_id": 9653628,
+        "rue": "Rue des Roses",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6167925495",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2023-01-16T08:00:17Z",
-        "@version": "7",
-        "@changeset": "131326136",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1280184,
-          49.6098972
+          6.125094,
+          49.608936
         ]
       },
-      "id": "node/6167925495"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 6167722490,
+        "osm_way_id": 682687109,
+        "rue": "Rue de la Semois",
+        "quartier": "Ville Haute"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6253288727",
-        "bicycle": "yes",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-17T11:21:49Z",
-        "@version": "6",
-        "@changeset": "127666334",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1597912,
-          49.6312106
+          6.159791,
+          49.631211
         ]
       },
-      "id": "node/6253288727"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 6253288727,
+        "osm_way_id": 121639441,
+        "rue": "Allée des Poiriers",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6375074212",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1480002,
-          49.6123443
+          6.148,
+          49.612344
         ]
       },
-      "id": "node/6375074212"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6375074212,
+        "osm_way_id": 95542154,
+        "rue": "Rue du Fort Dumoulin",
+        "quartier": "Cents"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6375074213",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1541201,
+          6.15412,
           49.61394
         ]
       },
-      "id": "node/6375074213"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6375074213,
+        "osm_way_id": 28144094,
+        "rue": "Tawioun",
+        "quartier": "Cents"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6375074214",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1656844,
-          49.6168104
+          6.165684,
+          49.61681
         ]
       },
-      "id": "node/6375074214"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6375074214,
+        "osm_way_id": 34130325,
+        "rue": "Rue Robert Bruch",
+        "quartier": "Cents"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6393819926",
-        "bicycle": "yes",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1250717,
-          49.6089558
+          6.125072,
+          49.608956
         ]
       },
-      "id": "node/6393819926"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 6393819926,
+        "osm_way_id": 682687109,
+        "rue": "Rue de la Semois",
+        "quartier": "Ville Haute"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6604162018",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "5",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1331257,
-          49.6036824
+          6.133126,
+          49.603682
         ]
       },
-      "id": "node/6604162018"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 6604162018,
+        "osm_way_id": 703243145,
+        "rue": "Rue du Fort Bourbon",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6615224298",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1030955,
-          49.5908659
+          6.103096,
+          49.590866
         ]
       },
-      "id": "node/6615224298"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6615224298,
+        "osm_way_id": 110164740,
+        "rue": "Rue du 9 septembre 1867",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6615224299",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1007528,
-          49.5904024
+          6.100753,
+          49.590402
         ]
       },
-      "id": "node/6615224299"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6615224299,
+        "osm_way_id": 51783648,
+        "rue": "Rue Ausone",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6615224300",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1077687,
-          49.5936134
+          6.107769,
+          49.593613
         ]
       },
-      "id": "node/6615224300"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6615224300,
+        "osm_way_id": 58880039,
+        "rue": "Rue Michel Flammang",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6615224304",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1030747,
+          6.103075,
           49.587212
         ]
       },
-      "id": "node/6615224304"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6615224304,
+        "osm_way_id": 190236893,
+        "rue": "Rue des Chênes",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/6787752447",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1488073,
-          49.6039291
+          6.148807,
+          49.603929
         ]
       },
-      "id": "node/6787752447"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 6787752447,
+        "osm_way_id": 723726943,
+        "rue": "Rue de Montmédy",
+        "quartier": "Hamm"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/7024836873",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2023-01-11T17:57:23Z",
-        "@version": "5",
-        "@changeset": "131156487",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1131406,
-          49.6214057
+          6.113141,
+          49.621406
         ]
       },
-      "id": "node/7024836873"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 7024836873,
+        "osm_way_id": 1029405537,
+        "rue": "Rue Antoine Hirsch",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/7095288375",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "2",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1396703,
-          49.6280357
+          6.13967,
+          49.628036
         ]
       },
-      "id": "node/7095288375"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 7095288375,
+        "osm_way_id": 28060632,
+        "rue": "Rue du Soleil",
+        "quartier": "Weimerskirch"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/7098110928",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "2",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1004209,
-          49.6021051
+          6.100421,
+          49.602105
         ]
       },
-      "id": "node/7098110928"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 7098110928,
+        "osm_way_id": 114721154,
+        "rue": "Boulevard Marcel Cahen",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/7838072478",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1044712,
-          49.5911833
+          6.104471,
+          49.591183
         ]
       },
-      "id": "node/7838072478"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 7838072478,
+        "osm_way_id": 110161980,
+        "rue": "Place de Roedgen",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8041749769",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-14T06:02:54Z",
-        "@version": "6",
-        "@changeset": "127504155",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1331491,
-          49.5994595
+          6.133149,
+          49.59946
         ]
       },
-      "id": "node/8041749769"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 8041749769,
+        "osm_way_id": 145814814,
+        "rue": "Unnamed",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8042417000",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-10-13T20:11:06Z",
-        "@version": "4",
-        "@changeset": "127489212",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1301935,
-          49.6043469
+          6.130193,
+          49.604347
         ]
       },
-      "id": "node/8042417000"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 8042417000,
+        "osm_way_id": 24789413,
+        "rue": "Rue Dicks",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8042417005",
-        "bicycle": "yes",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1296368,
-          49.6050115
+          6.129637,
+          49.605012
         ]
       },
-      "id": "node/8042417005"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 8042417005,
+        "osm_way_id": 24789424,
+        "rue": "Rue du Plébiscite",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8042417010",
-        "bicycle": "designated",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "4",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1289439,
-          49.6058123
+          6.128944,
+          49.605812
         ]
       },
-      "id": "node/8042417010"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 8042417010,
+        "osm_way_id": 23625562,
+        "rue": "Rue de la Grève",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8042417015",
-        "bicycle": "yes",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1283933,
-          49.6064838
+          6.128393,
+          49.606484
         ]
       },
-      "id": "node/8042417015"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 8042417015,
+        "osm_way_id": 126475750,
+        "rue": "Rue Goethe",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8093832826",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.0992636,
-          49.5860694
+          6.099264,
+          49.586069
         ]
       },
-      "id": "node/8093832826"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 8093832826,
+        "osm_way_id": 131343105,
+        "rue": "Boulevard du Brill",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8174345836",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-08-11T03:35:14Z",
-        "@version": "4",
-        "@changeset": "124755172",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1332987,
-          49.5992517
+          6.133299,
+          49.599252
         ]
       },
-      "id": "node/8174345836"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 8174345836,
+        "osm_way_id": 863164830,
+        "rue": "Unnamed",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8174345837",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "tactile_paving": "incorrect",
-        "@timestamp": "2022-12-28T15:10:28Z",
-        "@version": "5",
-        "@changeset": "130606732",
-        "@user": "jemareu",
-        "@uid": "1300925"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1332246,
-          49.5992689
+          6.133225,
+          49.599269
         ]
       },
-      "id": "node/8174345837"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 8174345837,
+        "osm_way_id": 863164829,
+        "rue": "Unnamed",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8198269529",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-11T03:35:14Z",
-        "@version": "5",
-        "@changeset": "124755172",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1329975,
-          49.5987155
+          6.132998,
+          49.598715
         ]
       },
-      "id": "node/8198269529"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 8198269529,
+        "osm_way_id": 863164832,
+        "rue": "Unnamed",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8273538479",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1382783,
-          49.6105598
+          6.138278,
+          49.61056
         ]
       },
-      "id": "node/8273538479"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 8273538479,
+        "osm_way_id": 52474105,
+        "rue": "Rue de Trèves",
+        "quartier": "Grund"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8383941774",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1344436,
-          49.6483655
+          6.134444,
+          49.648365
         ]
       },
-      "id": "node/8383941774"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 8383941774,
+        "osm_way_id": 26145056,
+        "rue": "Rue des Anémones",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8503636920",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "2",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.0972686,
-          49.5816074
+          6.097269,
+          49.581607
         ]
       },
-      "id": "node/8503636920"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 8503636920,
+        "osm_way_id": 915465087,
+        "rue": "Unnamed",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8569285144",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2023-01-15T21:40:56Z",
-        "@version": "8",
-        "@changeset": "131315354",
-        "@user": "Lyon-St-Clair",
-        "@uid": "9060372"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1324118,
-          49.5982071
+          6.132412,
+          49.598207
         ]
       },
-      "id": "node/8569285144"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 8569285144,
+        "osm_way_id": 145814815,
+        "rue": "Unnamed",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8734727446",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-08-11T03:35:14Z",
-        "@version": "3",
-        "@changeset": "124755172",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1326777,
-          49.5982745
+          6.132678,
+          49.598275
         ]
       },
-      "id": "node/8734727446"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 8734727446,
+        "osm_way_id": 844574517,
+        "rue": "Unnamed",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8734727447",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-08-11T03:35:14Z",
-        "@version": "3",
-        "@changeset": "124755172",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1327516,
-          49.5982576
+          6.132752,
+          49.598258
         ]
       },
-      "id": "node/8734727447"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 8734727447,
+        "osm_way_id": 827815960,
+        "rue": "Unnamed",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8743492703",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "7",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.163034,
-          49.6365714
+          49.636571
         ]
       },
-      "id": "node/8743492703"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 8743492703,
+        "osm_way_id": 26864220,
+        "rue": "Rue Anne Beffort",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/8996815039",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-05-28T16:20:32Z",
-        "@version": "3",
-        "@changeset": "121624180",
-        "@user": "SHARCRASH",
-        "@uid": "1808015"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1694664,
-          49.6296726
+          6.169466,
+          49.629673
         ]
       },
-      "id": "node/8996815039"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 8996815039,
+        "osm_way_id": 922838858,
+        "rue": "Rue des Labours",
+        "quartier": "Neudorf / Weimershof"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9002262911",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-16T06:45:25Z",
-        "@version": "5",
-        "@changeset": "127600523",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1615683,
-          49.6359415
+          6.170634,
+          49.629127
         ]
       },
-      "id": "node/9002262911"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 8996815046,
+        "osm_way_id": 348071733,
+        "rue": "Rue de Kevelaer",
+        "quartier": "Neudorf / Weimershof"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9187447331",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-10-14T08:58:19Z",
-        "@version": "4",
-        "@changeset": "127512264",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1167904,
-          49.5928785
+          6.161568,
+          49.635942
         ]
       },
-      "id": "node/9187447331"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 9002262911,
+        "osm_way_id": 256250946,
+        "rue": "Rue Simone de Beauvoir",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9330352515",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T04:38:45Z",
-        "@version": "2",
-        "@changeset": "117662096",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1374447,
-          49.5952057
+          6.11679,
+          49.592878
         ]
       },
-      "id": "node/9330352515"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 9187447331,
+        "osm_way_id": 454289782,
+        "rue": "Rue Léopold Hoffmann",
+        "quartier": "Gasperich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9459647660",
-        "crossing": "traffic_signals",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2023-03-12T13:04:59Z",
-        "@version": "4",
-        "@changeset": "133585622",
-        "@user": "NPU",
-        "@uid": "717469"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.0946478,
-          49.6047131
+          6.137445,
+          49.595206
         ]
       },
-      "id": "node/9459647660"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9330352515,
+        "osm_way_id": 167241685,
+        "rue": "Rue de Hesperange",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9459647696",
-        "check_date:crossing": "2021-02-27",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.0959164,
-          49.6024599
+          6.094648,
+          49.604713
         ]
       },
-      "id": "node/9459647696"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 9459647660,
+        "osm_way_id": 522295103,
+        "rue": "Rue Annette Schwall-Lacroix",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9470017592",
-        "bicycle": "yes",
-        "crossing": "traffic_signals",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1691068,
-          49.6374903
+          6.095916,
+          49.60246
         ]
       },
-      "id": "node/9470017592"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 9459647696,
+        "osm_way_id": 522295103,
+        "rue": "Rue Annette Schwall-Lacroix",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9470017614",
-        "crossing": "traffic_signals",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1691052,
-          49.6374729
+          6.133,
+          49.636469
         ]
       },
-      "id": "node/9470017614"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 9507379293,
+        "osm_way_id": 1031598167,
+        "rue": "Rue de Salm",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9507379293",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1329997,
-          49.6364693
+          6.159858,
+          49.634746
         ]
       },
-      "id": "node/9507379293"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 9509423151,
+        "osm_way_id": 256250943,
+        "rue": "Rue Anne Beffort",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9509423151",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-16T06:45:25Z",
-        "@version": "3",
-        "@changeset": "127600523",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1598583,
-          49.6347463
+          6.130033,
+          49.641791
         ]
       },
-      "id": "node/9509423151"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 9509725670,
+        "osm_way_id": 26140867,
+        "rue": "Rue du Travail",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9509725670",
-        "button_operated": "yes",
-        "crossing": "traffic_signals",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-10-15T20:02:01Z",
-        "@version": "3",
-        "@changeset": "127586971",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1300331,
-          49.6417911
+          6.13535,
+          49.628548
         ]
       },
-      "id": "node/9509725670"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523177957,
+        "osm_way_id": 813986032,
+        "rue": "Rue Henri Lamormesnil",
+        "quartier": "Weimerskirch"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523177785",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T19:10:15Z",
-        "@version": "2",
-        "@changeset": "133452683",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.139054,
-          49.6208892
+          6.099138,
+          49.590249
         ]
       },
-      "id": "node/9523177785"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 9523178149,
+        "osm_way_id": 190236503,
+        "rue": "Boulevard du Brill",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523177786",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T19:10:15Z",
-        "@version": "2",
-        "@changeset": "133452683",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1391661,
-          49.6210191
+          6.145416,
+          49.60208
         ]
       },
-      "id": "node/9523177786"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523291608,
+        "osm_way_id": 8899947,
+        "rue": "Rue de Montmédy",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523177957",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T03:09:23Z",
-        "@version": "1",
-        "@changeset": "117660631",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1353502,
-          49.6285475
+          6.141358,
+          49.59741
         ]
       },
-      "id": "node/9523177957"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 9523291611,
+        "osm_way_id": 9245308,
+        "rue": "Rue Henri Vannérus",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523178149",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.0991384,
-          49.5902493
+          6.150746,
+          49.61244
         ]
       },
-      "id": "node/9523178149"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 9523303560,
+        "osm_way_id": 26621055,
+        "rue": "Rue Nicolas Rollinger",
+        "quartier": "Cents"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523291608",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:30:17Z",
-        "@version": "1",
-        "@changeset": "117663157",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1454159,
-          49.6020798
+          6.124703,
+          49.603248
         ]
       },
-      "id": "node/9523291608"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 9523303561,
+        "osm_way_id": 22955111,
+        "rue": "Rue Michel Rodange",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523291611",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "highway": "crossing",
-        "@timestamp": "2023-01-11T17:57:23Z",
-        "@version": "4",
-        "@changeset": "131156487",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1413582,
-          49.5974096
+          6.137788,
+          49.595618
         ]
       },
-      "id": "node/9523291611"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523303563,
+        "osm_way_id": 9238910,
+        "rue": "Rue des Légionnaires",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523303560",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1507457,
-          49.6124403
+          6.104521,
+          49.587578
         ]
       },
-      "id": "node/9523303560"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523303564,
+        "osm_way_id": 27542601,
+        "rue": "Rue de Cessange",
+        "quartier": "Cessange"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523303561",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1247035,
-          49.6032481
+          6.12866,
+          49.627107
         ]
       },
-      "id": "node/9523303561"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523303565,
+        "osm_way_id": 60856687,
+        "rue": "Millegässel",
+        "quartier": "Eich"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523303563",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-10-17T12:48:38Z",
-        "@version": "2",
-        "@changeset": "127670823",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1377879,
-          49.5956182
+          6.165985,
+          49.625484
         ]
       },
-      "id": "node/9523303563"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 9523303566,
+        "osm_way_id": 50783259,
+        "rue": "Rue des Carrières",
+        "quartier": "Neudorf / Weimershof"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523303564",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T04:38:45Z",
-        "@version": "1",
-        "@changeset": "117662096",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1045211,
-          49.5875782
+          6.10996,
+          49.628145
         ]
       },
-      "id": "node/9523303564"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523303567,
+        "osm_way_id": 150093561,
+        "rue": "Avenue Pasteur",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523303565",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T04:38:45Z",
-        "@version": "1",
-        "@changeset": "117662096",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1286599,
-          49.6271073
+          6.12009,
+          49.617335
         ]
       },
-      "id": "node/9523303565"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523303568,
+        "osm_way_id": 37694005,
+        "rue": "Rue Nico Klopp",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523303566",
-        "crossing": "uncontrolled",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "2",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1659848,
-          49.6254839
+          6.122581,
+          49.623439
         ]
       },
-      "id": "node/9523303566"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523303569,
+        "osm_way_id": 49917085,
+        "rue": "Rue Ignace de la Fontaine",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523303567",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T04:38:45Z",
-        "@version": "1",
-        "@changeset": "117662096",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1099595,
-          49.6281453
+          6.133235,
+          49.615368
         ]
       },
-      "id": "node/9523303567"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 9523303577,
+        "osm_way_id": 83635011,
+        "rue": "Rue Alfred Kowalsky",
+        "quartier": "Pfaffenthal"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523303568",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T04:38:45Z",
-        "@version": "1",
-        "@changeset": "117662096",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1200905,
-          49.6173352
+          6.12572,
+          49.599902
         ]
       },
-      "id": "node/9523303568"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523322700,
+        "osm_way_id": 23625547,
+        "rue": "Rue Woodrow Wilson",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523303569",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T04:38:45Z",
-        "@version": "1",
-        "@changeset": "117662096",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1225806,
-          49.6234393
+          6.135005,
+          49.643111
         ]
       },
-      "id": "node/9523303569"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523322701,
+        "osm_way_id": 29279150,
+        "rue": "Rue de Malines",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523303577",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "3",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1332349,
-          49.6153681
-        ]
-      },
-      "id": "node/9523303577"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/9523322700",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "traffic_calming": "table",
-        "@timestamp": "2022-08-29T13:40:23Z",
-        "@version": "2",
-        "@changeset": "125522642",
-        "@user": "Ekeefoof",
-        "@uid": "16076489"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.1257203,
-          49.5999018
-        ]
-      },
-      "id": "node/9523322700"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/9523322701",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "1",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.1350053,
-          49.6431111
-        ]
-      },
-      "id": "node/9523322701"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/9523322703",
-        "crossing": "unmarked",
-        "crossing:island": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-10-10T22:08:27Z",
-        "@version": "2",
-        "@changeset": "127325528",
-        "@user": "Barahona",
-        "@uid": "20213"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.1010843,
+          6.101084,
           49.601796
         ]
       },
-      "id": "node/9523322703"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523322703,
+        "osm_way_id": 26450592,
+        "rue": "Rue de Merl",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523322705",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "1",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1392275,
+          6.139227,
           49.62789
         ]
       },
-      "id": "node/9523322705"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523322705,
+        "osm_way_id": 28959224,
+        "rue": "Fond Saint-Martin",
+        "quartier": "Weimerskirch"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523322706",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "1",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1414214,
+          6.141421,
           49.614418
         ]
       },
-      "id": "node/9523322706"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523322706,
+        "osm_way_id": 29693158,
+        "rue": "Rue Théophile Funck-Brentano",
+        "quartier": "Clausen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523322708",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "1",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1386791,
-          49.6139556
+          6.138679,
+          49.613956
         ]
       },
-      "id": "node/9523322708"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523322708,
+        "osm_way_id": 456378194,
+        "rue": "Rue Jules Wilhelm",
+        "quartier": "Clausen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523322709",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "1",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1434689,
-          49.5999369
+          6.143469,
+          49.599937
         ]
       },
-      "id": "node/9523322709"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523322709,
+        "osm_way_id": 161784435,
+        "rue": "Rue Gabriel Lippmann",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523322710",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-10-20T20:39:22Z",
-        "@version": "2",
-        "@changeset": "127854765",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1221518,
-          49.6249777
+          6.122152,
+          49.624978
         ]
       },
-      "id": "node/9523322710"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523322710,
+        "osm_way_id": 26555933,
+        "rue": "Rue de Gibraltar",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523322711",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-10-14T08:58:19Z",
-        "@version": "2",
-        "@changeset": "127512264",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1214383,
-          49.6141062
+          6.121438,
+          49.614106
         ]
       },
-      "id": "node/9523322711"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523322711,
+        "osm_way_id": 9653341,
+        "rue": "Rue de la Chapelle",
+        "quartier": "Ville Haute"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523322713",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-06-20T14:55:12Z",
-        "@version": "2",
-        "@changeset": "122628149",
-        "@user": "tobim91",
-        "@uid": "3233303"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1253865,
-          49.6059491
+          6.125387,
+          49.605949
         ]
       },
-      "id": "node/9523322713"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523322713,
+        "osm_way_id": 23625490,
+        "rue": "Rue Caspar Mathias Spoo",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523322714",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "1",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1336249,
-          49.6280676
+          6.133625,
+          49.628068
         ]
       },
-      "id": "node/9523322714"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523322714,
+        "osm_way_id": 26721749,
+        "rue": "Raspert",
+        "quartier": "Weimerskirch"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523322715",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "1",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.135917,
-          49.6283219
+          49.628322
         ]
       },
-      "id": "node/9523322715"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523322715,
+        "osm_way_id": 28959224,
+        "rue": "Fond Saint-Martin",
+        "quartier": "Weimerskirch"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523322716",
-        "crossing": "unmarked",
-        "crossing:island": "no",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-06-20T14:55:06Z",
-        "@version": "3",
-        "@changeset": "122628149",
-        "@user": "tobim91",
-        "@uid": "3233303"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1245804,
-          49.6051468
+          6.12458,
+          49.605147
         ]
       },
-      "id": "node/9523322716"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523322716,
+        "osm_way_id": 22955112,
+        "rue": "Rue Michel Welter",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523358618",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "1",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1123848,
+          6.112385,
           49.62198
         ]
       },
-      "id": "node/9523358618"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523358618,
+        "osm_way_id": 82452312,
+        "rue": "Rue Jean Soupert",
+        "quartier": "Limpertsberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523358620",
-        "crossing": "unmarked",
-        "crossing:island": "no",
-        "highway": "crossing",
-        "@timestamp": "2022-10-22T21:07:52Z",
-        "@version": "2",
-        "@changeset": "127938112",
-        "@user": "danwax",
-        "@uid": "3242890"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1378684,
+          6.137868,
           49.596742
         ]
       },
-      "id": "node/9523358620"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523358620,
+        "osm_way_id": 82261967,
+        "rue": "Rue des Ardennes",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523358622",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "1",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1545817,
-          49.5962433
+          6.154582,
+          49.596243
         ]
       },
-      "id": "node/9523358622"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523358622,
+        "osm_way_id": 9356188,
+        "rue": "Rue Albert Steffen",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523358623",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "1",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1397801,
-          49.6126196
+          6.13978,
+          49.61262
         ]
       },
-      "id": "node/9523358623"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523358623,
+        "osm_way_id": 26749914,
+        "rue": "Plateau Altmünster",
+        "quartier": "Clausen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523358624",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "1",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1168059,
-          49.6069919
+          6.116806,
+          49.606992
         ]
       },
-      "id": "node/9523358624"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523358624,
+        "osm_way_id": 23627912,
+        "rue": "Rue de Crécy",
+        "quartier": "Belair"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523358625",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T05:18:49Z",
-        "@version": "1",
-        "@changeset": "117662904",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1522678,
-          49.6305872
+          6.152268,
+          49.630587
         ]
       },
-      "id": "node/9523358625"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523358625,
+        "osm_way_id": 1095233710,
+        "rue": "Rue de Kirchberg",
+        "quartier": "Kirchberg"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523358626",
-        "crossing": "unmarked",
-        "crossing:island": "no",
-        "highway": "crossing",
-        "@timestamp": "2023-03-12T13:06:52Z",
-        "@version": "2",
-        "@changeset": "133585622",
-        "@user": "NPU",
-        "@uid": "717469"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.0992571,
-          49.6021495
+          6.099257,
+          49.60215
         ]
       },
-      "id": "node/9523358626"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523358626,
+        "osm_way_id": 122727968,
+        "rue": "Rue de Merl",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523417766",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "@timestamp": "2023-03-09T16:30:35Z",
-        "@version": "5",
-        "@changeset": "133485934",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.139821,
-          49.5901945
+          49.590195
         ]
       },
-      "id": "node/9523417766"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 9523417766,
+        "osm_way_id": 1093531466,
+        "rue": "Rue d'Ivoix",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523417767",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2023-03-09T16:30:35Z",
-        "@version": "4",
-        "@changeset": "133485934",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1399293,
-          49.5900119
+          6.139929,
+          49.590012
         ]
       },
-      "id": "node/9523417767"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 9523417767,
+        "osm_way_id": 1080390869,
+        "rue": "Rue d'Ivoix",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523417771",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T06:26:13Z",
-        "@version": "1",
-        "@changeset": "117664494",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1657723,
-          49.6158348
+          6.165772,
+          49.615835
         ]
       },
-      "id": "node/9523417771"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523417771,
+        "osm_way_id": 172705743,
+        "rue": "Rue Raoul Follereau",
+        "quartier": "Cents"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523417772",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T06:26:13Z",
-        "@version": "1",
-        "@changeset": "117664494",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1655084,
-          49.6157132
+          6.165508,
+          49.615713
         ]
       },
-      "id": "node/9523417772"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523417772,
+        "osm_way_id": 172705744,
+        "rue": "Rue Raoul Follereau",
+        "quartier": "Cents"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523417773",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2022-02-21T06:26:13Z",
-        "@version": "1",
-        "@changeset": "117664494",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1654874,
-          49.6158054
+          6.165487,
+          49.615805
         ]
       },
-      "id": "node/9523417773"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523417773,
+        "osm_way_id": 172705745,
+        "rue": "Rue Raoul Follereau",
+        "quartier": "Cents"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9523417779",
-        "crossing": "unmarked",
-        "crossing:island": "no",
-        "highway": "crossing",
-        "tactile_paving": "no",
-        "@timestamp": "2022-11-03T15:58:06Z",
-        "@version": "4",
-        "@changeset": "128445486",
-        "@user": "marcinx1",
-        "@uid": "12752863"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1319155,
-          49.6407892
+          6.131915,
+          49.640789
         ]
       },
-      "id": "node/9523417779"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9523417779,
+        "osm_way_id": 151536601,
+        "rue": "Rue Pierre-Joseph Redouté",
+        "quartier": "Beggen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9939044456",
-        "crossing": "traffic_signals",
-        "crossing:island": "yes",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-10-19T20:20:48Z",
-        "@version": "3",
-        "@changeset": "127805328",
-        "@user": "EUMapper",
-        "@uid": "11746909"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1370812,
-          49.6019167
+          6.137081,
+          49.601917
         ]
       },
-      "id": "node/9939044456"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 9939044456,
+        "osm_way_id": 1084615489,
+        "rue": "Rue du Verger",
+        "quartier": "Bonnevoie-Nord / Verlorenkost"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9943332987",
-        "crossing": "uncontrolled",
-        "crossing:island": "no",
-        "crossing:marking": "red",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "1",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1266475,
-          49.5999678
+          6.126647,
+          49.599968
         ]
       },
-      "id": "node/9943332987"
+      "properties": {
+        "crossing_marking": "red",
+        "osm_node_id": 9943332987,
+        "osm_way_id": 411319784,
+        "rue": "Rue de Chiny",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9943332990",
-        "bicycle": "yes",
-        "crossing": "uncontrolled",
-        "crossing:island": "yes",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "tactile_paving": "yes",
-        "@timestamp": "2022-08-09T19:40:36Z",
-        "@version": "1",
-        "@changeset": "124700806",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1036078,
-          49.6012762
+          6.103608,
+          49.601276
         ]
       },
-      "id": "node/9943332990"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 9943332990,
+        "osm_way_id": 1085176013,
+        "rue": "Rue Charles Martel",
+        "quartier": "Merl"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9946344573",
-        "crossing": "unmarked",
-        "crossing:island": "no",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T18:16:16Z",
-        "@version": "2",
-        "@changeset": "133451160",
-        "@user": "Riccardo Stagni",
-        "@uid": "67621"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1408874,
+          6.140887,
           49.613516
         ]
       },
-      "id": "node/9946344573"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9946344573,
+        "osm_way_id": 37847293,
+        "rue": "Sentier de l'Espérance",
+        "quartier": "Clausen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9957225072",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-09T16:30:35Z",
-        "@version": "2",
-        "@changeset": "133485934",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1391328,
-          49.5896914
+          6.139133,
+          49.589691
         ]
       },
-      "id": "node/9957225072"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 9957225072,
+        "osm_way_id": 1024992632,
+        "rue": "Place de Durbuy",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/9957225112",
-        "crossing": "uncontrolled",
-        "crossing:marking": "no",
-        "crossing_ref": "zebra",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T19:10:15Z",
-        "@version": "3",
-        "@changeset": "133452683",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.138994,
-          49.5900329
+          49.590033
         ]
       },
-      "id": "node/9957225112"
+      "properties": {
+        "crossing_marking": "no",
+        "osm_node_id": 9957225112,
+        "osm_way_id": 1093531465,
+        "rue": "Rue de Houffalize",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722086901",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1644034,
-          49.6217492
+          6.164403,
+          49.621749
         ]
       },
-      "id": "node/10722086901"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722086901,
+        "osm_way_id": 123811443,
+        "rue": "Rue de Neudorf",
+        "quartier": "Neudorf / Weimershof"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722086902",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1373824,
-          49.6266577
+          6.137382,
+          49.626658
         ]
       },
-      "id": "node/10722086902"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722086902,
+        "osm_way_id": 43118591,
+        "rue": "Rue de Laroche",
+        "quartier": "Weimerskirch"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722086904",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1637536,
-          49.6215265
+          6.163754,
+          49.621527
         ]
       },
-      "id": "node/10722086904"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722086904,
+        "osm_way_id": 123811443,
+        "rue": "Rue de Neudorf",
+        "quartier": "Neudorf / Weimershof"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722101332",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T19:48:16Z",
-        "@version": "1",
-        "@changeset": "133453802",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1473412,
-          49.5985342
+          6.147341,
+          49.598534
         ]
       },
-      "id": "node/10722101332"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722101332,
+        "osm_way_id": 9238940,
+        "rue": "Rue Jean Jacoby",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722154305",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.103915,
-          49.6250004
+          49.625
         ]
       },
-      "id": "node/10722154305"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722154305,
+        "osm_way_id": 23898011,
+        "rue": "Montée des Tilleuls",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722154306",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1070103,
-          49.6223582
+          6.10701,
+          49.622358
         ]
       },
-      "id": "node/10722154306"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722154306,
+        "osm_way_id": 30326131,
+        "rue": "Montée Thommes",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722154308",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1072763,
-          49.6229406
+          6.107276,
+          49.622941
         ]
       },
-      "id": "node/10722154308"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722154308,
+        "osm_way_id": 25405205,
+        "rue": "Rue de Dormans",
+        "quartier": "Rollingergrund / Belair-Nord"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722154309",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1328596,
-          49.6081956
+          6.13286,
+          49.608196
         ]
       },
-      "id": "node/10722154309"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722154309,
+        "osm_way_id": 126475740,
+        "rue": "Rue du Saint-Esprit",
+        "quartier": "Ville Haute"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722154310",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1621594,
-          49.6214062
+          6.162159,
+          49.621406
         ]
       },
-      "id": "node/10722154310"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722154310,
+        "osm_way_id": 123811427,
+        "rue": "Ale Wee",
+        "quartier": "Neudorf / Weimershof"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722154311",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           6.12427,
-          49.6046337
+          49.604634
         ]
       },
-      "id": "node/10722154311"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722154311,
+        "osm_way_id": 742504051,
+        "rue": "Rue Adolphe Fischer",
+        "quartier": "Gare"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722154312",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1367245,
-          49.6262337
+          6.136724,
+          49.626234
         ]
       },
-      "id": "node/10722154312"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722154312,
+        "osm_way_id": 44433974,
+        "rue": "Rue Pierre-Éloi Schoué",
+        "quartier": "Weimerskirch"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722154313",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1387553,
-          49.5984507
+          6.138755,
+          49.598451
         ]
       },
-      "id": "node/10722154313"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722154313,
+        "osm_way_id": 9245280,
+        "rue": "Place du Parc",
+        "quartier": "Bonnevoie-Sud"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722154315",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1576165,
-          49.6194774
+          6.157616,
+          49.619477
         ]
       },
-      "id": "node/10722154315"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722154315,
+        "osm_way_id": 255827272,
+        "rue": "Rue de Neudorf",
+        "quartier": "Neudorf / Weimershof"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722154316",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1457424,
+          6.145742,
           49.614873
         ]
       },
-      "id": "node/10722154316"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722154316,
+        "osm_way_id": 37862400,
+        "rue": "Rue Malakoff",
+        "quartier": "Clausen"
+      }
     },
     {
       "type": "Feature",
-      "properties": {
-        "@id": "node/10722154317",
-        "crossing": "unmarked",
-        "highway": "crossing",
-        "@timestamp": "2023-03-08T20:05:56Z",
-        "@version": "1",
-        "@changeset": "133454235",
-        "@user": "Stereo",
-        "@uid": "40611"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.1441537,
-          49.6129188
+          6.144154,
+          49.612919
         ]
       },
-      "id": "node/10722154317"
+      "properties": {
+        "crossing_marking": "unmarked",
+        "osm_node_id": 10722154317,
+        "osm_way_id": 125912269,
+        "rue": "Rue de la Tour Jacob",
+        "quartier": "Clausen"
+      }
     }
   ]
 }
