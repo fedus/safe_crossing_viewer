@@ -168,7 +168,7 @@
     }
     .info {
       padding: 10px 14px;
-      font: 14px/16px Arial, Helvetica, sans-serif;
+      font: 14px/16px sans-serif;
       background: #242121;
       box-shadow: 0 0 15px rgba(0,0,0,0.2);
       border-radius: 20px;
@@ -405,12 +405,12 @@
     const ortho2022 = L.tileLayer(
       'https://wmts1.geoportail.lu/opendata/wmts/ortho_2022/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
       {
-        attribution: '2022 aerial photography &copy; ' + mapLink,
+        attribution: 'Map data &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>. 2022 aerial photography &copy; ' + mapLink,
         maxZoom: 21,
       }
     );
 
-    map.addLayer(ortho2020)
+    map.addLayer(ortho2022)
 
     function onLocationFound(e) {
       const radius = e.accuracy;
