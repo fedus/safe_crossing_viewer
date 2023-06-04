@@ -383,9 +383,11 @@
 
       const options = { opacity: 1 };
 
+      const locationString = `<b>${feature.properties.quartier}</b>, ${feature.properties.rue}`;
+
       switch(feature.properties.crossing_marking) {
-        case 'unmarked': return layer.bindTooltip(`<h3>Missing crosswalk</h3><p>There must be a pedestrian crossing at this place, but it is completely missing.</p>`, options);
-        case 'no': return layer.bindTooltip(`<h3>Crosswalk should be red</h3><p>There is a crosswalk at this spot, but it must have a red background.</p>`, options);
+        case 'unmarked': return layer.bindTooltip(`<h3>Crossing missing completely! 🤷</h3><p>Here, a pedestrian crossing is missing completely, and probably dangerous and uncomfortable for pedestrians..</p>${locationString}`, options);
+        case 'no': return layer.bindTooltip(`<h3>Missing red background 🤨</h3><p>While there is a crossing here, the required red background is missing. Car drivers might not realise they are entering a 30 zone.</p>${locationString}`, options);
       }
     }
 
@@ -471,7 +473,7 @@
 
     const thirtyMarkerUnmarked = {
       radius: 6,
-      color: "red",
+      color: "orange",
       fillColor: "#242121",
       weight: 3,
       opacity: 1,
@@ -537,7 +539,7 @@
         const div = L.DomUtil.create('div', 'info legend');
 
         div.innerHTML +=
-            '<p><i style="background: red"></i> Crosswalk completely missing</p>';
+            '<p><i style="background: orange"></i> Crosswalk completely missing</p>';
           div.innerHTML +=
             '<p><i style="background: white"></i> Red background missing from crosswalk</p>';
 
