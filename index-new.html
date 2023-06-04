@@ -141,6 +141,9 @@
       padding: 20px;
       margin: 40px 0;
     }
+    a.btn {
+      text-decoration: none;
+    }
     .btn {
       border-radius: 20px;
       padding: 15px;
@@ -153,6 +156,8 @@
       border-style: solid;
       box-shadow: 0 0 15px rgba(0,0,0,0.2);
       transition: .2s;
+      font-size: small;
+      text-align: center;
     }
     .btn.round {
       padding: 0;
@@ -252,12 +257,12 @@
     </div>
     <div class="project-switcher-head">
       <div class="btn-group">
-        <button class="btn btn-project-selector btn-safe-crossing active" onClick="toggleSafeCrossing()">Unsafe Crosswalks</button>
-        <button class="btn btn-project-selector btn-thirtykmh" onClick="toggle30kmh()">NEW: Missing crosswalks</button>
+        <a class="btn btn-project-selector btn-thirtykmh" href="#30kmh">NEW: Missing crosswalks</a>
+        <a class="btn btn-project-selector btn-safe-crossing" href="#safe-crossing">Unsafe Crosswalks</a>
       </div>
     </div>
     <div class="spacer"></div>
-    <div class="project-switcher-description" id="project-safe-crossing">
+    <div class="project-switcher-description hidden" id="project-safe-crossing">
       <h2>Unsafe crosswalks</h2>
       <p>Uses aerial imagery from 2020.</p>
       <p>
@@ -610,6 +615,20 @@
 
     document.getElementById("map").onmousedown = minimizeInfo;
     map.on('movestart', minimizeInfo);
+
+    function hashChange() {
+      const selectedTabFromUrl = window.location.hash.substr(1);
+
+      if(selectedTabFromUrl === '30kmh') {
+        toggle30kmh();
+      } else {
+        toggleSafeCrossing();
+      }
+    }
+
+    hashChange();
+
+    window.onhashchange = hashChange;
   </script>
 </body>
 </html>
