@@ -421,6 +421,14 @@
     const map = L.map('map').setView([49.6061209088, 6.12493950024], 14);
     const mapLink = '<a href="http://geoportail.lu">Geoportail</a>';
 
+    const ortho2020 = L.tileLayer(
+      'https://wmts1.geoportail.lu/opendata/wmts/ortho_2020/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
+      {
+        attribution: 'Map data &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>. 2020 aerial photography CC0 <a href="http://geoportail.lu">Geoportail</a>',
+        maxZoom: 21,
+      }
+    );
+    
     const ortho2022 = L.tileLayer(
       'https://wmts1.geoportail.lu/opendata/wmts/ortho_2022/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
       {
