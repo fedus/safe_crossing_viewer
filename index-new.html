@@ -412,9 +412,9 @@
       const locationString = `<b>${feature.properties.quartier}</b>, ${feature.properties.rue}`;
 
       switch(feature.properties.crossing_marking) {
-        case 'unmarked': return layer.bindTooltip(`<h3>Crossing missing completely! 🤷</h3><p>Here, a pedestrian crossing is missing completely, and probably dangerous and uncomfortable for pedestrians.</p>${locationString}`, options);
-        case 'no': return layer.bindTooltip(`<h3>Missing red background 🤨</h3><p>While there is a crossing here, the required red background is missing. Car drivers might not realise they are entering a 30 zone.</p>${locationString}`, options);
-        case 'red': return layer.bindTooltip(`<h3>Crossing is painted red ✅'</h3><p>The red backgrounds has been painted at this <i>zone 30</i> entrance, but this doesn&apos;t mean that there are no other issues.</p>${locationString}`, options);
+        case 'unmarked': return layer.bindTooltip(`<h3>Crossing missing completely! 🤷</h3><p>Here, a pedestrian crossing is missing completely. It is probably dangerous and uncomfortable for pedestrians, and discourages walking.</p>${locationString}`, options);
+        case 'no': return layer.bindTooltip(`<h3>Missing red background 🤨</h3><p>While there is a crossing here, the required red background is missing. Car drivers might not realise they are entering a 30 zone. This is dangerous for pedestrians, and discourages walking.</p>${locationString}`, options);
+        case 'red': return layer.bindTooltip(`<h3>Crossing is painted red ✅</h3><p>The red backgrounds has been painted at this <i>zone 30</i> entrance. This doesn&apos;t mean that there are no other issues.</p>${locationString}`, options);
       }
     }
 
