@@ -237,6 +237,9 @@
     .inline {
       display: inline;
     }
+    .example-img {
+      max-width: 90vw;
+    }
     @media only screen and (min-width: 769px) {
       .mobile {
         display: none;
@@ -319,13 +322,13 @@
       <div class="spacer"></div>
       <h3>Examples</h3>
       <p>
-      <img src="img/Chimay.jpg">
+        <img class="example-img" src="img/Chimay.jpg">
       </p>
       <p>
         Example: the crossing on entrance of rue Chimay by the Gëlle Fra is missing completely. This is a dangerous crossing.
       </p>
       <p>
-        <img src="img/Oradour.jpg">
+        <img class="example-img" src="img/Oradour.jpg">
       </p>
       <p>
         Example: the crossing on rue d'Oradour is missing a red background. The crossing on rue Walram has a red background.
@@ -619,10 +622,10 @@
     function hashChange() {
       const selectedTabFromUrl = window.location.hash.substr(1);
 
-      if(selectedTabFromUrl === '30kmh') {
-        toggle30kmh();
-      } else {
+      if(selectedTabFromUrl === 'safe-crossing') {
         toggleSafeCrossing();
+      } else {
+        toggle30kmh();
       }
     }
 
