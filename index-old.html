@@ -1,0 +1,222 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Safe Crossing - Map viewer</title>
+  <meta name="description" content="Safe Crossing viewer">
+  <meta name="author" content="ZUG">
+
+  <meta property="og:title" content="Safe Crossing - Unsafe pedestrian crossings in Luxembourg-City (Map)">
+  <meta property="og:site_name" content="Safe Crossing by ZUG (Zentrum fir Urban Gerechtegkeet)">
+  <meta property="og:url" content="https://www.zug.lu/safe-crossing">
+  <meta property="og:description" content="Safe Crossing is a project based on a crowd-sourced effort to assess if the setup of pedestrian crossings in Luxembourg-City complies with the Code de la Route.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://zug.lu/safe-crossing/img/banner.png">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #info {
+      overflow: auto;
+      padding: 2rem;
+    }
+    #map {
+      flex-grow: 1;
+    }
+    .invisible {
+      display: none;
+    }
+    .button-info button {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+    .red {
+      color: red;
+      font-weight: bold;
+    }
+    .orange {
+      color: orange;
+      font-weight: bold;
+    }
+    .more-information {
+      font-weight: bold;
+      text-align: center;
+      background-color: lightgrey;
+      border-radius: 4px;
+      padding: .5rem;
+    }
+    @media only screen and (max-width: 768px) {
+      #info {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="info">
+    <h2>Safe Crossing</h2>
+    <p>
+      Welcome to the "Safe Crossing" viewer. The map shows pedestrian crossings in Luxembourg-City that have
+      been determined through a crowdsourced effort as not being compliant with the Highway Code ("Code de la route")
+      because designated parking spots (including bus stops) are within 5 metres of a pedestrian crossing.
+    </p>
+    <p>
+      Red and orange dots mark the relevant crossings:
+    </p>
+    <p>
+      <span class="red">Red (475 crossings, 27%):</span> Users agreed that the crossing was not compliant with the Highway Code
+    </p>
+    <p>
+      <span class="orange">Yellow (162 crossings, 9%):</span> Users were unable to determine whether the crossing is compliant with the Highway Code<br>
+    </p>
+    <p>
+      Compliant crossings are not shown on the map (1150 crossings, 64%).
+    </p>
+    <p>
+      By clicking on a dot, you can check the street name and neighbourhood, and how many users cast votes. You can
+      also check out the OpenStreetMaps node id.
+    </p>
+    <p>
+      Data for the pedestrian crossings comes from OpenStreetMap. Satellite imagery comes from Geoportail. Download
+      the data <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson">as GeoJSON</a> or as
+      <a href="https://zug.lu/safe-crossing/safe-crossing-results-u1.csv">CSV</a>.
+    </p>
+    <p class="more-information">
+      <a href="more.html">More information about the project</a>.
+    </p>
+    <p class="button-info"><button onClick="javascript:hideInfoAndMaybeLocate()">OK, hide this text!</button></p>
+  </div>
+  <div id="map"></div>
+
+  <script>
+    const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+    let ownPositionMarker;
+    let ownPositionRadiusMarker;
+
+    function getResultDescription(result) {
+      switch (result) {
+        case 2:
+          case 12:
+            return "Designated parking too close to crossing";
+            break;
+          default:
+            return "Ambiguous or impossible to see";
+      }
+    }
+
+    function getLocationDescription(street, neighbourhood) {
+      if (street && neighbourhood) return `${street} (${neighbourhood})`;
+      else if (street) return street;
+      else if (neighbourhood) return neighbourhood;
+      return "";
+    }
+
+    async function loadCrosswalksGeojson() {
+      const url = 'https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson';
+      return (await fetch(url)).json();
+    }
+
+    function bindTooltips(feature, layer) {
+      const { street, neighbourhood, votesTotal, currentResult, osmnodeid } = feature.properties;
+
+      layer.bindTooltip(`<h2>${getLocationDescription(street, neighbourhood)}</h2><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: <a href="https://openstreetmap.org/${osmnodeid}">${osmnodeid}</a></p>`);
+    }
+
+    const map = L.map('map').setView([49.6061209088, 6.12493950024], 14);
+    const mapLink = '<a href="http://geoportail.lu">Geoportail</a>';
+
+    L.tileLayer(
+      'https://wmts1.geoportail.lu/opendata/wmts/ortho_2020/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
+      {
+        attribution: 'Map data &copy; ' + mapLink,
+        maxZoom: 20,
+      }
+    ).addTo(map);
+
+    function onLocationFound(e) {
+      const radius = e.accuracy;
+
+      if (!ownPositionMarker) {
+        ownPositionMarker = L.marker(e.latlng).addTo(map);
+      } else {
+        ownPositionMarker.setLatLng(e.latlng)
+      }
+
+      if (!ownPositionRadiusMarker) {
+        ownPositionRadiusMarker = L.circle(e.latlng, { radius, interactive: false }).addTo(map);
+      } else {
+        ownPositionRadiusMarker.setLatLng(e.latlng)
+      }
+    }
+
+    map.on('locationfound', onLocationFound);
+
+    async function startLocation() {
+      map.locate({setView: false, watch: true, /* maxZoom: 17 */});
+    }
+
+    if (!isMobile) {
+      startLocation();
+    }
+
+    function hideInfoAndMaybeLocate() {
+      document.getElementById("info").className = "invisible";
+      map.invalidateSize();
+      if (isMobile) {
+        startLocation();
+      }
+    }
+
+
+    const notSureMarkerOptions = {
+      radius: 8,
+      fillColor: "#fede42",
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.8
+    };
+
+    const tooCloseMarkerOptions = {
+      radius: 8,
+      fillColor: "#ff0000",
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.8
+    };
+
+    loadCrosswalksGeojson().then(data => L.geoJson(data, {
+      onEachFeature: bindTooltips,
+      pointToLayer: function (feature, latlng) {
+        switch (feature.properties.currentResult) {
+          case 2:
+          case 12:
+            return L.circleMarker(latlng, tooCloseMarkerOptions);
+            break;
+          default:
+            return L.circleMarker(latlng, notSureMarkerOptions);
+        }
+      }
+    })).then(map.addLayer.bind(map));
+  </script>
+</body>
+</html>
