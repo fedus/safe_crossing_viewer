@@ -372,8 +372,10 @@
   </div>
   <div id="map"></div>
 
-  <script type="text/javascript" src="30kmh.js"></script>
   <script>
+    const safeCrossingUrl = 'https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson';
+    const zebra30Url = 'https://zug.lu/safe-crossing/zebra30.geojson';
+    
     const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
     let ownPositionMarker;
     let ownPositionRadiusMarker;
@@ -396,8 +398,7 @@
       return "";
     }
 
-    async function loadCrosswalksGeojson() {
-      const url = 'https://zug.lu/safe-crossing/safe-crossing-results-u1.geojson';
+    async function loadCrosswalksGeojson(url) {
       return (await fetch(url)).json();
     }
 
@@ -525,7 +526,7 @@
 
     const safeCrossingGroup = L.layerGroup().addTo(map);
 
-    loadCrosswalksGeojson().then(data => L.geoJson(data, {
+    loadCrosswalksGeojson(safeCrossingUrl).then(data => L.geoJson(data, {
       onEachFeature: bindSafeCrossingTooltips,
       pointToLayer: function (feature, latlng) {
         switch (feature.properties.currentResult) {
@@ -541,7 +542,7 @@
 
     const thirtyKmhGroup = L.layerGroup();
 
-    L.geoJson(thirtyKmh, {
+    loadCrosswalksGeojson(zebra30Url).then(data => L.geoJson(data, {
       onEachFeature: bindThirtyKmhTooltips,
       pointToLayer: function (feature, latlng) {
         switch(feature.properties.crossing_marking) {
@@ -550,7 +551,7 @@
           case 'red': return L.circleMarker(latlng, thirtyMarkerMarkedRed).addTo(thirtyKmhGroup);
         }
       }
-    });
+    }));
 
     const safeCrossingLegend = L.control({position: 'topright'});
 
