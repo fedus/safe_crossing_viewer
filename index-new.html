@@ -660,6 +660,14 @@
     document.getElementById("map").onmousedown = minimizeInfo;
     map.on('movestart', minimizeInfo);
 
+    function detectTabFromUrl() {
+      if(window.location.pathname.includes('/safe-crossing')) {
+        toggleSafeCrossing();
+      } else {
+        toggle30kmh();
+      }
+    }
+
     function hashChange() {
       const selectedTabFromUrl = window.location.hash.substr(1);
 
@@ -670,7 +678,11 @@
       }
     }
 
-    hashChange();
+    if(window.location.hash) {
+      hashChange();
+    } else {
+      detectTabFromUrl();
+    }
 
     window.onhashchange = hashChange;
   </script>
