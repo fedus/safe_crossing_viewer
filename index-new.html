@@ -355,6 +355,8 @@
       <h3>FAQ</h3>
       <h4>Why are there crossings with no dot?</h4>
       <p>Only the crossings at the entrance of a <i>zone 30</i> are shown</p>
+    <h4>Are crossings legally required at zone 30 exits on one-way streets?</h4>
+    <p>The regulations are unclear. Crossings certainly make sense there, for example along boulevard Roosevelt.</p>
     <h4>I want to report a mistake, or want to help. How do I contact you?</h4>
     <p><a href="https://zug.lu/contact/">On our contact page</a> or <a href="https://twitter.com/zug_lu">on twitter</a>
     <h4>How do you know that these are the applicable rules and guidelines?</h4>
@@ -410,9 +412,9 @@
       const locationString = `<b>${feature.properties.quartier}</b>, ${feature.properties.rue}`;
 
       switch(feature.properties.crossing_marking) {
-        case 'unmarked': return layer.bindTooltip(`<h3>Crossing missing completely! 🤷</h3><p>Here, a pedestrian crossing is missing completely, and probably dangerous and uncomfortable for pedestrians..</p>${locationString}`, options);
+        case 'unmarked': return layer.bindTooltip(`<h3>Crossing missing completely! 🤷</h3><p>Here, a pedestrian crossing is missing completely, and probably dangerous and uncomfortable for pedestrians.</p>${locationString}`, options);
         case 'no': return layer.bindTooltip(`<h3>Missing red background 🤨</h3><p>While there is a crossing here, the required red background is missing. Car drivers might not realise they are entering a 30 zone.</p>${locationString}`, options);
-        case 'red': return layer.bindTooltip(`<h3>Crossing is painted red ✅'</h3><p>The red backgrounds has been painted here, but this doesn&apos;t mean that there are no other issues.</p>${locationString}`, options);
+        case 'red': return layer.bindTooltip(`<h3>Crossing is painted red ✅'</h3><p>The red backgrounds has been painted at this <i>zone 30</i> entrance, but this doesn&apos;t mean that there are no other issues.</p>${locationString}`, options);
       }
     }
 
