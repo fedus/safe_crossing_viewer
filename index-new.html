@@ -399,8 +399,7 @@
       switch(feature.properties.crossing_marking) {
         case 'unmarked': return layer.bindTooltip(`<h3>Crossing missing completely! 🤷</h3><p>Here, a pedestrian crossing is missing completely, and probably dangerous and uncomfortable for pedestrians..</p>${locationString}`, options);
         case 'no': return layer.bindTooltip(`<h3>Missing red background 🤨</h3><p>While there is a crossing here, the required red background is missing. Car drivers might not realise they are entering a 30 zone.</p>${locationString}`, options);
-        case 'red': return layer.bindTooltip(`<h3>Crossing is painted red ✅'</h3><p>The red backgrounds has been painted here, but this doesn&apos;t mean that there are no other <a href="https://zug.lu/safe-crossing">possible issues</a> here.</p>${locationString}`, options);
-
+        case 'red': return layer.bindTooltip(`<h3>Crossing is painted red ✅'</h3><p>The red backgrounds has been painted here, but this doesn&apos;t mean that there are no other issues.</p>${locationString}`, options);
       }
     }
 
@@ -491,16 +490,16 @@
       fillColor: "#242121",
       weight: 3,
       opacity: 1,
-      fillOpacity: 1
+      fillOpacity: 0.7
     };
     
      const thirtyMarkerMarkedRed = {
       radius: 6,
       color: "red",
-      fillColor: "#fede42",
+      fillColor: "white",
       weight: 3,
       opacity: 1,
-      fillOpacity: 1
+      fillOpacity: 0.7
     };
 
 
