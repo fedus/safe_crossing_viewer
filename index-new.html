@@ -313,45 +313,49 @@
       <h2>Missing or incorrect crosswalks at Zone 30 entrances</h2>
       <p>Uses aerial imagery from 2022.</p>
       <p>
-        The map shows pedestrian crossings in Luxembourg-City that are missing or incorrect. On roads where drivers enter a "zone 30" from a major road, <a href="https://pch.gouvernement.lu/dam-assets/administration/competences/permission-de-voirie/ministerielle/tome-1/e-guide-application-zones30km.pdf">regulations</a> and <a href="https://transports.public.lu/content/dam/transport/circulation-routiere/Brochure-Apaisement-du-trafic-PDF.pdf">guidelines from 2013</a> require a pedestrian crossing with a red background.
+        The map shows pedestrian crossings in Luxembourg-City that are missing or incorrect. On roads where drivers enter a "zone 30" from a major road,
+        <a href="https://pch.gouvernement.lu/dam-assets/administration/competences/permission-de-voirie/ministerielle/tome-1/e-guide-application-zones30km.pdf">regulations</a> and <a href="https://transports.public.lu/content/dam/transport/circulation-routiere/Brochure-Apaisement-du-trafic-PDF.pdf">guidelines</a>  from 2013 require a pedestrian crossing with a red background.
         In Luxembourg-City, the red background is often missing, or the pedestrian crossing is missing completely.
       </p>
       <p>
         Without the red crossings, drivers might not realise they are entering a 30 zone, crossing the road is dangerous and uncomfortable for pedestrians, and walking gets discouraged.
       </p>
+      <p>In 2021, <a href="https://zug.lu/safe-crossing">we had already alerted</a> the city about unsafe crossings with parking spaces too close. This new project shows that the city keeps systematically failing to apply guidelines when it comes to pedestrian infrastructure.</a>
       <div class="spacer"></div>
-      <h3>Examples</h3>
+      <h3>Examples of dangerous crossings</h3>
       <p>
         <img class="example-img" src="img/Chimay.jpg">
       </p>
       <p>
-        Example: the crossing on entrance of rue Chimay by the Gëlle Fra is missing completely. This is a dangerous crossing.
+        The crossing on entrance of rue Chimay by the Gëlle Fra is missing completely.
       </p>
       <p>
         <img class="example-img" src="img/Oradour.jpg">
       </p>
       <p>
-        Example: the crossing on rue d'Oradour is missing a red background. The crossing on rue Walram has a red background.
+        The crossing on rue d'Oradour is missing a red background. (The crossing on rue Walram has a red background.)
       </p>
       <div class="spacer"></div>
       <h3>How to read the map</h3>
       <p>
-        Red and white dots mark the relevant crossings:
+        Dots mark the relevant crossings:
       </p>
       <p>
-        <span class="red">Red:</span> Crosswalk completely missing at entrance of 30km/h zone
+        <span class="orange">Orange:</span> Crosswalk completely missing at entrance of 30km/h zone, and probably dangerous and uncomfortable for pedestrians. Walking is discouraged.
       </p>
       <p>
-        <span class="white">White:</span> Crosswalk should have red background at entrance of 30km/h zone<br>
+        <span class="white">White:</span> Crosswalk should have red background at entrance of 30km/h zone
       </p>
       <p>
-        By hovering (or tapping) on a dot, you can check the street name and neighbourhood. You can
-        also check out the relevant OpenStreetMap node id.
+        <span class="red">Red:</span> Crosswalk should have red background at entrance of 30km/h zone
+      </p>
+      <p>
+        Clicking on a dot shows the street name and neighbourhood.
       </p>
       <div class="spacer"></div>
       <p>
-        Raw location data for the pedestrian crossings comes from OpenStreetMap. Satellite imagery comes from Geoportail.
-        Download link as GeoJSON coming soon.
+        Raw location data for the pedestrian crossings comes from OpenStreetMap. Analysis automatically done with the Overpass API; please report any errors. Aerial imagery from Geoportail.
+        Download raw data <a href="zebra30.geojson">as geojson</a>.
       </p>
     </div>
   </div>
@@ -396,30 +400,24 @@
       switch(feature.properties.crossing_marking) {
         case 'unmarked': return layer.bindTooltip(`<h3>Crossing missing completely! 🤷</h3><p>Here, a pedestrian crossing is missing completely, and probably dangerous and uncomfortable for pedestrians..</p>${locationString}`, options);
         case 'no': return layer.bindTooltip(`<h3>Missing red background 🤨</h3><p>While there is a crossing here, the required red background is missing. Car drivers might not realise they are entering a 30 zone.</p>${locationString}`, options);
+        case 'red': return layer.bindTooltip(`<h3>Crossing is painted red ✅'</h3><p>The red backgrounds has been painted here, but this doesn&apos;t mean that there are no other <a href="https://zug.lu/safe-crossing">possible issues</a> here.</p>${locationString}`, options);
+
       }
     }
 
     function bindSafeCrossingTooltips(feature, layer) {
       const { street, neighbourhood, votesTotal, currentResult, osmnodeid } = feature.properties;
 
-      layer.bindTooltip(`<h3>${getLocationDescription(street, neighbourhood)}</h3><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p>OpenStreetMaps ID: <a href="https://openstreetmap.org/${osmnodeid}">${osmnodeid}</a></p>`, { opacity: 1 });
+      layer.bindTooltip(`<h3>${getLocationDescription(street, neighbourhood)}</h3><p><b>${getResultDescription(currentResult)}</b> - ${votesTotal} votes</p><p><a href="https://openstreetmap.org/node/${osmnodeid}">See on OpenStreetMap</a></p>`, { opacity: 1 });
     }
 
     const map = L.map('map').setView([49.6061209088, 6.12493950024], 14);
     const mapLink = '<a href="http://geoportail.lu">Geoportail</a>';
 
-    const ortho2020 = L.tileLayer(
-      'https://wmts1.geoportail.lu/opendata/wmts/ortho_2020/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
-      {
-        attribution: '2020 aerial photography &copy; ' + mapLink,
-        maxZoom: 21,
-      }
-    );
-
     const ortho2022 = L.tileLayer(
       'https://wmts1.geoportail.lu/opendata/wmts/ortho_2022/GLOBAL_WEBMERCATOR_4_V3/{z}/{x}/{y}.jpeg',
       {
-        attribution: 'Map data &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>. 2022 aerial photography &copy; ' + mapLink,
+        attribution: 'Map data &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>. 2022 aerial photography CC0 <a href="http://geoportail.lu">Geoportail</a>'
         maxZoom: 21,
       }
     );
@@ -496,6 +494,15 @@
       opacity: 1,
       fillOpacity: 1
     };
+    
+     const thirtyMarkerMarkedRed = {
+      radius: 6,
+      color: "red",
+      fillColor: "#fede42",
+      weight: 3,
+      opacity: 1,
+      fillOpacity: 1
+    };
 
 
     const safeCrossingGroup = L.layerGroup().addTo(map);
@@ -522,6 +529,7 @@
         switch(feature.properties.crossing_marking) {
           case 'unmarked': return L.circleMarker(latlng, thirtyMarkerUnmarked).addTo(thirtyKmhGroup);
           case 'no': return L.circleMarker(latlng, thirtyMarkerMarkedButNotRed).addTo(thirtyKmhGroup);
+          case 'red': return L.circleMarker(latlng, thirtyMarkerMarkedRed).addTo(thirtyKmhGroup);
         }
       }
     });
@@ -550,6 +558,8 @@
             '<p><i style="background: orange"></i> Crosswalk completely missing</p>';
           div.innerHTML +=
             '<p><i style="background: white"></i> Red background missing from crosswalk</p>';
+          div.innerHTML +=
+            '<p><i style="background: red"></i> Red background painted</p>';
 
         return div;
     };
