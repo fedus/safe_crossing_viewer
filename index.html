@@ -247,6 +247,10 @@
     .example-img {
       width: 100%;
     }
+    .zebra-30-marker {
+      font-size: 20px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
     @media only screen and (min-width: 769px) {
       .mobile {
         display: none;
@@ -343,16 +347,16 @@
       <div class="spacer"></div>
       <h3>How to read the map</h3>
       <p>
-        Dots mark the relevant crossings:
+        Dots made of emojis mark the relevant crossings:
       </p>
       <p>
-        <span class="orange">Orange:</span> 🤷 Crosswalk completely missing at entrance of 30km/h zone, and probably dangerous and uncomfortable for pedestrians. Walking is discouraged.
+        🚨: Crosswalk completely missing at entrance of 30km/h zone, and probably dangerous and uncomfortable for pedestrians. Walking is discouraged.
       </p>
       <p>
-        <span class="white">White:</span> 🤨 Crosswalk is there but should have red background at entrance of 30km/h zone.
+        😑: Crosswalk is there but should have red background at entrance of 30km/h zone.
       </p>
       <p>
-        <span class="red">Red:</span> ✅ Crosswalk has red background at entrance of 30km/h zone as required. All good.
+        ✅: Crosswalk has red background at entrance of 30km/h zone as required. All good.
       </p>
       <p>
         Clicking on a dot shows the street name and neighbourhood.
@@ -421,8 +425,8 @@
       const locationString = `<b>${feature.properties.quartier}</b>, ${feature.properties.rue}`;
 
       switch(feature.properties.crossing_marking) {
-        case 'unmarked': return layer.bindTooltip(`<h3>Crossing missing completely! 🤷</h3><p>A pedestrian crossing is missing completely at this <i>zone 30</i> entrance. It is probably dangerous and uncomfortable for pedestrians, and discourages walking.</p>${locationString}`, options);
-        case 'no': return layer.bindTooltip(`<h3>Missing red background 🤨</h3><p>While there is a crossing at this <i>zone 30</i> entrance, the required red background is missing. Car drivers might not realise they are entering a 30 zone. This is dangerous for pedestrians, and discourages walking.</p>${locationString}`, options);
+        case 'unmarked': return layer.bindTooltip(`<h3>Crossing missing completely! 🚨</h3><p>A pedestrian crossing is missing completely at this <i>zone 30</i> entrance. It is probably dangerous and uncomfortable for pedestrians, and discourages walking.</p>${locationString}`, options);
+        case 'no': return layer.bindTooltip(`<h3>Missing red background 😑</h3><p>While there is a crossing at this <i>zone 30</i> entrance, the required red background is missing. Car drivers might not realise they are entering a 30 zone. This is dangerous for pedestrians, and discourages walking.</p>${locationString}`, options);
         case 'red': return layer.bindTooltip(`<h3>Crossing is painted red ✅</h3><p>The red backgrounds has been painted at this <i>zone 30</i> entrance. This doesn&apos;t mean that there are no other issues.</p>${locationString}`, options);
       }
     }
@@ -507,33 +511,22 @@
       fillOpacity: 1
     };
 
-    const thirtyMarkerUnmarked = {
-      radius: 6,
-      color: "orange",
-      fillColor: "#242121",
-      weight: 3,
-      opacity: 1,
-      fillOpacity: 1
+    const zebra30MarkerSize = 20;
+
+    const zebra30MarkerOptions = {
+      iconSize: [zebra30MarkerSize, zebra30MarkerSize],
+      iconAnchor: [zebra30MarkerSize/2, zebra30MarkerSize+9],
+      className: 'zebra-30-marker',
     };
 
-    const thirtyMarkerMarkedButNotRed = {
-      radius: 6,
-      color: "white",
-      fillColor: "#242121",
-      weight: 3,
-      opacity: 1,
-      fillOpacity: 0.7
-    };
+    const buildZebra30MarkerOptions = (htmlContent) => ({
+      draggable: true,
+      icon: L.divIcon(Object.assign({}, zebra30MarkerOptions, { html: htmlContent }))
+    });
 
-     const thirtyMarkerMarkedRed = {
-      radius: 6,
-      color: "red",
-      fillColor: "white",
-      weight: 3,
-      opacity: 1,
-      fillOpacity: 0.7
-    };
-
+    const zebra30MissingIcon = buildZebra30MarkerOptions('🚨');
+    const zebra30PresentButNotRed = buildZebra30MarkerOptions('😑');
+    const zebra30Ok = buildZebra30MarkerOptions('✅');
 
     const safeCrossingGroup = L.layerGroup().addTo(map);
 
@@ -557,9 +550,9 @@
       onEachFeature: bindThirtyKmhTooltips,
       pointToLayer: function (feature, latlng) {
         switch(feature.properties.crossing_marking) {
-          case 'unmarked': return L.circleMarker(latlng, thirtyMarkerUnmarked).addTo(thirtyKmhGroup);
-          case 'no': return L.circleMarker(latlng, thirtyMarkerMarkedButNotRed).addTo(thirtyKmhGroup);
-          case 'red': return L.circleMarker(latlng, thirtyMarkerMarkedRed).addTo(thirtyKmhGroup);
+          case 'unmarked': return L.marker(latlng, zebra30MissingIcon).addTo(thirtyKmhGroup);
+          case 'no': return L.marker(latlng, zebra30PresentButNotRed).addTo(thirtyKmhGroup);
+          case 'red': return L.marker(latlng, zebra30Ok).addTo(thirtyKmhGroup);
         }
       }
     }));
@@ -585,11 +578,11 @@
         const div = L.DomUtil.create('div', 'info legend');
 
         div.innerHTML +=
-            '<p><i style="background: orange"></i> Crosswalk completely missing</p>';
+            '<p>🚨 Crosswalk completely missing</p>';
           div.innerHTML +=
-            '<p><i style="background: white"></i> Red background missing from crosswalk</p>';
+            '<p>😑 Red background missing from crosswalk</p>';
           div.innerHTML +=
-            '<p><i style="background: red"></i> Red background painted</p>';
+            '<p>✅ Red background painted</p>';
 
         return div;
     };
