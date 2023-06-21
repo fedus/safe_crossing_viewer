@@ -2964,23 +2964,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.140074,
-          49.59822
-        ]
-      },
-      "properties": {
-        "crossing_marking": "unmarked",
-        "osm_node_id": 2007461003,
-        "osm_way_id": 9245288,
-        "rue": "Rue Irmine",
-        "quartier": "Bonnevoie-Sud"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           6.129373,
           49.620857
         ]
