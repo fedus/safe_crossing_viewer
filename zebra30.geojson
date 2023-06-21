@@ -1587,23 +1587,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.132818,
-          49.598242
-        ]
-      },
-      "properties": {
-        "crossing_marking": "no",
-        "osm_node_id": 1591487456,
-        "osm_way_id": 749561229,
-        "rue": "Unnamed",
-        "quartier": "Gare"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           6.104034,
           49.606049
         ]
@@ -3244,23 +3227,6 @@
         "crossing_marking": "no",
         "osm_node_id": 3205936470,
         "osm_way_id": 1050476020,
-        "rue": "Unnamed",
-        "quartier": "Gare"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.133068,
-          49.598699
-        ]
-      },
-      "properties": {
-        "crossing_marking": "no",
-        "osm_node_id": 3205936481,
-        "osm_way_id": 777449343,
         "rue": "Unnamed",
         "quartier": "Gare"
       }
@@ -4936,57 +4902,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.133299,
-          49.599252
-        ]
-      },
-      "properties": {
-        "crossing_marking": "no",
-        "osm_node_id": 8174345836,
-        "osm_way_id": 863164830,
-        "rue": "Unnamed",
-        "quartier": "Gare"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.133225,
-          49.599269
-        ]
-      },
-      "properties": {
-        "crossing_marking": "no",
-        "osm_node_id": 8174345837,
-        "osm_way_id": 863164829,
-        "rue": "Unnamed",
-        "quartier": "Gare"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.132998,
-          49.598715
-        ]
-      },
-      "properties": {
-        "crossing_marking": "no",
-        "osm_node_id": 8198269529,
-        "osm_way_id": 863164832,
-        "rue": "Unnamed",
-        "quartier": "Gare"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           6.138278,
           49.61056
         ]
@@ -5046,40 +4961,6 @@
         "crossing_marking": "no",
         "osm_node_id": 8569285144,
         "osm_way_id": 145814815,
-        "rue": "Unnamed",
-        "quartier": "Gare"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.132678,
-          49.598275
-        ]
-      },
-      "properties": {
-        "crossing_marking": "no",
-        "osm_node_id": 8734727446,
-        "osm_way_id": 844574517,
-        "rue": "Unnamed",
-        "quartier": "Gare"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.132752,
-          49.598258
-        ]
-      },
-      "properties": {
-        "crossing_marking": "no",
-        "osm_node_id": 8734727447,
-        "osm_way_id": 827815960,
         "rue": "Unnamed",
         "quartier": "Gare"
       }
