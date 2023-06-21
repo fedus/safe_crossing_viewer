@@ -584,13 +584,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.136368,
-          49.602911
+          6.1364893,
+          49.6030436
         ]
       },
       "properties": {
-        "crossing_marking": "no",
-        "osm_node_id": 1118466501,
+        "crossing_marking": "unmarked",
+        "osm_node_id": 1378101893,
         "osm_way_id": 123658679,
         "rue": "Rue du Laboratoire",
         "quartier": "Bonnevoie-Nord / Verlorenkost"
