@@ -74,23 +74,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.135817,
-          49.611801
-        ]
-      },
-      "properties": {
-        "crossing_marking": "no",
-        "osm_node_id": 75389885,
-        "osm_way_id": 160000361,
-        "rue": "Rue Sosthène Weis",
-        "quartier": "Pfaffenthal"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           6.108237,
           49.62262
         ]
@@ -4368,23 +4351,6 @@
         "osm_way_id": 167447472,
         "rue": "Rue Goethe",
         "quartier": "Gare"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.135522,
-          49.611528
-        ]
-      },
-      "properties": {
-        "crossing_marking": "no",
-        "osm_node_id": 6064671025,
-        "osm_way_id": 147557544,
-        "rue": "Chemin de la Corniche",
-        "quartier": "Pfaffenthal"
       }
     },
     {
