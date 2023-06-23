@@ -4494,23 +4494,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.125094,
-          49.608936
-        ]
-      },
-      "properties": {
-        "crossing_marking": "unmarked",
-        "osm_node_id": 6167722490,
-        "osm_way_id": 682687109,
-        "rue": "Rue de la Semois",
-        "quartier": "Ville Haute"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           6.159791,
           49.631211
         ]
@@ -4572,23 +4555,6 @@
         "osm_way_id": 34130325,
         "rue": "Rue Robert Bruch",
         "quartier": "Cents"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.125072,
-          49.608956
-        ]
-      },
-      "properties": {
-        "crossing_marking": "no",
-        "osm_node_id": 6393819926,
-        "osm_way_id": 682687109,
-        "rue": "Rue de la Semois",
-        "quartier": "Ville Haute"
       }
     },
     {
