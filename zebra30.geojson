@@ -1434,23 +1434,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.124721,
-          49.599547
-        ]
-      },
-      "properties": {
-        "crossing_marking": "no",
-        "osm_node_id": 1511944343,
-        "osm_way_id": 9230263,
-        "rue": "Rue de la Fonderie",
-        "quartier": "Gare"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           6.128056,
           49.600316
         ]
