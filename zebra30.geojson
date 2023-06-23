@@ -3253,23 +3253,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.129614,
-          49.609669
-        ]
-      },
-      "properties": {
-        "crossing_marking": "unmarked",
-        "osm_node_id": 3344887571,
-        "osm_way_id": 333426960,
-        "rue": "Rue Chimay",
-        "quartier": "Ville Haute"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           6.128561,
           49.645589
         ]
