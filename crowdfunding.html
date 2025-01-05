@@ -36,334 +36,8 @@
     <meta name="twitter:image:alt" content="Banner inviting people to donate to our crowdfunding campaign" />
     <meta name="twitter:url" content="https://www.zug.lu/safe-crossing/crowdfunding.html"/>
 
-    <style>
-      html {
-        font-family: Helvetica, sans-serif;
-      }
+    <link rel="stylesheet" href="crowdfunding.css">
 
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        background-color: #f5f5f5;
-      }
-
-      .content {
-        max-width: 1100px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 30px;
-      }
-
-      .container-header {
-        border-bottom: 3px solid #dcdcdc;
-        background-color: white;
-
-        padding: 10px 20px;
-
-        position: sticky;
-        top: 0;
-
-        z-index: 2;
-      }
-
-      .container-hero {
-        padding-top: 20px;
-        background-color: white;
-      }
-
-      .hero {
-        display: flex;
-        flex-direction: row;
-      }
-
-      .hero-left {
-        width: 60%;
-      }
-
-      .hero-right {
-        width: 40%;
-      }
-
-      .hero-right-image {
-        height: 350px;
-        width: auto;
-      }
-
-      @media (max-width: 767px) {
-        .hero {
-          flex-direction: column-reverse;
-        }
-
-        .hero-left {
-          width: 100%;
-        }
-
-        .hero-right {
-          width: 100%;
-        }
-
-        .hero-right-image {
-          height: 150px;
-          width: auto;
-        }
-      }
-
-      .progress-bar {
-        background-color: white;
-        height: 30px;
-        border: 2px solid lightgrey;
-        border-radius: 20px;
-        overflow: hidden;
-        width: 95%;
-        margin: 30px 0;
-      }
-
-      .progress-bar-inner {
-        background-color: #91c591;
-        width: 69%;
-        height: 100%;
-        border-radius: 0 15px 15px 0;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-      }
-
-      .progress-bar-label {
-        font-weight: bold;
-        padding: 10px;
-        white-space: nowrap;
-      }
-
-      .amount-container {
-        margin: 30px 0;
-        display: flex;
-        flex-direction: row;
-      }
-
-      .amount-received,
-      .amount-goal {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .amount-received-number,
-      .amount-goal-number {
-        font-size: 2rem;
-      }
-
-      @media (max-width: 470px) {
-        .amount-container {
-          flex-direction: column;
-        }
-
-        .amount-received,
-        .amount-goal {
-          width: 100%;
-          margin: 20px 0;
-        }
-      }
-
-      .donation-details-background {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        background: linear-gradient(180deg, #fff 50%, #f5f5f5 50%);
-      }
-
-      .donation-pulse {
-        width: 90%;
-        border-radius: 10px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .donation-details {
-        overflow: auto;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 0 5px #999;
-        padding-bottom: 10px;
-      }
-
-      .donation-details-content {
-        padding: 10px;
-      }
-
-      .or {
-        width: auto;
-        text-align: center;
-        border-bottom: 2px solid lightgray;
-        line-height: 0.1em;
-        margin: 30px -10px 30px;
-      }
-
-      .or-label {
-        background: #fff;
-        padding: 0 10px;
-        font-style: italic;
-      }
-
-      .button {
-        display: block;
-        text-decoration: none;
-        color: white;
-        border-radius: 20px;
-        padding: 10px;
-        background-color: darkslategrey;
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-        transition: background 0.5s;
-      }
-
-      .button:hover {
-        background-color: darkgray;
-      }
-
-      .payment-icons {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .apay {
-        height: 30px;
-        width: auto;
-      }
-
-      .gpay {
-        height: 50px;
-        width: auto;
-      }
-
-      .ccpay {
-        height: 40px;
-        width: auto;
-      }
-
-      .bold {
-        font-weight: bold;
-      }
-
-      .center {
-        text-align: center;
-      }
-
-      .font-large {
-        font-size: 1.5rem;
-      }
-
-      .footer {
-        margin-top: 40px;
-      }
-
-      .pulse {
-        animation: pulse-animation 2s infinite;
-      }
-
-      @keyframes pulse-animation {
-        0% {
-          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
-        }
-        100% {
-          box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
-        }
-      }
-
-      .btn-copy {
-        border: 2px solid black;
-        border-radius: 5px;
-        color: black;
-        text-transform: uppercase;
-        font-weight: bold;
-      }
-
-      .ribbon-container {
-        position: relative;
-      }
-
-      .ribbon {
-        position: absolute;
-        right: -5px; top: -5px;
-        z-index: 1;
-        overflow: hidden;
-        width: 75px; height: 75px;
-        text-align: right;
-      }
-
-      .ribbon span {
-        font-size: 10px;
-        font-weight: bold;
-        color: #FFF;
-        text-transform: uppercase;
-        text-align: center;
-        line-height: 20px;
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        width: 100px;
-        display: block;
-        background: #79A70A;
-        background: linear-gradient(#9BC90D 0%, #79A70A 100%);
-        box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-        position: absolute;
-        top: 19px; right: -21px;
-      }
-
-      .ribbon span::before {
-        content: "";
-        position: absolute; left: 0px; top: 100%;
-        z-index: -1;
-        border-left: 3px solid #79A70A;
-        border-right: 3px solid transparent;
-        border-bottom: 3px solid transparent;
-        border-top: 3px solid #79A70A;
-      }
-
-      .ribbon span::after {
-        content: "";
-        position: absolute; right: 0px; top: 100%;
-        z-index: -1;
-        border-left: 3px solid transparent;
-        border-right: 3px solid #79A70A;
-        border-bottom: 3px solid transparent;
-        border-top: 3px solid #79A70A;
-      }
-
-      .payconiq-qr {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        width: 200px;
-      }
-
-      .payconiq-logo {
-        height: 25px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .payconiq-payment-mobile {
-        display: none;
-      }
-
-      @media (max-width: 767px) {
-        .payconiq-payment-desktop {
-          display: none;
-        }
-
-        .payconiq-payment-mobile {
-          display: unset;
-        }
-      }
-
-    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
   </head>
 
@@ -386,22 +60,39 @@
             pedestrian infrastructure. We need your help to cover the legal
             costs of challenging this refusal in court.
           </p>
-          <div class="progress-bar">
-            <div class="progress-bar-inner">
-              <div class="progress-bar-label">69%</div>
+          <h3>Current (second) tranche:</h3>
+          <div id="second-tranche" class="tranche">
+            <div class="progress-bar">
+              <div class="progress-bar-inner">
+                <div class="progress-bar-label">7%</div>
+              </div>
+            </div>
+            <div class="amount-container">
+              <div class="amount-received">
+                <div class="amount-received-number">€389,32</div>
+                <div class="amount-received-label">Amount raised to date</div>
+              </div>
+              <div class="amount-goal">
+                <div class="amount-goal-number">€5.000,00</div>
+                <div class="amount-goal-label">Current fundraising goal</div>
+              </div>
             </div>
           </div>
-          <div class="amount-container">
-            <div class="amount-received">
-              <div class="amount-received-number">€10.389,32</div>
-              <div class="amount-received-label">Amount raised to date</div>
+          <h3>First tranche:</h3>
+          <div id="first-tranche" class="tranche">
+            <div class="progress-bar">
+              <div class="progress-bar-inner">
+                <div class="progress-bar-label">100%</div>
+              </div>
             </div>
-            <div class="amount-goal">
-              <div class="amount-goal-number">€15.000,00</div>
-              <div class="amount-goal-label">Current fundraising goal</div>
+            <div class="amount-container">
+              <div class="amount-goal">
+                <div class="amount-goal-number">Thank you!</div>
+                <div class="amount-goal-label">€10.000,00 successfully raised!</div>
+              </div>
             </div>
           </div>
-          <p class="center">(as of 5 January 2025 cob)</p>
+          <p class="center">(data as of 5 January 2025 cob)</p>
         </div>
         <div class="hero-right">
           <img class="hero-right-image" src="img/crowdfunding.webp" alt="Person putting money in a lightbulb as if it was a piggy bank"/>
